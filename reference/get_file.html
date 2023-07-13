@@ -81,7 +81,15 @@
 
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu">get_file</span><span class="op">(</span>url <span class="op">=</span> <span class="st">"https://github.com/taxonomicallyinformedannotation/tima-example-files/raw/main/example_metadata.tsv"</span>, export <span class="op">=</span> <span class="st">"data/source/example_metadata.tsv"</span><span class="op">)</span></span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="va">git</span> <span class="op">&lt;-</span> <span class="st">"https://github.com/"</span></span></span>
+<span class="r-in"><span><span class="va">org</span> <span class="op">&lt;-</span> <span class="st">"taxonomicallyinformedannotation"</span></span></span>
+<span class="r-in"><span><span class="va">repo</span> <span class="op">&lt;-</span> <span class="st">"tima-example-files"</span></span></span>
+<span class="r-in"><span><span class="va">branch</span> <span class="op">&lt;-</span> <span class="st">"main"</span></span></span>
+<span class="r-in"><span><span class="va">file</span> <span class="op">&lt;-</span> <span class="st">"example_metadata.tsv"</span></span></span>
+<span class="r-in"><span><span class="fu">get_file</span><span class="op">(</span></span></span>
+<span class="r-in"><span>  url <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/paste.html" class="external-link">paste</a></span><span class="op">(</span><span class="va">git</span>, <span class="va">org</span>, <span class="va">repo</span>, <span class="st">"raw"</span>, <span class="va">branch</span>, <span class="va">file</span>, sep <span class="op">=</span> <span class="st">"/"</span><span class="op">)</span>,</span></span>
+<span class="r-in"><span>  export <span class="op">=</span> <span class="st">"data/source/example_metadata.tsv"</span></span></span>
+<span class="r-in"><span><span class="op">)</span></span></span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> Timeout for download is 60 minutes</span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> Downloading</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [1] "data/source/example_metadata.tsv"</span>
