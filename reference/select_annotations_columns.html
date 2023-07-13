@@ -61,13 +61,40 @@
 
     <div class="section level2">
     <h2 id="ref-usage">Usage<a class="anchor" aria-label="anchor" href="#ref-usage"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">select_annotations_columns</span><span class="op">(</span><span class="va">df</span><span class="op">)</span></span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">select_annotations_columns</span><span class="op">(</span></span>
+<span>  <span class="va">df</span>,</span>
+<span>  str_2D_3D <span class="op">=</span> <span class="va">paths</span><span class="op">$</span><span class="va">data</span><span class="op">$</span><span class="va">interim</span><span class="op">$</span><span class="va">libraries</span><span class="op">$</span><span class="va">merged</span><span class="op">$</span><span class="va">structures</span><span class="op">$</span><span class="va">dd_ddd</span>,</span>
+<span>  str_met <span class="op">=</span> <span class="va">paths</span><span class="op">$</span><span class="va">data</span><span class="op">$</span><span class="va">interim</span><span class="op">$</span><span class="va">libraries</span><span class="op">$</span><span class="va">merged</span><span class="op">$</span><span class="va">structures</span><span class="op">$</span><span class="va">metadata</span>,</span>
+<span>  str_nam <span class="op">=</span> <span class="va">paths</span><span class="op">$</span><span class="va">data</span><span class="op">$</span><span class="va">interim</span><span class="op">$</span><span class="va">libraries</span><span class="op">$</span><span class="va">merged</span><span class="op">$</span><span class="va">structures</span><span class="op">$</span><span class="va">names</span>,</span>
+<span>  str_tax_cla <span class="op">=</span> <span class="va">paths</span><span class="op">$</span><span class="va">data</span><span class="op">$</span><span class="va">interim</span><span class="op">$</span><span class="va">libraries</span><span class="op">$</span><span class="va">merged</span><span class="op">$</span><span class="va">structures</span><span class="op">$</span><span class="va">taxonomies</span><span class="op">$</span><span class="va">classyfire</span>,</span>
+<span>  str_tax_npc <span class="op">=</span> <span class="va">paths</span><span class="op">$</span><span class="va">data</span><span class="op">$</span><span class="va">interim</span><span class="op">$</span><span class="va">libraries</span><span class="op">$</span><span class="va">merged</span><span class="op">$</span><span class="va">structures</span><span class="op">$</span><span class="va">taxonomies</span><span class="op">$</span><span class="va">npc</span></span>
+<span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div class="section level2">
     <h2 id="arguments">Arguments<a class="anchor" aria-label="anchor" href="#arguments"></a></h2>
     <dl><dt>df</dt>
 <dd><p>Dataframe</p></dd>
+
+
+<dt>str_2D_3D</dt>
+<dd><p>File containing 2D and 3D structures</p></dd>
+
+
+<dt>str_met</dt>
+<dd><p>File containing structures metadata</p></dd>
+
+
+<dt>str_nam</dt>
+<dd><p>File containing structures names</p></dd>
+
+
+<dt>str_tax_cla</dt>
+<dd><p>File containing Classyfire taxonomy</p></dd>
+
+
+<dt>str_tax_npc</dt>
+<dd><p>File containing NPClassifier taxonomy</p></dd>
 
 </dl></div>
 
