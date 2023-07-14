@@ -62,78 +62,79 @@
     <div class="section level2">
     <h2 id="ref-usage">Usage<a class="anchor" aria-label="anchor" href="#ref-usage"></a></h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">weight_bio</span><span class="op">(</span></span>
-<span>  annotationTable <span class="op">=</span> <span class="va">annotation_table_taxed</span>,</span>
-<span>  structureOrganismPairsTable <span class="op">=</span> <span class="va">structure_organism_pairs_table</span>,</span>
-<span>  weightSpectral <span class="op">=</span> <span class="va">weight_spectral</span>,</span>
-<span>  weightBiological <span class="op">=</span> <span class="va">weight_biological</span>,</span>
-<span>  scoreBiologicalDomain <span class="op">=</span> <span class="va">score_biological_domain</span>,</span>
-<span>  scoreBiologicalKingdom <span class="op">=</span> <span class="va">score_biological_kingdom</span>,</span>
-<span>  scoreBiologicalPhylum <span class="op">=</span> <span class="va">score_biological_phylum</span>,</span>
-<span>  scoreBiologicalClass <span class="op">=</span> <span class="va">score_biological_class</span>,</span>
-<span>  scoreBiologicalOrder <span class="op">=</span> <span class="va">score_biological_order</span>,</span>
-<span>  scoreBiologicalFamily <span class="op">=</span> <span class="va">score_biological_family</span>,</span>
-<span>  scoreBiologicalTribe <span class="op">=</span> <span class="va">score_biological_tribe</span>,</span>
-<span>  scoreBiologicalGenus <span class="op">=</span> <span class="va">score_biological_genus</span>,</span>
-<span>  scoreBiologicalSpecies <span class="op">=</span> <span class="va">score_biological_species</span>,</span>
-<span>  scoreBiologicalVariety <span class="op">=</span> <span class="va">score_biological_variety</span></span>
+<span>  annotation_table_taxed <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/get.html" class="external-link">get</a></span><span class="op">(</span><span class="st">"annotation_table_taxed"</span>, envir <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/sys.parent.html" class="external-link">parent.frame</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>  structure_organism_pairs_table <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/get.html" class="external-link">get</a></span><span class="op">(</span><span class="st">"structure_organism_pairs_table"</span>, envir <span class="op">=</span></span>
+<span>    <span class="fu"><a href="https://rdrr.io/r/base/sys.parent.html" class="external-link">parent.frame</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>  weight_spectral <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/get.html" class="external-link">get</a></span><span class="op">(</span><span class="st">"weight_spectral"</span>, envir <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/sys.parent.html" class="external-link">parent.frame</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>  weight_biological <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/get.html" class="external-link">get</a></span><span class="op">(</span><span class="st">"weight_biological"</span>, envir <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/sys.parent.html" class="external-link">parent.frame</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>  score_biological_domain <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/get.html" class="external-link">get</a></span><span class="op">(</span><span class="st">"score_biological_domain"</span>, envir <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/sys.parent.html" class="external-link">parent.frame</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>  score_biological_kingdom <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/get.html" class="external-link">get</a></span><span class="op">(</span><span class="st">"score_biological_kingdom"</span>, envir <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/sys.parent.html" class="external-link">parent.frame</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>  score_biological_phylum <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/get.html" class="external-link">get</a></span><span class="op">(</span><span class="st">"score_biological_phylum"</span>, envir <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/sys.parent.html" class="external-link">parent.frame</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>  score_biological_class <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/get.html" class="external-link">get</a></span><span class="op">(</span><span class="st">"score_biological_class"</span>, envir <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/sys.parent.html" class="external-link">parent.frame</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>  score_biological_order <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/get.html" class="external-link">get</a></span><span class="op">(</span><span class="st">"score_biological_order"</span>, envir <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/sys.parent.html" class="external-link">parent.frame</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>  score_biological_family <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/get.html" class="external-link">get</a></span><span class="op">(</span><span class="st">"score_biological_family"</span>, envir <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/sys.parent.html" class="external-link">parent.frame</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>  score_biological_tribe <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/get.html" class="external-link">get</a></span><span class="op">(</span><span class="st">"score_biological_tribe"</span>, envir <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/sys.parent.html" class="external-link">parent.frame</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>  score_biological_genus <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/get.html" class="external-link">get</a></span><span class="op">(</span><span class="st">"score_biological_genus"</span>, envir <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/sys.parent.html" class="external-link">parent.frame</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>  score_biological_species <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/get.html" class="external-link">get</a></span><span class="op">(</span><span class="st">"score_biological_species"</span>, envir <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/sys.parent.html" class="external-link">parent.frame</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>  score_biological_variety <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/get.html" class="external-link">get</a></span><span class="op">(</span><span class="st">"score_biological_variety"</span>, envir <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/sys.parent.html" class="external-link">parent.frame</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span></span>
 <span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div class="section level2">
     <h2 id="arguments">Arguments<a class="anchor" aria-label="anchor" href="#arguments"></a></h2>
-    <dl><dt>annotationTable</dt>
+    <dl><dt>annotation_table_taxed</dt>
 <dd><p>Table containing the initial annotation eventually complemented by additional MS1 annotations</p></dd>
 
 
-<dt>structureOrganismPairsTable</dt>
+<dt>structure_organism_pairs_table</dt>
 <dd><p>Table containing the structure - organism pairs</p></dd>
 
 
-<dt>weightSpectral</dt>
+<dt>weight_spectral</dt>
 <dd><p>Weight for the spectral score</p></dd>
 
 
-<dt>weightBiological</dt>
+<dt>weight_biological</dt>
 <dd><p>Weight for the biological score</p></dd>
 
 
-<dt>scoreBiologicalDomain</dt>
+<dt>score_biological_domain</dt>
 <dd><p>Score for a <code>domain</code> match (should be lower than <code>kingdom</code>)</p></dd>
 
 
-<dt>scoreBiologicalKingdom</dt>
+<dt>score_biological_kingdom</dt>
 <dd><p>Score for a <code>kingdom</code> match (should be lower than <code>phylum</code>)</p></dd>
 
 
-<dt>scoreBiologicalPhylum</dt>
+<dt>score_biological_phylum</dt>
 <dd><p>Score for a <code>phylum</code> match (should be lower than <code>class</code>)</p></dd>
 
 
-<dt>scoreBiologicalClass</dt>
+<dt>score_biological_class</dt>
 <dd><p>Score for a <code>class</code> match (should be lower than <code>order</code>)</p></dd>
 
 
-<dt>scoreBiologicalOrder</dt>
+<dt>score_biological_order</dt>
 <dd><p>Score for a <code>order</code> match (should be lower than <code>family</code>)</p></dd>
 
 
-<dt>scoreBiologicalFamily</dt>
+<dt>score_biological_family</dt>
 <dd><p>Score for a <code>family</code> match (should be lower than <code>tribe</code>)</p></dd>
 
 
-<dt>scoreBiologicalTribe</dt>
+<dt>score_biological_tribe</dt>
 <dd><p>Score for a <code>tribe</code> match (should be lower than <code>genus</code>)</p></dd>
 
 
-<dt>scoreBiologicalGenus</dt>
+<dt>score_biological_genus</dt>
 <dd><p>Score for a <code>genus</code> match (should be lower than <code>species</code>)</p></dd>
 
 
-<dt>scoreBiologicalSpecies</dt>
+<dt>score_biological_species</dt>
 <dd><p>Score for a <code>species</code> match (should be lower than <code>variety</code>)</p></dd>
 
 
-<dt>scoreBiologicalVariety</dt>
+<dt>score_biological_variety</dt>
 <dd><p>Score for a <code>variety</code> match (should be the highest)</p></dd>
 
 </dl></div>

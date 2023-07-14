@@ -62,48 +62,50 @@
     <div class="section level2">
     <h2 id="ref-usage">Usage<a class="anchor" aria-label="anchor" href="#ref-usage"></a></h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">decorate_chemo</span><span class="op">(</span></span>
-<span>  df <span class="op">=</span> <span class="va">annotation_table_weighted_chemo</span>,</span>
-<span>  sc_cla_kin <span class="op">=</span> <span class="va">score_chemical_cla_kingdom</span>,</span>
-<span>  sc_cla_sup <span class="op">=</span> <span class="va">score_chemical_cla_superclass</span>,</span>
-<span>  sc_cla_cla <span class="op">=</span> <span class="va">score_chemical_cla_class</span>,</span>
-<span>  sc_cla_par <span class="op">=</span> <span class="va">score_chemical_cla_parent</span>,</span>
-<span>  sc_npc_pat <span class="op">=</span> <span class="va">score_chemical_npc_pathway</span>,</span>
-<span>  sc_npc_sup <span class="op">=</span> <span class="va">score_chemical_npc_superclass</span>,</span>
-<span>  sc_npc_cla <span class="op">=</span> <span class="va">score_chemical_npc_class</span></span>
+<span>  annot_table_weighted_chemo <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/get.html" class="external-link">get</a></span><span class="op">(</span><span class="st">"annot_table_weighted_chemo"</span>, envir <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/sys.parent.html" class="external-link">parent.frame</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>  score_chemical_cla_kingdom <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/get.html" class="external-link">get</a></span><span class="op">(</span><span class="st">"score_chemical_cla_kingdom"</span>, envir <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/sys.parent.html" class="external-link">parent.frame</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>  score_chemical_cla_superclass <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/get.html" class="external-link">get</a></span><span class="op">(</span><span class="st">"score_chemical_cla_superclass"</span>, envir <span class="op">=</span></span>
+<span>    <span class="fu"><a href="https://rdrr.io/r/base/sys.parent.html" class="external-link">parent.frame</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>  score_chemical_cla_class <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/get.html" class="external-link">get</a></span><span class="op">(</span><span class="st">"score_chemical_cla_class"</span>, envir <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/sys.parent.html" class="external-link">parent.frame</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>  score_chemical_cla_parent <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/get.html" class="external-link">get</a></span><span class="op">(</span><span class="st">"score_chemical_cla_parent"</span>, envir <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/sys.parent.html" class="external-link">parent.frame</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>  score_chemical_npc_pathway <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/get.html" class="external-link">get</a></span><span class="op">(</span><span class="st">"score_chemical_npc_pathway"</span>, envir <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/sys.parent.html" class="external-link">parent.frame</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>  score_chemical_npc_superclass <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/get.html" class="external-link">get</a></span><span class="op">(</span><span class="st">"score_chemical_npc_superclass"</span>, envir <span class="op">=</span></span>
+<span>    <span class="fu"><a href="https://rdrr.io/r/base/sys.parent.html" class="external-link">parent.frame</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>  score_chemical_npc_class <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/get.html" class="external-link">get</a></span><span class="op">(</span><span class="st">"score_chemical_npc_class"</span>, envir <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/sys.parent.html" class="external-link">parent.frame</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span></span>
 <span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div class="section level2">
     <h2 id="arguments">Arguments<a class="anchor" aria-label="anchor" href="#arguments"></a></h2>
-    <dl><dt>df</dt>
+    <dl><dt>annot_table_weighted_chemo</dt>
 <dd><p>Table to decorate</p></dd>
 
 
-<dt>sc_cla_kin</dt>
+<dt>score_chemical_cla_kingdom</dt>
 <dd><p>Classyfire kingdom score</p></dd>
 
 
-<dt>sc_cla_sup</dt>
+<dt>score_chemical_cla_superclass</dt>
 <dd><p>Classyfire superclass score</p></dd>
 
 
-<dt>sc_cla_cla</dt>
+<dt>score_chemical_cla_class</dt>
 <dd><p>Classyfire class score</p></dd>
 
 
-<dt>sc_cla_par</dt>
+<dt>score_chemical_cla_parent</dt>
 <dd><p>Classyfire parent score</p></dd>
 
 
-<dt>sc_npc_pat</dt>
+<dt>score_chemical_npc_pathway</dt>
 <dd><p>NPC pathway score</p></dd>
 
 
-<dt>sc_npc_sup</dt>
+<dt>score_chemical_npc_superclass</dt>
 <dd><p>NPC superclass score</p></dd>
 
 
-<dt>sc_npc_cla</dt>
+<dt>score_chemical_npc_class</dt>
 <dd><p>NPC class score</p></dd>
 
 </dl></div>

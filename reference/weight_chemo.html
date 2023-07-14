@@ -62,63 +62,66 @@
     <div class="section level2">
     <h2 id="ref-usage">Usage<a class="anchor" aria-label="anchor" href="#ref-usage"></a></h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">weight_chemo</span><span class="op">(</span></span>
-<span>  annotationTableWeightedBioCleaned <span class="op">=</span> <span class="va">annotation_table_weighted_bio_cleaned</span>,</span>
-<span>  weightSpectral <span class="op">=</span> <span class="va">weight_spectral</span>,</span>
-<span>  weightBiological <span class="op">=</span> <span class="va">weight_biological</span>,</span>
-<span>  weightChemical <span class="op">=</span> <span class="va">weight_chemical</span>,</span>
-<span>  scoreChemicalClaKingdom <span class="op">=</span> <span class="va">score_chemical_cla_kingdom</span>,</span>
-<span>  scoreChemicalClaSuperclass <span class="op">=</span> <span class="va">score_chemical_cla_superclass</span>,</span>
-<span>  scoreChemicalClaClass <span class="op">=</span> <span class="va">score_chemical_cla_class</span>,</span>
-<span>  scoreChemicalClaParent <span class="op">=</span> <span class="va">score_chemical_cla_parent</span>,</span>
-<span>  scoreChemicalNpcPathway <span class="op">=</span> <span class="va">score_chemical_npc_pathway</span>,</span>
-<span>  scoreChemicalNpcSuperclass <span class="op">=</span> <span class="va">score_chemical_npc_superclass</span>,</span>
-<span>  scoreChemicalNpcClass <span class="op">=</span> <span class="va">score_chemical_npc_class</span></span>
+<span>  annot_table_weighted_bio_cleaned <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/get.html" class="external-link">get</a></span><span class="op">(</span><span class="st">"annot_table_weighted_bio_cleaned"</span>, envir <span class="op">=</span></span>
+<span>    <span class="fu"><a href="https://rdrr.io/r/base/sys.parent.html" class="external-link">parent.frame</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>  weight_spectral <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/get.html" class="external-link">get</a></span><span class="op">(</span><span class="st">"weight_spectral"</span>, envir <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/sys.parent.html" class="external-link">parent.frame</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>  weight_biological <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/get.html" class="external-link">get</a></span><span class="op">(</span><span class="st">"weight_biological"</span>, envir <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/sys.parent.html" class="external-link">parent.frame</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>  weight_chemical <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/get.html" class="external-link">get</a></span><span class="op">(</span><span class="st">"weight_chemical"</span>, envir <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/sys.parent.html" class="external-link">parent.frame</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>  score_chemical_cla_kingdom <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/get.html" class="external-link">get</a></span><span class="op">(</span><span class="st">"score_chemical_cla_kingdom"</span>, envir <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/sys.parent.html" class="external-link">parent.frame</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>  score_chemical_cla_superclass <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/get.html" class="external-link">get</a></span><span class="op">(</span><span class="st">"score_chemical_cla_superclass"</span>, envir <span class="op">=</span></span>
+<span>    <span class="fu"><a href="https://rdrr.io/r/base/sys.parent.html" class="external-link">parent.frame</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>  score_chemical_cla_class <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/get.html" class="external-link">get</a></span><span class="op">(</span><span class="st">"score_chemical_cla_class"</span>, envir <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/sys.parent.html" class="external-link">parent.frame</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>  score_chemical_cla_parent <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/get.html" class="external-link">get</a></span><span class="op">(</span><span class="st">"score_chemical_cla_parent"</span>, envir <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/sys.parent.html" class="external-link">parent.frame</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>  score_chemical_npc_pathway <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/get.html" class="external-link">get</a></span><span class="op">(</span><span class="st">"score_chemical_npc_pathway"</span>, envir <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/sys.parent.html" class="external-link">parent.frame</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>  score_chemical_npc_superclass <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/get.html" class="external-link">get</a></span><span class="op">(</span><span class="st">"score_chemical_npc_superclass"</span>, envir <span class="op">=</span></span>
+<span>    <span class="fu"><a href="https://rdrr.io/r/base/sys.parent.html" class="external-link">parent.frame</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>  score_chemical_npc_class <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/get.html" class="external-link">get</a></span><span class="op">(</span><span class="st">"score_chemical_npc_class"</span>, envir <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/sys.parent.html" class="external-link">parent.frame</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span></span>
 <span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div class="section level2">
     <h2 id="arguments">Arguments<a class="anchor" aria-label="anchor" href="#arguments"></a></h2>
-    <dl><dt>annotationTableWeightedBioCleaned</dt>
+    <dl><dt>annot_table_weighted_bio_cleaned</dt>
 <dd><p>Table containing the biologically weighted annotation</p></dd>
 
 
-<dt>weightSpectral</dt>
+<dt>weight_spectral</dt>
 <dd><p>Weight for the spectral score</p></dd>
 
 
-<dt>weightBiological</dt>
+<dt>weight_biological</dt>
 <dd><p>Weight for the biological score</p></dd>
 
 
-<dt>weightChemical</dt>
+<dt>weight_chemical</dt>
 <dd><p>Weight for the chemical consistency score</p></dd>
 
 
-<dt>scoreChemicalClaKingdom</dt>
+<dt>score_chemical_cla_kingdom</dt>
 <dd><p>Score for a <code>Classyfire kingdom</code> match (should be lower than <code> Classyfire superclass</code>)</p></dd>
 
 
-<dt>scoreChemicalClaSuperclass</dt>
+<dt>score_chemical_cla_superclass</dt>
 <dd><p>Score for a <code>Classyfire superclass</code> match (should be lower than <code>Classyfire class</code>)</p></dd>
 
 
-<dt>scoreChemicalClaClass</dt>
+<dt>score_chemical_cla_class</dt>
 <dd><p>Score for a <code>Classyfire class</code> match (should be lower than <code>Classyfire parent</code>)</p></dd>
 
 
-<dt>scoreChemicalClaParent</dt>
+<dt>score_chemical_cla_parent</dt>
 <dd><p>Score for a <code>Classyfire parent</code> match (should be the highest)</p></dd>
 
 
-<dt>scoreChemicalNpcPathway</dt>
+<dt>score_chemical_npc_pathway</dt>
 <dd><p>Score for a <code>pathway</code> match (should be lower than <code>superclass</code>)</p></dd>
 
 
-<dt>scoreChemicalNpcSuperclass</dt>
+<dt>score_chemical_npc_superclass</dt>
 <dd><p>Score for a <code>superclass</code> match (should be lower than <code>class</code>)</p></dd>
 
 
-<dt>scoreChemicalNpcClass</dt>
+<dt>score_chemical_npc_class</dt>
 <dd><p>Score for a <code>class</code> match (should be the highest)</p></dd>
 
 </dl></div>

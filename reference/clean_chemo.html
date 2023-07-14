@@ -62,49 +62,50 @@
     <div class="section level2">
     <h2 id="ref-usage">Usage<a class="anchor" aria-label="anchor" href="#ref-usage"></a></h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">clean_chemo</span><span class="op">(</span></span>
-<span>  annotationTableWeightedChemo <span class="op">=</span> <span class="va">annotation_table_weighted_chemo</span>,</span>
-<span>  componentsTable <span class="op">=</span> <span class="va">components_table</span>,</span>
-<span>  featuresTable <span class="op">=</span> <span class="va">features_table</span>,</span>
-<span>  structureOrganismPairsTable <span class="op">=</span> <span class="va">structure_organism_pairs_table</span>,</span>
-<span>  candidatesFinal <span class="op">=</span> <span class="va">candidates_final</span>,</span>
-<span>  minimalMs1Bio <span class="op">=</span> <span class="va">minimal_ms1_bio</span>,</span>
-<span>  minimalMs1Chemo <span class="op">=</span> <span class="va">minimal_ms1_chemo</span>,</span>
-<span>  summarize <span class="op">=</span> <span class="va">summarise</span></span>
+<span>  annot_table_weighted_chemo <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/get.html" class="external-link">get</a></span><span class="op">(</span><span class="st">"annot_table_weighted_chemo"</span>, envir <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/sys.parent.html" class="external-link">parent.frame</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>  components_table <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/get.html" class="external-link">get</a></span><span class="op">(</span><span class="st">"components_table"</span>, envir <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/sys.parent.html" class="external-link">parent.frame</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>  features_table <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/get.html" class="external-link">get</a></span><span class="op">(</span><span class="st">"features_table"</span>, envir <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/sys.parent.html" class="external-link">parent.frame</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>  structure_organism_pairs_table <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/get.html" class="external-link">get</a></span><span class="op">(</span><span class="st">"structure_organism_pairs_table"</span>, envir <span class="op">=</span></span>
+<span>    <span class="fu"><a href="https://rdrr.io/r/base/sys.parent.html" class="external-link">parent.frame</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>  candidates_final <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/get.html" class="external-link">get</a></span><span class="op">(</span><span class="st">"candidates_final"</span>, envir <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/sys.parent.html" class="external-link">parent.frame</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>  minimal_ms1_bio <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/get.html" class="external-link">get</a></span><span class="op">(</span><span class="st">"minimal_ms1_bio"</span>, envir <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/sys.parent.html" class="external-link">parent.frame</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>  minimal_ms1_chemo <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/get.html" class="external-link">get</a></span><span class="op">(</span><span class="st">"minimal_ms1_chemo"</span>, envir <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/sys.parent.html" class="external-link">parent.frame</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>  summarise <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/get.html" class="external-link">get</a></span><span class="op">(</span><span class="st">"summarise"</span>, envir <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/sys.parent.html" class="external-link">parent.frame</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span></span>
 <span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div class="section level2">
     <h2 id="arguments">Arguments<a class="anchor" aria-label="anchor" href="#arguments"></a></h2>
-    <dl><dt>annotationTableWeightedChemo</dt>
+    <dl><dt>annot_table_weighted_chemo</dt>
 <dd><p>Table containing your chemically weighted annotation</p></dd>
 
 
-<dt>componentsTable</dt>
+<dt>components_table</dt>
 <dd><p>Prepared components file</p></dd>
 
 
-<dt>featuresTable</dt>
+<dt>features_table</dt>
 <dd><p>Prepared features file</p></dd>
 
 
-<dt>structureOrganismPairsTable</dt>
+<dt>structure_organism_pairs_table</dt>
 <dd><p>Table containing the structure - organism pairs</p></dd>
 
 
-<dt>candidatesFinal</dt>
+<dt>candidates_final</dt>
 <dd><p>Number of final candidates to keep</p></dd>
 
 
-<dt>minimalMs1Bio</dt>
+<dt>minimal_ms1_bio</dt>
 <dd><p>Minimal biological score to keep MS1 based annotation</p></dd>
 
 
-<dt>minimalMs1Chemo</dt>
+<dt>minimal_ms1_chemo</dt>
 <dd><p>Minimal chemical score to keep MS1 based annotation</p></dd>
 
 
-<dt>summarize</dt>
-<dd><p>Boolean. Summarize results (1 row per feature)</p></dd>
+<dt>summarise</dt>
+<dd><p>Boolean. summarise results (1 row per feature)</p></dd>
 
 </dl></div>
     <div class="section level2">
