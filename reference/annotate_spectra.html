@@ -88,7 +88,8 @@
 
 
 <dt>library</dt>
-<dd><p>Library containing spectra to match against. Can be '.mgf' or '.sqlite' (Spectra formatted)</p></dd>
+<dd><p>Library containing spectra to match against.
+Can be '.mgf' or '.sqlite' (Spectra formatted)</p></dd>
 
 
 <dt>polarity</dt>
@@ -124,11 +125,12 @@
 
 
 <dt>condition</dt>
-<dd><p>Condition to be fulfilled. Either 'OR' or 'AND' (mass and peaks minima).</p></dd>
+<dd><p>Condition to be fulfilled.
+Either 'OR' or 'AND' (mass and peaks minima).</p></dd>
 
 
 <dt>qutoff</dt>
-<dd><p>Intensity under which ms2 fragments will be removed previous to comparison.</p></dd>
+<dd><p>Intensity under which ms2 fragments will be removed.</p></dd>
 
 
 <dt>parallel</dt>
@@ -149,10 +151,13 @@
 </dl></div>
     <div class="section level2">
     <h2 id="details">Details<a class="anchor" aria-label="anchor" href="#details"></a></h2>
-    <p>It takes two files as input. A query file that will be matched against a library file.
+    <p>It takes two files as input.
+A query file that will be matched against a library file.
 Multiple comparison distances are available
-('gnps', 'navdist','ndotproduct','neuclidean', 'nspectraangle' (See MsCoreUtils for details)).
-Number of matched peaks and their ratio are also available (See MatchForwardReverseParam for details).
+('gnps', 'navdist','ndotproduct','neuclidean', 'nspectraangle')
+(See MsCoreUtils for details).
+Number of matched peaks and their ratio are also available
+(See MatchForwardReverseParam for details).
 Parallel processing is also made available.</p>
     </div>
 
