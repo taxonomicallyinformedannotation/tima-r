@@ -232,6 +232,9 @@
     <loc>https://taxonomicallyinformedannotation.github.io/tima-r/reference/sanitize_spectra.html</loc>
   </url>
   <url>
+    <loc>https://taxonomicallyinformedannotation.github.io/tima-r/reference/sanitize_spectra_benchmark.html</loc>
+  </url>
+  <url>
     <loc>https://taxonomicallyinformedannotation.github.io/tima-r/reference/select_annotations_columns.html</loc>
   </url>
   <url>
@@ -245,6 +248,9 @@
   </url>
   <url>
     <loc>https://taxonomicallyinformedannotation.github.io/tima-r/reference/split_tables_sop.html</loc>
+  </url>
+  <url>
+    <loc>https://taxonomicallyinformedannotation.github.io/tima-r/reference/taxize_spectra_benchmark.html</loc>
   </url>
   <url>
     <loc>https://taxonomicallyinformedannotation.github.io/tima-r/reference/weight_annotations.html</loc>
