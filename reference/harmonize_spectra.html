@@ -64,22 +64,22 @@
     <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">harmonize_spectra</span><span class="op">(</span></span>
 <span>  <span class="va">spectra</span>,</span>
 <span>  <span class="va">mode</span>,</span>
-<span>  <span class="va">co_ce</span>,</span>
-<span>  <span class="va">co_ci</span>,</span>
-<span>  <span class="va">co_em</span>,</span>
-<span>  <span class="va">co_in</span>,</span>
-<span>  <span class="va">co_io</span>,</span>
-<span>  <span class="va">co_ik</span>,</span>
-<span>  <span class="va">co_il</span>,</span>
-<span>  <span class="va">co_mf</span>,</span>
-<span>  <span class="va">co_na</span>,</span>
-<span>  <span class="va">co_po</span>,</span>
-<span>  <span class="va">co_sm</span>,</span>
-<span>  <span class="va">co_sn</span>,</span>
-<span>  <span class="va">co_si</span>,</span>
-<span>  <span class="va">co_sp</span>,</span>
-<span>  <span class="va">co_sy</span>,</span>
-<span>  <span class="va">co_xl</span></span>
+<span>  col_ce <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/get.html" class="external-link">get</a></span><span class="op">(</span><span class="st">"col_ce"</span>, envir <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/sys.parent.html" class="external-link">parent.frame</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>  col_ci <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/get.html" class="external-link">get</a></span><span class="op">(</span><span class="st">"col_ci"</span>, envir <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/sys.parent.html" class="external-link">parent.frame</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>  col_em <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/get.html" class="external-link">get</a></span><span class="op">(</span><span class="st">"col_em"</span>, envir <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/sys.parent.html" class="external-link">parent.frame</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>  col_in <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/get.html" class="external-link">get</a></span><span class="op">(</span><span class="st">"col_in"</span>, envir <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/sys.parent.html" class="external-link">parent.frame</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>  col_io <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/get.html" class="external-link">get</a></span><span class="op">(</span><span class="st">"col_io"</span>, envir <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/sys.parent.html" class="external-link">parent.frame</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>  col_ik <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/get.html" class="external-link">get</a></span><span class="op">(</span><span class="st">"col_ik"</span>, envir <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/sys.parent.html" class="external-link">parent.frame</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>  col_il <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/get.html" class="external-link">get</a></span><span class="op">(</span><span class="st">"col_il"</span>, envir <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/sys.parent.html" class="external-link">parent.frame</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>  col_mf <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/get.html" class="external-link">get</a></span><span class="op">(</span><span class="st">"col_mf"</span>, envir <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/sys.parent.html" class="external-link">parent.frame</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>  col_na <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/get.html" class="external-link">get</a></span><span class="op">(</span><span class="st">"col_na"</span>, envir <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/sys.parent.html" class="external-link">parent.frame</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>  col_po <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/get.html" class="external-link">get</a></span><span class="op">(</span><span class="st">"col_po"</span>, envir <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/sys.parent.html" class="external-link">parent.frame</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>  col_sm <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/get.html" class="external-link">get</a></span><span class="op">(</span><span class="st">"col_sm"</span>, envir <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/sys.parent.html" class="external-link">parent.frame</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>  col_sn <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/get.html" class="external-link">get</a></span><span class="op">(</span><span class="st">"col_sn"</span>, envir <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/sys.parent.html" class="external-link">parent.frame</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>  col_si <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/get.html" class="external-link">get</a></span><span class="op">(</span><span class="st">"col_si"</span>, envir <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/sys.parent.html" class="external-link">parent.frame</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>  col_sp <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/get.html" class="external-link">get</a></span><span class="op">(</span><span class="st">"col_sp"</span>, envir <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/sys.parent.html" class="external-link">parent.frame</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>  col_sy <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/get.html" class="external-link">get</a></span><span class="op">(</span><span class="st">"col_sy"</span>, envir <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/sys.parent.html" class="external-link">parent.frame</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>  col_xl <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/get.html" class="external-link">get</a></span><span class="op">(</span><span class="st">"col_xl"</span>, envir <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/sys.parent.html" class="external-link">parent.frame</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span></span>
 <span><span class="op">)</span></span></code></pre></div>
     </div>
 
@@ -93,67 +93,67 @@
 <dd><p>MS ionization mode. Must contain 'pos' or 'neg'</p></dd>
 
 
-<dt>co_ce</dt>
+<dt>col_ce</dt>
 <dd><p>Name of the collision energy in mgf</p></dd>
 
 
-<dt>co_ci</dt>
+<dt>col_ci</dt>
 <dd><p>Name of the compound id in mgf</p></dd>
 
 
-<dt>co_em</dt>
+<dt>col_em</dt>
 <dd><p>Name of the exact mass in mgf</p></dd>
 
 
-<dt>co_in</dt>
+<dt>col_in</dt>
 <dd><p>Name of the InChI in mgf</p></dd>
 
 
-<dt>co_io</dt>
+<dt>col_io</dt>
 <dd><p>Name of the InChI 2D in mgf</p></dd>
 
 
-<dt>co_ik</dt>
+<dt>col_ik</dt>
 <dd><p>Name of the InChIKey in mgf</p></dd>
 
 
-<dt>co_il</dt>
+<dt>col_il</dt>
 <dd><p>Name of the InChIKey 2D in mgf</p></dd>
 
 
-<dt>co_mf</dt>
+<dt>col_mf</dt>
 <dd><p>Name of the molecular formula in mgf</p></dd>
 
 
-<dt>co_na</dt>
+<dt>col_na</dt>
 <dd><p>Name of the name in mgf</p></dd>
 
 
-<dt>co_po</dt>
+<dt>col_po</dt>
 <dd><p>Name of the polarity in mgf</p></dd>
 
 
-<dt>co_sm</dt>
+<dt>col_sm</dt>
 <dd><p>Name of the SMILES in mgf</p></dd>
 
 
-<dt>co_sn</dt>
+<dt>col_sn</dt>
 <dd><p>Name of the SMILES 2D in mgf</p></dd>
 
 
-<dt>co_si</dt>
+<dt>col_si</dt>
 <dd><p>Name of the spectrum id in mgf</p></dd>
 
 
-<dt>co_sp</dt>
+<dt>col_sp</dt>
 <dd><p>Name of the SPLASH in mgf</p></dd>
 
 
-<dt>co_sy</dt>
+<dt>col_sy</dt>
 <dd><p>Name of the synonyms in mgf</p></dd>
 
 
-<dt>co_xl</dt>
+<dt>col_xl</dt>
 <dd><p>Name of the xlogp in mgf</p></dd>
 
 </dl></div>
