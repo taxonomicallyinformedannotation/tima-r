@@ -61,7 +61,13 @@
 
     <div class="section level2">
     <h2 id="ref-usage">Usage<a class="anchor" aria-label="anchor" href="#ref-usage"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">sanitize_spectra</span><span class="op">(</span><span class="va">spectra</span>, ratio <span class="op">=</span> <span class="fl">1000</span>, cutoff <span class="op">=</span> <span class="fl">10</span>, fragments <span class="op">=</span> <span class="fl">2</span><span class="op">)</span></span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">sanitize_spectra</span><span class="op">(</span></span>
+<span>  <span class="va">spectra</span>,</span>
+<span>  ratio <span class="op">=</span> <span class="fl">10000</span>,</span>
+<span>  cutoff <span class="op">=</span> <span class="fl">10</span>,</span>
+<span>  fragments <span class="op">=</span> <span class="fl">2</span>,</span>
+<span>  deeper <span class="op">=</span> <span class="cn">FALSE</span></span>
+<span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div class="section level2">
@@ -80,6 +86,10 @@
 
 <dt>fragments</dt>
 <dd><p>Minimal number of fragments</p></dd>
+
+
+<dt>deeper</dt>
+<dd><p>Deep sanitization using quantiles</p></dd>
 
 </dl></div>
 
