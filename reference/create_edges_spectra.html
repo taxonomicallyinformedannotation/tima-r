@@ -69,16 +69,11 @@ based on fragmentation spectra similarity</p>
 <span>  output <span class="op">=</span> <span class="va">params</span><span class="op">$</span><span class="va">files</span><span class="op">$</span><span class="va">networks</span><span class="op">$</span><span class="va">spectral</span><span class="op">$</span><span class="va">edges</span><span class="op">$</span><span class="va">raw</span>,</span>
 <span>  name_source <span class="op">=</span> <span class="va">params</span><span class="op">$</span><span class="va">names</span><span class="op">$</span><span class="va">source</span>,</span>
 <span>  name_target <span class="op">=</span> <span class="va">params</span><span class="op">$</span><span class="va">names</span><span class="op">$</span><span class="va">target</span>,</span>
-<span>  method <span class="op">=</span> <span class="va">params</span><span class="op">$</span><span class="va">annotations</span><span class="op">$</span><span class="va">ms2</span><span class="op">$</span><span class="va">method</span>,</span>
 <span>  threshold <span class="op">=</span> <span class="va">params</span><span class="op">$</span><span class="va">annotations</span><span class="op">$</span><span class="va">ms2</span><span class="op">$</span><span class="va">thresholds</span><span class="op">$</span><span class="va">similarity</span>,</span>
 <span>  ppm <span class="op">=</span> <span class="va">params</span><span class="op">$</span><span class="va">ms</span><span class="op">$</span><span class="va">tolerances</span><span class="op">$</span><span class="va">mass</span><span class="op">$</span><span class="va">ppm</span><span class="op">$</span><span class="va">ms2</span>,</span>
 <span>  dalton <span class="op">=</span> <span class="va">params</span><span class="op">$</span><span class="va">ms</span><span class="op">$</span><span class="va">tolerances</span><span class="op">$</span><span class="va">mass</span><span class="op">$</span><span class="va">dalton</span><span class="op">$</span><span class="va">ms2</span>,</span>
-<span>  npeaks <span class="op">=</span> <span class="va">params</span><span class="op">$</span><span class="va">annotations</span><span class="op">$</span><span class="va">ms2</span><span class="op">$</span><span class="va">thresholds</span><span class="op">$</span><span class="va">peaks</span><span class="op">$</span><span class="va">absolute</span>,</span>
-<span>  rpeaks <span class="op">=</span> <span class="va">params</span><span class="op">$</span><span class="va">annotations</span><span class="op">$</span><span class="va">ms2</span><span class="op">$</span><span class="va">thresholds</span><span class="op">$</span><span class="va">peaks</span><span class="op">$</span><span class="va">ratio</span>,</span>
-<span>  condition <span class="op">=</span> <span class="va">params</span><span class="op">$</span><span class="va">annotations</span><span class="op">$</span><span class="va">ms2</span><span class="op">$</span><span class="va">thresholds</span><span class="op">$</span><span class="va">condition</span>,</span>
 <span>  qutoff <span class="op">=</span> <span class="va">params</span><span class="op">$</span><span class="va">ms</span><span class="op">$</span><span class="va">intensity</span><span class="op">$</span><span class="va">thresholds</span><span class="op">$</span><span class="va">ms2</span>,</span>
 <span>  parallel <span class="op">=</span> <span class="va">params</span><span class="op">$</span><span class="va">options</span><span class="op">$</span><span class="va">parallel</span>,</span>
-<span>  fast <span class="op">=</span> <span class="va">params</span><span class="op">$</span><span class="va">options</span><span class="op">$</span><span class="va">fast</span>,</span>
 <span>  parameters <span class="op">=</span> <span class="va">params</span></span>
 <span><span class="op">)</span></span></code></pre></div>
     </div>
@@ -101,10 +96,6 @@ based on fragmentation spectra similarity</p>
 <dd><p>Name of the target features column</p></dd>
 
 
-<dt>method</dt>
-<dd><p>Method to be used to perform spectral comparison</p></dd>
-
-
 <dt>threshold</dt>
 <dd><p>Minimal similarity to report</p></dd>
 
@@ -117,19 +108,6 @@ based on fragmentation spectra similarity</p>
 <dd><p>Absolute Dalton tolerance to be used</p></dd>
 
 
-<dt>npeaks</dt>
-<dd><p>Absolute minimum number of peaks to be matched</p></dd>
-
-
-<dt>rpeaks</dt>
-<dd><p>Relative minimum number of peaks to be matched</p></dd>
-
-
-<dt>condition</dt>
-<dd><p>Condition to be fulfilled.
-Either 'OR' or 'AND' (mass and peaks minima).</p></dd>
-
-
 <dt>qutoff</dt>
 <dd><p>Intensity under which ms2 fragments will be removed.</p></dd>
 
@@ -138,12 +116,12 @@ Either 'OR' or 'AND' (mass and peaks minima).</p></dd>
 <dd><p>Boolean. Process in parallel</p></dd>
 
 
-<dt>fast</dt>
-<dd><p>Boolean. Do it fast</p></dd>
-
-
 <dt>parameters</dt>
 <dd><p>Params</p></dd>
+
+
+<dt>method</dt>
+<dd><p>Method to be used to perform spectral comparison</p></dd>
 
 </dl></div>
 
