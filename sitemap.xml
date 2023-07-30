@@ -52,6 +52,9 @@
     <loc>https://taxonomicallyinformedannotation.github.io/tima-r/reference/annotate_spectra.html</loc>
   </url>
   <url>
+    <loc>https://taxonomicallyinformedannotation.github.io/tima-r/reference/calculate_entropy.html</loc>
+  </url>
+  <url>
     <loc>https://taxonomicallyinformedannotation.github.io/tima-r/reference/clean_bio.html</loc>
   </url>
   <url>
@@ -77,9 +80,6 @@
   </url>
   <url>
     <loc>https://taxonomicallyinformedannotation.github.io/tima-r/reference/create_edges_parallel.html</loc>
-  </url>
-  <url>
-    <loc>https://taxonomicallyinformedannotation.github.io/tima-r/reference/create_edges_progress.html</loc>
   </url>
   <url>
     <loc>https://taxonomicallyinformedannotation.github.io/tima-r/reference/create_edges_spectra.html</loc>
