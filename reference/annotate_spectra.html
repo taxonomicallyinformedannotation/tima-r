@@ -70,7 +70,6 @@
 <span>  ppm <span class="op">=</span> <span class="va">params</span><span class="op">$</span><span class="va">ms</span><span class="op">$</span><span class="va">tolerances</span><span class="op">$</span><span class="va">mass</span><span class="op">$</span><span class="va">ppm</span><span class="op">$</span><span class="va">ms2</span>,</span>
 <span>  dalton <span class="op">=</span> <span class="va">params</span><span class="op">$</span><span class="va">ms</span><span class="op">$</span><span class="va">tolerances</span><span class="op">$</span><span class="va">mass</span><span class="op">$</span><span class="va">dalton</span><span class="op">$</span><span class="va">ms2</span>,</span>
 <span>  qutoff <span class="op">=</span> <span class="va">params</span><span class="op">$</span><span class="va">ms</span><span class="op">$</span><span class="va">intensity</span><span class="op">$</span><span class="va">thresholds</span><span class="op">$</span><span class="va">ms2</span>,</span>
-<span>  parallel <span class="op">=</span> <span class="va">params</span><span class="op">$</span><span class="va">options</span><span class="op">$</span><span class="va">parallel</span>,</span>
 <span>  approx <span class="op">=</span> <span class="va">params</span><span class="op">$</span><span class="va">annotations</span><span class="op">$</span><span class="va">ms2</span><span class="op">$</span><span class="va">approx</span>,</span>
 <span>  parameters <span class="op">=</span> <span class="va">params</span></span>
 <span><span class="op">)</span></span></code></pre></div>
@@ -111,10 +110,6 @@ Can be '.mgf' or '.sqlite' (Spectra formatted)</p></dd>
 <dd><p>Intensity under which ms2 fragments will be removed.</p></dd>
 
 
-<dt>parallel</dt>
-<dd><p>Boolean. Process in parallel</p></dd>
-
-
 <dt>approx</dt>
 <dd><p>Perform matching without precursor match</p></dd>
 
@@ -131,8 +126,7 @@ Either 'OR' or 'AND' (mass and peaks minima).</p></dd>
     <div class="section level2">
     <h2 id="details">Details<a class="anchor" aria-label="anchor" href="#details"></a></h2>
     <p>It takes two files as input.
-A query file that will be matched against a library file.
-Parallel processing is also made available.</p>
+A query file that will be matched against a library file.</p>
     </div>
 
     <div class="section level2">
