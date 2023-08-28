@@ -101,6 +101,7 @@
 <span>  minimal_ms1_chemo <span class="op">=</span> <span class="va">params</span><span class="op">$</span><span class="va">annotations</span><span class="op">$</span><span class="va">ms1</span><span class="op">$</span><span class="va">thresholds</span><span class="op">$</span><span class="va">chemical</span>,</span>
 <span>  minimal_ms1_condition <span class="op">=</span> <span class="va">params</span><span class="op">$</span><span class="va">annotations</span><span class="op">$</span><span class="va">ms1</span><span class="op">$</span><span class="va">thresholds</span><span class="op">$</span><span class="va">condition</span>,</span>
 <span>  ms1_only <span class="op">=</span> <span class="va">params</span><span class="op">$</span><span class="va">annotations</span><span class="op">$</span><span class="va">ms1only</span>,</span>
+<span>  compounds_names <span class="op">=</span> <span class="va">params</span><span class="op">$</span><span class="va">options</span><span class="op">$</span><span class="va">compounds_names</span>,</span>
 <span>  summarise <span class="op">=</span> <span class="va">params</span><span class="op">$</span><span class="va">options</span><span class="op">$</span><span class="va">summarise</span>,</span>
 <span>  pattern <span class="op">=</span> <span class="va">params</span><span class="op">$</span><span class="va">files</span><span class="op">$</span><span class="va">pattern</span>,</span>
 <span>  force <span class="op">=</span> <span class="va">params</span><span class="op">$</span><span class="va">options</span><span class="op">$</span><span class="va">force</span>,</span>
@@ -286,6 +287,10 @@ match (should be lower than <code>NPC class</code>)</p></dd>
 
 <dt>ms1_only</dt>
 <dd><p>Boolean. Keep only MS1 annotations</p></dd>
+
+
+<dt>compounds_names</dt>
+<dd><p>Report compounds names. Can be very large. BOOLEAN</p></dd>
 
 
 <dt>summarise</dt>
