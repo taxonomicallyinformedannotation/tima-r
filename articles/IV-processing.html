@@ -109,10 +109,10 @@ successfully, this should be a piece of cake, you deserve it!</p>
 <code>inst/params/user/weight_annotations.yaml</code>.</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/source.html" class="external-link">source</a></span><span class="op">(</span>file <span class="op">=</span> <span class="st">"inst/scripts/weight_annotations.R"</span><span class="op">)</span></span>
-<span><span class="co">#&gt; 2023-08-28 10:43:28.59041 This script performs <span style="color: #00BB00;">taxonomically informed scoring</span> and followed by <span style="color: #0000BB;">chemical consistency informed scoring</span> </span></span>
-<span><span class="co">#&gt; 2023-08-28 10:43:28.595919 Authors:  <span style="color: #00BB00;">AR</span> , <span style="color: #0000BB;">PMA</span> </span></span>
+<span><span class="co">#&gt; 2023-08-28 11:44:10.039194 This script performs <span style="color: #00BB00;">taxonomically informed scoring</span> and followed by <span style="color: #0000BB;">chemical consistency informed scoring</span> </span></span>
+<span><span class="co">#&gt; 2023-08-28 11:44:10.044912 Authors:  <span style="color: #00BB00;">AR</span> , <span style="color: #0000BB;">PMA</span> </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-08-28 10:43:28.596403 Contributors: ... </span></span>
+<span><span class="co">#&gt; 2023-08-28 11:44:10.045321 Contributors: ... </span></span>
 <span><span class="co">#&gt; <span style="color: #BB0000;">✔ skip target yaml_paths</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target dic_add</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target dic_neu_los</span></span></span>
@@ -122,7 +122,7 @@ successfully, this should be a piece of cake, you deserve it!</p>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_def_pre_lib_sop_ecm</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ▶ start target lib_sop_lot</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; A file with the same size is already present. Skipping</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ● built target lib_sop_lot [1.125 seconds]</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ● built target lib_sop_lot [1.235 seconds]</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ▶ start target lib_spe_is_lot_pos</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; File already exists. Skipping.</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ● built target lib_spe_is_lot_pos [0 seconds]</span></span></span>
@@ -134,7 +134,7 @@ successfully, this should be a piece of cake, you deserve it!</p>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_def_pre_lib_rt</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ▶ start target lib_spe_is_lot_neg</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; File already exists. Skipping.</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ● built target lib_spe_is_lot_neg [0.007 seconds]</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ● built target lib_spe_is_lot_neg [0.006 seconds]</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_def_ann_spe</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_def_pre_lib_sop_clo</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_def_cre_edg_spe</span></span></span>
@@ -220,46 +220,52 @@ successfully, this should be a piece of cake, you deserve it!</p>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target int_com</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target fea_com_pre</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ▶ start target ann_pre</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; </span>2023-08-28 10:43:35.755575 ... files ... </span></span>
-<span><span class="co">#&gt; 2023-08-28 10:43:35.758355 ... annotations </span></span>
-<span><span class="co">#&gt; 2023-08-28 10:43:51.506909 ... components </span></span>
-<span><span class="co">#&gt; 2023-08-28 10:43:51.546907 ... edges </span></span>
-<span><span class="co">#&gt; 2023-08-28 10:43:51.587272 ... taxa </span></span>
-<span><span class="co">#&gt; 2023-08-28 10:43:51.648229 ... structure-organism pairs </span></span>
-<span><span class="co">#&gt; 2023-08-28 10:43:56.496706 ... features </span></span>
-<span><span class="co">#&gt; 2023-08-28 10:43:56.626856 adding biological organism metadata </span></span>
-<span><span class="co">#&gt; 2023-08-28 10:43:57.437608 performing taxonomically informed scoring </span></span>
-<span><span class="co">#&gt; 2023-08-28 10:44:12.099826 selecting DB columns </span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; </span>2023-08-28 11:44:16.463895 Loading files ... </span></span>
+<span><span class="co">#&gt; 2023-08-28 11:44:16.466564 ... components </span></span>
+<span><span class="co">#&gt; 2023-08-28 11:44:16.568723 ... edges </span></span>
+<span><span class="co">#&gt; 2023-08-28 11:44:16.606418 ... structure-organism pairs </span></span>
+<span><span class="co">#&gt; 2023-08-28 11:44:21.860367 ... annotations </span></span>
+<span><span class="co">#&gt; 2023-08-28 11:44:37.13715 adding biological organism metadata </span></span>
+<span><span class="co">#&gt; 2023-08-28 11:44:38.615885 performing taxonomically informed scoring </span></span>
+<span><span class="co">#&gt; 2023-08-28 11:44:38.694515 filtering top  3  candidates and keeping only MS1 candidates with minimum </span></span>
+<span><span class="co">#&gt;  0.5  biological score </span></span>
+<span><span class="co">#&gt;  OR 0.666 chemical score </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-08-28 10:44:12.827033 keeping distinct candidates per taxonomical rank </span></span>
+<span><span class="co">#&gt; 2023-08-28 11:44:38.821068 calculating chemical score ... </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-08-28 10:44:15.070213 calculating biological scores ... </span></span>
+<span><span class="co">#&gt; 2023-08-28 11:44:38.821304 ... adding metadata </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-08-28 10:44:15.070566 ... domain </span></span>
+<span><span class="co">#&gt; 2023-08-28 11:44:51.987927 selecting DB columns </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-08-28 10:44:17.046576 ... kingdom </span></span>
+<span><span class="co">#&gt; 2023-08-28 11:44:52.6436 keeping distinct candidates per taxonomical rank </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-08-28 10:44:19.655103 ... phylum </span></span>
+<span><span class="co">#&gt; 2023-08-28 11:44:54.314979 calculating biological scores ... </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-08-28 10:44:22.275664 ... class </span></span>
+<span><span class="co">#&gt; 2023-08-28 11:44:54.315196 ... domain </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-08-28 10:44:26.203183 ... order </span></span>
+<span><span class="co">#&gt; 2023-08-28 11:44:56.151822 ... kingdom </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-08-28 10:44:31.288373 ... family </span></span>
+<span><span class="co">#&gt; 2023-08-28 11:44:58.729777 ... phylum </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-08-28 10:44:35.5909 ... tribe </span></span>
+<span><span class="co">#&gt; 2023-08-28 11:45:01.211651 ... class </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-08-28 10:44:38.242453 ... genus </span></span>
+<span><span class="co">#&gt; 2023-08-28 11:45:04.489233 ... order </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-08-28 10:44:43.815503 ... species </span></span>
+<span><span class="co">#&gt; 2023-08-28 11:45:09.882457 ... family </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-08-28 10:44:50.80698 ... varietas </span></span>
+<span><span class="co">#&gt; 2023-08-28 11:45:14.815377 ... tribe </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-08-28 10:44:51.795325 keeping best biological score only </span></span>
+<span><span class="co">#&gt; 2023-08-28 11:45:17.349053 ... genus </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-08-28 10:44:53.108579 joining with initial results </span></span>
+<span><span class="co">#&gt; 2023-08-28 11:45:22.582326 ... species </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-08-28 10:45:19.761489 taxonomically informed scoring led to </span></span>
+<span><span class="co">#&gt; 2023-08-28 11:45:29.552261 ... varietas </span></span>
+<span><span class="co">#&gt;  </span></span>
+<span><span class="co">#&gt; 2023-08-28 11:45:30.56655 keeping best biological score only </span></span>
+<span><span class="co">#&gt;  </span></span>
+<span><span class="co">#&gt; 2023-08-28 11:45:31.643175 joining with initial results </span></span>
+<span><span class="co">#&gt;  </span></span>
+<span><span class="co">#&gt; 2023-08-28 11:45:54.608129 taxonomically informed scoring led to </span></span>
 <span><span class="co">#&gt;  <span style="color: #555555;">95027</span> annotations reranked at the <span style="color: #555555;">kingdom</span> level, </span></span>
 <span><span class="co">#&gt;  <span style="color: #BBBBBB;">93846</span> annotations reranked at the <span style="color: #BBBBBB;">phylum</span> level, </span></span>
 <span><span class="co">#&gt;  <span style="color: #00BBBB;">88098</span> annotations reranked at the <span style="color: #00BBBB;">class</span> level, </span></span>
@@ -269,60 +275,53 @@ successfully, this should be a piece of cake, you deserve it!</p>
 <span><span class="co">#&gt;  <span style="color: #00BB00;">781</span> annotations reranked at the <span style="color: #00BB00;">species</span> level, </span></span>
 <span><span class="co">#&gt;  and <span style="color: #BB0000;">0</span> annotations reranked at the <span style="color: #BB0000;">variety</span> level. </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-08-28 10:45:20.146754 cleaning taxonomically informed results and</span></span>
-<span><span class="co">#&gt;               preparing for chemically informed scoring </span></span>
-<span><span class="co">#&gt; 2023-08-28 10:45:21.721927 adding "notClassified" </span></span>
+<span><span class="co">#&gt; 2023-08-28 11:45:56.048205 adding "notClassified" </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-08-28 10:45:23.701994 calculating chemical consistency</span></span>
+<span><span class="co">#&gt; 2023-08-28 11:45:56.720969 calculating chemical consistency</span></span>
 <span><span class="co">#&gt;               features with at least 2 neighbors ... </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-08-28 10:45:23.702655 ... among edges ... </span></span>
+<span><span class="co">#&gt; 2023-08-28 11:45:56.721239 ... among edges ... </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-08-28 10:45:27.634952 ... at the (classyfire) kingdom level </span></span>
+<span><span class="co">#&gt; 2023-08-28 11:45:59.738737 ... at the (classyfire) kingdom level </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-08-28 10:45:29.442719 ... at the (NPC) pathway level </span></span>
+<span><span class="co">#&gt; 2023-08-28 11:46:02.809143 ... at the (NPC) pathway level </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-08-28 10:45:34.483568 ... at the (classyfire) superclass level </span></span>
+<span><span class="co">#&gt; 2023-08-28 11:46:06.610832 ... at the (classyfire) superclass level </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-08-28 10:45:38.142181 ... at the (NPC) superclass level </span></span>
+<span><span class="co">#&gt; 2023-08-28 11:46:09.592816 ... at the (NPC) superclass level </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-08-28 10:45:48.603621 ... at the (classyfire) class level </span></span>
+<span><span class="co">#&gt; 2023-08-28 11:46:18.222242 ... at the (classyfire) class level </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-08-28 10:46:01.347576 ... at the (NPC) class level </span></span>
+<span><span class="co">#&gt; 2023-08-28 11:46:29.178957 ... at the (NPC) class level </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-08-28 10:46:33.88753 ... at the (classyfire) parent level </span></span>
+<span><span class="co">#&gt; 2023-08-28 11:46:56.00635 ... at the (classyfire) parent level </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-08-28 10:47:09.114988 joining all except -1 together </span></span>
+<span><span class="co">#&gt; 2023-08-28 11:47:25.446349 joining all except -1 together </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-08-28 10:47:17.953718 adding dummy consistency for features</span></span>
+<span><span class="co">#&gt; 2023-08-28 11:47:34.693993 adding dummy consistency for features</span></span>
 <span><span class="co">#&gt;               with less than 2 neighbors </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-08-28 10:47:20.077052 performing chemically informed scoring </span></span>
-<span><span class="co">#&gt; 2023-08-28 10:47:20.150842 calculating chemical score ... </span></span>
+<span><span class="co">#&gt; 2023-08-28 11:47:37.230433 ... (classyfire) kingdom </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-08-28 10:47:20.15108 ... adding metadata </span></span>
+<span><span class="co">#&gt; 2023-08-28 11:47:44.130027 ... (NPC) pathway </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-08-28 10:47:21.517536 ... (classyfire) kingdom </span></span>
+<span><span class="co">#&gt; 2023-08-28 11:47:50.709521 ... (classyfire) superclass </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-08-28 10:47:29.497829 ... (NPC) pathway </span></span>
+<span><span class="co">#&gt; 2023-08-28 11:47:54.011354 ... (NPC) superclass </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-08-28 10:47:37.047292 ... (classyfire) superclass </span></span>
+<span><span class="co">#&gt; 2023-08-28 11:47:55.076279 ... (classyfire) class </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-08-28 10:47:40.911287 ... (NPC) superclass </span></span>
+<span><span class="co">#&gt; 2023-08-28 11:47:56.158226 ... (NPC) class </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-08-28 10:47:42.145222 ... (classyfire) class </span></span>
+<span><span class="co">#&gt; 2023-08-28 11:47:56.518608 ... (classyfire) parent </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-08-28 10:47:43.387367 ... (NPC) class </span></span>
+<span><span class="co">#&gt; 2023-08-28 11:47:57.24356 ... outputting best score </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-08-28 10:47:43.796108 ... (classyfire) parent </span></span>
+<span><span class="co">#&gt; 2023-08-28 11:47:57.877948 ... joining </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-08-28 10:47:44.5628 ... outputting best score </span></span>
+<span><span class="co">#&gt; 2023-08-28 11:47:59.985284 ... cleaning </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-08-28 10:47:44.816103 ... joining </span></span>
-<span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-08-28 10:47:49.79318 ... cleaning </span></span>
-<span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-08-28 10:48:55.960961 chemically informed scoring led to </span></span>
+<span><span class="co">#&gt; 2023-08-28 11:48:22.083771 chemically informed scoring led to </span></span>
 <span><span class="co">#&gt;  <span style="color: #555555;">128342</span> annotations reranked at the <span style="color: #555555;">(classyfire) kingdom</span> level, </span></span>
 <span><span class="co">#&gt;  <span style="color: #00BBBB;">90965</span> annotations reranked at the <span style="color: #00BBBB;">(NPC) pathway</span> level, </span></span>
 <span><span class="co">#&gt;  <span style="color: #BB00BB;">77386</span> annotations reranked at the <span style="color: #BB00BB;">(classyfire) superclass</span> level, </span></span>
@@ -331,31 +330,26 @@ successfully, this should be a piece of cake, you deserve it!</p>
 <span><span class="co">#&gt;  <span style="color: #00BB00;">12936</span> annotations reranked at the <span style="color: #00BB00;">(NPC) class</span> level, and </span></span>
 <span><span class="co">#&gt;  <span style="color: #BB0000;">12936</span> annotations reranked at the <span style="color: #BB0000;">(classyfire) parent</span> level. </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-08-28 10:48:56.541516 cleaning for export </span></span>
-<span><span class="co">#&gt; 2023-08-28 10:48:56.649977 filtering top  3  candidates and keeping only MS1 candidates with minimum </span></span>
-<span><span class="co">#&gt;  0.5  biological score </span></span>
-<span><span class="co">#&gt;  OR 0.5 chemical score </span></span>
+<span><span class="co">#&gt; 2023-08-28 11:48:27.747286 adding initial metadata (RT, etc.) and simplifying columns </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-08-28 10:49:04.008045 adding initial metadata (RT, etc.) and simplifying columns </span></span>
+<span><span class="co">#&gt; 2023-08-28 11:48:30.69636 adding references </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-08-28 10:49:13.230984 adding references </span></span>
+<span><span class="co">#&gt; 2023-08-28 11:48:38.501526 Collecting garbage ... </span></span>
+<span><span class="co">#&gt; 2023-08-28 11:48:39.301253 summarizing results </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-08-28 10:49:26.023261 Collecting garbage ... </span></span>
-<span><span class="co">#&gt; 2023-08-28 10:49:27.588878 summarizing results </span></span>
+<span><span class="co">#&gt; 2023-08-28 11:48:46.685463 selecting columns to export </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-08-28 10:49:37.215827 selecting columns to export </span></span>
+<span><span class="co">#&gt; 2023-08-28 11:48:47.17801 adding consensus again to droped candidates </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-08-28 10:49:37.883224 adding consensus again to droped candidates </span></span>
-<span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-08-28 10:49:58.165046 Exporting ... </span></span>
-<span><span class="co">#&gt; 2023-08-28 10:49:58.178173 Directory data/processed/230828_104958_example created. </span></span>
-<span><span class="co">#&gt; 2023-08-28 10:49:58.178411 ... path to used parameters is <span style="color: #00BB00;">data/processed/230828_104958_example</span> </span></span>
-<span><span class="co">#&gt; 2023-08-28 10:49:58.191633 Directory data/processed/230828_104958_example already exists. </span></span>
-<span><span class="co">#&gt; 2023-08-28 10:49:58.191787 File annotations.tsv will be saved in the directory data/processed/230828_104958_example </span></span>
-<span><span class="co">#&gt; 2023-08-28 10:49:58.191909 ... path to export is <span style="color: #00BB00;">data/processed/230828_104958_example/annotations.tsv</span> </span></span>
-<span><span class="co">#&gt; <span style="color: #BB0000;">● built target ann_pre [6.378 minutes]</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ▶ end pipeline [6.454 minutes]</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; </span>2023-08-28 10:49:59.162372 Script finished in <span style="color: #00BB00;">6.509531 mins</span></span></span></code></pre></div>
+<span><span class="co">#&gt; 2023-08-28 11:49:06.914891 Exporting ... </span></span>
+<span><span class="co">#&gt; 2023-08-28 11:49:06.920733 Directory data/processed/230828_114906_example created. </span></span>
+<span><span class="co">#&gt; 2023-08-28 11:49:06.920916 ... path to used parameters is <span style="color: #00BB00;">data/processed/230828_114906_example</span> </span></span>
+<span><span class="co">#&gt; 2023-08-28 11:49:06.93059 Directory data/processed/230828_114906_example already exists. </span></span>
+<span><span class="co">#&gt; 2023-08-28 11:49:06.930747 File annotations.tsv will be saved in the directory data/processed/230828_114906_example </span></span>
+<span><span class="co">#&gt; 2023-08-28 11:49:06.930877 ... path to export is <span style="color: #00BB00;">data/processed/230828_114906_example/annotations.tsv</span> </span></span>
+<span><span class="co">#&gt; <span style="color: #BB0000;">● built target ann_pre [4.844 minutes]</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ▶ end pipeline [4.913 minutes]</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; </span>2023-08-28 11:49:07.292988 Script finished in <span style="color: #00BB00;">4.954235 mins</span></span></span></code></pre></div>
 <p>The final exported file is formatted in order to be easily imported
 in <a href="https://cytoscape.org/" class="external-link">Cytoscape</a> to further explore
 your data!</p>
