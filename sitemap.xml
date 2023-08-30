@@ -19,22 +19,22 @@
     <loc>https://taxonomicallyinformedannotation.github.io/tima-r/SUPPORT.html</loc>
   </url>
   <url>
-    <loc>https://taxonomicallyinformedannotation.github.io/tima-r/articles/I-intro.html</loc>
+    <loc>https://taxonomicallyinformedannotation.github.io/tima-r/articles/I-inputs.html</loc>
   </url>
   <url>
-    <loc>https://taxonomicallyinformedannotation.github.io/tima-r/articles/II-inputs.html</loc>
+    <loc>https://taxonomicallyinformedannotation.github.io/tima-r/articles/II-formatting.html</loc>
   </url>
   <url>
-    <loc>https://taxonomicallyinformedannotation.github.io/tima-r/articles/III-formatting.html</loc>
+    <loc>https://taxonomicallyinformedannotation.github.io/tima-r/articles/III-processing.html</loc>
   </url>
   <url>
-    <loc>https://taxonomicallyinformedannotation.github.io/tima-r/articles/IV-processing.html</loc>
-  </url>
-  <url>
-    <loc>https://taxonomicallyinformedannotation.github.io/tima-r/articles/V-actual-performance.html</loc>
+    <loc>https://taxonomicallyinformedannotation.github.io/tima-r/articles/IV-actual-performance.html</loc>
   </url>
   <url>
     <loc>https://taxonomicallyinformedannotation.github.io/tima-r/articles/index.html</loc>
+  </url>
+  <url>
+    <loc>https://taxonomicallyinformedannotation.github.io/tima-r/articles/timaR.html</loc>
   </url>
   <url>
     <loc>https://taxonomicallyinformedannotation.github.io/tima-r/authors.html</loc>
