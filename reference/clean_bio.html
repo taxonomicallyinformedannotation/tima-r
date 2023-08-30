@@ -69,7 +69,7 @@ obtained after biological weighting</p>
     <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">clean_bio</span><span class="op">(</span></span>
 <span>  annot_table_wei_bio <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/get.html" class="external-link">get</a></span><span class="op">(</span><span class="st">"annot_table_wei_bio"</span>, envir <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/sys.parent.html" class="external-link">parent.frame</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span>,</span>
 <span>  edges_table <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/get.html" class="external-link">get</a></span><span class="op">(</span><span class="st">"edges_table"</span>, envir <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/sys.parent.html" class="external-link">parent.frame</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span>,</span>
-<span>  candidates_initial <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/get.html" class="external-link">get</a></span><span class="op">(</span><span class="st">"candidates_initial"</span>, envir <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/sys.parent.html" class="external-link">parent.frame</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span></span>
+<span>  minimal_consistency <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/get.html" class="external-link">get</a></span><span class="op">(</span><span class="st">"minimal_consistency"</span>, envir <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/sys.parent.html" class="external-link">parent.frame</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span></span>
 <span><span class="op">)</span></span></code></pre></div>
     </div>
 
@@ -84,8 +84,8 @@ biologically weighted annotation</p></dd>
 <dd><p>Table containing the edges between features</p></dd>
 
 
-<dt>candidates_initial</dt>
-<dd><p>Number of initial candidates to keep</p></dd>
+<dt>minimal_consistency</dt>
+<dd><p>Minimal consistency score for a class. FLOAT</p></dd>
 
 </dl></div>
     <div class="section level2">

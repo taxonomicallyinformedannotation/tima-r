@@ -72,7 +72,6 @@
 <span>  edges <span class="op">=</span> <span class="va">params</span><span class="op">$</span><span class="va">files</span><span class="op">$</span><span class="va">networks</span><span class="op">$</span><span class="va">spectral</span><span class="op">$</span><span class="va">edges</span><span class="op">$</span><span class="va">prepared</span>,</span>
 <span>  taxa <span class="op">=</span> <span class="va">params</span><span class="op">$</span><span class="va">files</span><span class="op">$</span><span class="va">taxa</span><span class="op">$</span><span class="va">prepared</span>,</span>
 <span>  output <span class="op">=</span> <span class="va">params</span><span class="op">$</span><span class="va">files</span><span class="op">$</span><span class="va">annotations</span><span class="op">$</span><span class="va">processed</span>,</span>
-<span>  candidates_initial <span class="op">=</span> <span class="va">params</span><span class="op">$</span><span class="va">annotations</span><span class="op">$</span><span class="va">candidates</span><span class="op">$</span><span class="va">initial</span>,</span>
 <span>  candidates_final <span class="op">=</span> <span class="va">params</span><span class="op">$</span><span class="va">annotations</span><span class="op">$</span><span class="va">candidates</span><span class="op">$</span><span class="va">final</span>,</span>
 <span>  weight_spectral <span class="op">=</span> <span class="va">params</span><span class="op">$</span><span class="va">weights</span><span class="op">$</span><span class="va">global</span><span class="op">$</span><span class="va">spectral</span>,</span>
 <span>  weight_chemical <span class="op">=</span> <span class="va">params</span><span class="op">$</span><span class="va">weights</span><span class="op">$</span><span class="va">global</span><span class="op">$</span><span class="va">chemical</span>,</span>
@@ -99,9 +98,10 @@
 <span>  score_chemical_npc_pathway <span class="op">=</span> <span class="va">params</span><span class="op">$</span><span class="va">weights</span><span class="op">$</span><span class="va">chemical</span><span class="op">$</span><span class="va">npc</span><span class="op">$</span><span class="va">pathway</span>,</span>
 <span>  score_chemical_npc_superclass <span class="op">=</span> <span class="va">params</span><span class="op">$</span><span class="va">weights</span><span class="op">$</span><span class="va">chemical</span><span class="op">$</span><span class="va">npc</span><span class="op">$</span><span class="va">superclass</span>,</span>
 <span>  score_chemical_npc_class <span class="op">=</span> <span class="va">params</span><span class="op">$</span><span class="va">weights</span><span class="op">$</span><span class="va">chemical</span><span class="op">$</span><span class="va">npc</span><span class="op">$</span><span class="va">class</span>,</span>
-<span>  minimal_ms1_bio <span class="op">=</span> <span class="va">params</span><span class="op">$</span><span class="va">annotations</span><span class="op">$</span><span class="va">ms1</span><span class="op">$</span><span class="va">thresholds</span><span class="op">$</span><span class="va">biological</span>,</span>
-<span>  minimal_ms1_chemo <span class="op">=</span> <span class="va">params</span><span class="op">$</span><span class="va">annotations</span><span class="op">$</span><span class="va">ms1</span><span class="op">$</span><span class="va">thresholds</span><span class="op">$</span><span class="va">chemical</span>,</span>
-<span>  minimal_ms1_condition <span class="op">=</span> <span class="va">params</span><span class="op">$</span><span class="va">annotations</span><span class="op">$</span><span class="va">ms1</span><span class="op">$</span><span class="va">thresholds</span><span class="op">$</span><span class="va">condition</span>,</span>
+<span>  minimal_consistency <span class="op">=</span> <span class="va">params</span><span class="op">$</span><span class="va">annotations</span><span class="op">$</span><span class="va">thresholds</span><span class="op">$</span><span class="va">consistency</span>,</span>
+<span>  minimal_ms1_bio <span class="op">=</span> <span class="va">params</span><span class="op">$</span><span class="va">annotations</span><span class="op">$</span><span class="va">thresholds</span><span class="op">$</span><span class="va">ms1</span><span class="op">$</span><span class="va">biological</span>,</span>
+<span>  minimal_ms1_chemo <span class="op">=</span> <span class="va">params</span><span class="op">$</span><span class="va">annotations</span><span class="op">$</span><span class="va">thresholds</span><span class="op">$</span><span class="va">ms1</span><span class="op">$</span><span class="va">chemical</span>,</span>
+<span>  minimal_ms1_condition <span class="op">=</span> <span class="va">params</span><span class="op">$</span><span class="va">annotations</span><span class="op">$</span><span class="va">thresholds</span><span class="op">$</span><span class="va">ms1</span><span class="op">$</span><span class="va">condition</span>,</span>
 <span>  ms1_only <span class="op">=</span> <span class="va">params</span><span class="op">$</span><span class="va">annotations</span><span class="op">$</span><span class="va">ms1only</span>,</span>
 <span>  compounds_names <span class="op">=</span> <span class="va">params</span><span class="op">$</span><span class="va">options</span><span class="op">$</span><span class="va">compounds_names</span>,</span>
 <span>  summarise <span class="op">=</span> <span class="va">params</span><span class="op">$</span><span class="va">options</span><span class="op">$</span><span class="va">summarise</span>,</span>
@@ -143,10 +143,6 @@
 
 <dt>output</dt>
 <dd><p>Output file</p></dd>
-
-
-<dt>candidates_initial</dt>
-<dd><p>Number of initial candidates to keep</p></dd>
 
 
 <dt>candidates_final</dt>
@@ -273,6 +269,10 @@ match (should be lower than <code>NPC class</code>)</p></dd>
 <dt>score_chemical_npc_class</dt>
 <dd><p>Score for a <code>NPC class</code> match
 (should be the highest)</p></dd>
+
+
+<dt>minimal_consistency</dt>
+<dd><p>Minimal consistency score for a class. FLOAT</p></dd>
 
 
 <dt>minimal_ms1_bio</dt>
