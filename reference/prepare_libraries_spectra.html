@@ -75,14 +75,14 @@ to be used for spectral matching</p>
 <span>  col_ci <span class="op">=</span> <span class="va">params</span><span class="op">$</span><span class="va">names</span><span class="op">$</span><span class="va">mgf</span><span class="op">$</span><span class="va">compound_id</span>,</span>
 <span>  col_em <span class="op">=</span> <span class="va">params</span><span class="op">$</span><span class="va">names</span><span class="op">$</span><span class="va">mgf</span><span class="op">$</span><span class="va">exact_mass</span>,</span>
 <span>  col_in <span class="op">=</span> <span class="va">params</span><span class="op">$</span><span class="va">names</span><span class="op">$</span><span class="va">mgf</span><span class="op">$</span><span class="va">inchi</span>,</span>
-<span>  col_io <span class="op">=</span> <span class="va">params</span><span class="op">$</span><span class="va">names</span><span class="op">$</span><span class="va">mgf</span><span class="op">$</span><span class="va">inchi_2D</span>,</span>
+<span>  col_io <span class="op">=</span> <span class="va">params</span><span class="op">$</span><span class="va">names</span><span class="op">$</span><span class="va">mgf</span><span class="op">$</span><span class="va">inchi_no_stereo</span>,</span>
 <span>  col_ik <span class="op">=</span> <span class="va">params</span><span class="op">$</span><span class="va">names</span><span class="op">$</span><span class="va">mgf</span><span class="op">$</span><span class="va">inchikey</span>,</span>
-<span>  col_il <span class="op">=</span> <span class="va">params</span><span class="op">$</span><span class="va">names</span><span class="op">$</span><span class="va">mgf</span><span class="op">$</span><span class="va">inchikey_2D</span>,</span>
+<span>  col_il <span class="op">=</span> <span class="va">params</span><span class="op">$</span><span class="va">names</span><span class="op">$</span><span class="va">mgf</span><span class="op">$</span><span class="va">inchikey_no_stereo</span>,</span>
 <span>  col_mf <span class="op">=</span> <span class="va">params</span><span class="op">$</span><span class="va">names</span><span class="op">$</span><span class="va">mgf</span><span class="op">$</span><span class="va">molecular_formula</span>,</span>
 <span>  col_na <span class="op">=</span> <span class="va">params</span><span class="op">$</span><span class="va">names</span><span class="op">$</span><span class="va">mgf</span><span class="op">$</span><span class="va">name</span>,</span>
 <span>  col_po <span class="op">=</span> <span class="va">params</span><span class="op">$</span><span class="va">names</span><span class="op">$</span><span class="va">mgf</span><span class="op">$</span><span class="va">polarity</span>,</span>
 <span>  col_sm <span class="op">=</span> <span class="va">params</span><span class="op">$</span><span class="va">names</span><span class="op">$</span><span class="va">mgf</span><span class="op">$</span><span class="va">smiles</span>,</span>
-<span>  col_sn <span class="op">=</span> <span class="va">params</span><span class="op">$</span><span class="va">names</span><span class="op">$</span><span class="va">mgf</span><span class="op">$</span><span class="va">smiles_2D</span>,</span>
+<span>  col_sn <span class="op">=</span> <span class="va">params</span><span class="op">$</span><span class="va">names</span><span class="op">$</span><span class="va">mgf</span><span class="op">$</span><span class="va">smiles_no_stereo</span>,</span>
 <span>  col_si <span class="op">=</span> <span class="va">params</span><span class="op">$</span><span class="va">names</span><span class="op">$</span><span class="va">mgf</span><span class="op">$</span><span class="va">spectrum_id</span>,</span>
 <span>  col_sp <span class="op">=</span> <span class="va">params</span><span class="op">$</span><span class="va">names</span><span class="op">$</span><span class="va">mgf</span><span class="op">$</span><span class="va">splash</span>,</span>
 <span>  col_sy <span class="op">=</span> <span class="va">params</span><span class="op">$</span><span class="va">names</span><span class="op">$</span><span class="va">mgf</span><span class="op">$</span><span class="va">synonyms</span>,</span>
@@ -126,7 +126,7 @@ to be used for spectral matching</p>
 
 
 <dt>col_io</dt>
-<dd><p>Name of the InChI 2D in mgf</p></dd>
+<dd><p>Name of the InChI without stereo in mgf</p></dd>
 
 
 <dt>col_ik</dt>
@@ -134,7 +134,7 @@ to be used for spectral matching</p>
 
 
 <dt>col_il</dt>
-<dd><p>Name of the InChIKey 2D in mgf</p></dd>
+<dd><p>Name of the InChIKey without stereo in mgf</p></dd>
 
 
 <dt>col_mf</dt>
@@ -154,7 +154,7 @@ to be used for spectral matching</p>
 
 
 <dt>col_sn</dt>
-<dd><p>Name of the SMILES 2D in mgf</p></dd>
+<dd><p>Name of the SMILES without stereo in mgf</p></dd>
 
 
 <dt>col_si</dt>
