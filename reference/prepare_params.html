@@ -64,15 +64,15 @@
     <div class="section level2">
     <h2 id="ref-usage">Usage<a class="anchor" aria-label="anchor" href="#ref-usage"></a></h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">prepare_params</span><span class="op">(</span></span>
-<span>  filename <span class="op">=</span> <span class="va">params</span><span class="op">$</span><span class="va">files</span><span class="op">$</span><span class="va">pattern</span>,</span>
-<span>  features <span class="op">=</span> <span class="va">params</span><span class="op">$</span><span class="va">files</span><span class="op">$</span><span class="va">features</span><span class="op">$</span><span class="va">raw</span>,</span>
-<span>  spectra <span class="op">=</span> <span class="va">params</span><span class="op">$</span><span class="va">files</span><span class="op">$</span><span class="va">spectral</span><span class="op">$</span><span class="va">raw</span>,</span>
-<span>  gnps_job_id <span class="op">=</span> <span class="va">params</span><span class="op">$</span><span class="va">gnps</span><span class="op">$</span><span class="va">id</span>,</span>
-<span>  gnps_example_id <span class="op">=</span> <span class="va">paths</span><span class="op">$</span><span class="va">gnps</span><span class="op">$</span><span class="va">example</span>,</span>
-<span>  ms_mode <span class="op">=</span> <span class="va">params</span><span class="op">$</span><span class="va">ms</span><span class="op">$</span><span class="va">polarity</span>,</span>
-<span>  taxon <span class="op">=</span> <span class="va">params</span><span class="op">$</span><span class="va">organisms</span><span class="op">$</span><span class="va">taxon</span>,</span>
-<span>  summarise <span class="op">=</span> <span class="va">params</span><span class="op">$</span><span class="va">options</span><span class="op">$</span><span class="va">summarise</span>,</span>
-<span>  parameters <span class="op">=</span> <span class="va">params</span>,</span>
+<span>  filename <span class="op">=</span> <span class="fu"><a href="get_params.html">get_params</a></span><span class="op">(</span>step <span class="op">=</span> <span class="st">"prepare_params"</span><span class="op">)</span><span class="op">$</span><span class="va">files</span><span class="op">$</span><span class="va">pattern</span>,</span>
+<span>  features <span class="op">=</span> <span class="fu"><a href="get_params.html">get_params</a></span><span class="op">(</span>step <span class="op">=</span> <span class="st">"prepare_params"</span><span class="op">)</span><span class="op">$</span><span class="va">files</span><span class="op">$</span><span class="va">features</span><span class="op">$</span><span class="va">raw</span>,</span>
+<span>  spectra <span class="op">=</span> <span class="fu"><a href="get_params.html">get_params</a></span><span class="op">(</span>step <span class="op">=</span> <span class="st">"prepare_params"</span><span class="op">)</span><span class="op">$</span><span class="va">files</span><span class="op">$</span><span class="va">spectral</span><span class="op">$</span><span class="va">raw</span>,</span>
+<span>  gnps_job_id <span class="op">=</span> <span class="fu"><a href="get_params.html">get_params</a></span><span class="op">(</span>step <span class="op">=</span> <span class="st">"prepare_params"</span><span class="op">)</span><span class="op">$</span><span class="va">gnps</span><span class="op">$</span><span class="va">id</span>,</span>
+<span>  gnps_example_id <span class="op">=</span> <span class="fu"><a href="parse_yaml_paths.html">parse_yaml_paths</a></span><span class="op">(</span><span class="op">)</span><span class="op">$</span><span class="va">gnps</span><span class="op">$</span><span class="va">example</span>,</span>
+<span>  ms_mode <span class="op">=</span> <span class="fu"><a href="get_params.html">get_params</a></span><span class="op">(</span>step <span class="op">=</span> <span class="st">"prepare_params"</span><span class="op">)</span><span class="op">$</span><span class="va">ms</span><span class="op">$</span><span class="va">polarity</span>,</span>
+<span>  taxon <span class="op">=</span> <span class="fu"><a href="get_params.html">get_params</a></span><span class="op">(</span>step <span class="op">=</span> <span class="st">"prepare_params"</span><span class="op">)</span><span class="op">$</span><span class="va">organisms</span><span class="op">$</span><span class="va">taxon</span>,</span>
+<span>  summarise <span class="op">=</span> <span class="fu"><a href="get_params.html">get_params</a></span><span class="op">(</span>step <span class="op">=</span> <span class="st">"prepare_params"</span><span class="op">)</span><span class="op">$</span><span class="va">options</span><span class="op">$</span><span class="va">summarise</span>,</span>
+<span>  parameters <span class="op">=</span> <span class="fu"><a href="get_params.html">get_params</a></span><span class="op">(</span>step <span class="op">=</span> <span class="st">"prepare_params"</span><span class="op">)</span>,</span>
 <span>  paths <span class="op">=</span> <span class="fu"><a href="parse_yaml_paths.html">parse_yaml_paths</a></span><span class="op">(</span><span class="op">)</span>,</span>
 <span>  step <span class="op">=</span> <span class="cn">NA</span></span>
 <span><span class="op">)</span></span></code></pre></div>
@@ -112,8 +112,8 @@
 <dd><p>Summarise results to one row per feature. BOOLEAN</p></dd>
 
 
-<dt>parameters</dt>
-<dd><p>Params</p></dd>
+<dt>paths</dt>
+<dd><p>Paths</p></dd>
 
 
 <dt>step</dt>
