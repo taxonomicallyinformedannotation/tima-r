@@ -66,8 +66,9 @@
     <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">prepare_libraries_adducts</span><span class="op">(</span></span>
 <span>  str_met <span class="op">=</span> <span class="fu"><a href="get_params.html">get_params</a></span><span class="op">(</span>step <span class="op">=</span></span>
 <span>    <span class="st">"prepare_libraries_adducts"</span><span class="op">)</span><span class="op">$</span><span class="va">files</span><span class="op">$</span><span class="va">libraries</span><span class="op">$</span><span class="va">sop</span><span class="op">$</span><span class="va">merged</span><span class="op">$</span><span class="va">structures</span><span class="op">$</span><span class="va">metadata</span>,</span>
-<span>  adducts_masses <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/system.file.html" class="external-link">system.file</a></span><span class="op">(</span><span class="st">"extdata"</span>, <span class="st">"adducts.tsv"</span>, package <span class="op">=</span> <span class="st">"timaR"</span><span class="op">)</span>,</span>
+<span>  adducts_masses_list <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/system.file.html" class="external-link">system.file</a></span><span class="op">(</span><span class="st">"extdata"</span>, <span class="st">"adducts.tsv"</span>, package <span class="op">=</span> <span class="st">"timaR"</span><span class="op">)</span>,</span>
 <span>  adducts_output_path <span class="op">=</span> <span class="fu"><a href="parse_yaml_paths.html">parse_yaml_paths</a></span><span class="op">(</span><span class="op">)</span><span class="op">$</span><span class="va">data</span><span class="op">$</span><span class="va">interim</span><span class="op">$</span><span class="va">libraries</span><span class="op">$</span><span class="va">adducts</span><span class="op">$</span><span class="va">path</span>,</span>
+<span>  clusters_list <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/system.file.html" class="external-link">system.file</a></span><span class="op">(</span><span class="st">"extdata"</span>, <span class="st">"clusters.tsv"</span>, package <span class="op">=</span> <span class="st">"timaR"</span><span class="op">)</span>,</span>
 <span>  output_name <span class="op">=</span> <span class="fu"><a href="get_params.html">get_params</a></span><span class="op">(</span>step <span class="op">=</span></span>
 <span>    <span class="st">"prepare_libraries_adducts"</span><span class="op">)</span><span class="op">$</span><span class="va">files</span><span class="op">$</span><span class="va">libraries</span><span class="op">$</span><span class="va">adducts</span><span class="op">$</span><span class="va">prepared</span>,</span>
 <span>  masses_pos_output_path <span class="op">=</span> <span class="fu"><a href="get_params.html">get_params</a></span><span class="op">(</span>step <span class="op">=</span></span>
@@ -83,12 +84,16 @@
 <dd><p>File containing structures metadata</p></dd>
 
 
-<dt>adducts_masses</dt>
+<dt>adducts_masses_list</dt>
 <dd><p>Table of adducts taken as input</p></dd>
 
 
 <dt>adducts_output_path</dt>
 <dd><p>Path where the adducts will be saved</p></dd>
+
+
+<dt>clusters_list</dt>
+<dd><p>Table of clusters taken as input</p></dd>
 
 
 <dt>output_name</dt>
