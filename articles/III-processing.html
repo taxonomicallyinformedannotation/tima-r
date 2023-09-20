@@ -93,7 +93,7 @@
                         <h4 data-toc-skip class="author">Adriano
 Rutz</h4>
             
-            <h4 data-toc-skip class="date">2023-09-19</h4>
+            <h4 data-toc-skip class="date">2023-09-20</h4>
       
       <small class="dont-index">Source: <a href="https://github.com/taxonomicallyinformedannotation/tima-r/blob/HEAD/vignettes/III-processing.Rmd" class="external-link"><code>vignettes/III-processing.Rmd</code></a></small>
       <div class="d-none name"><code>III-processing.Rmd</code></div>
@@ -111,148 +111,150 @@ successfully, this should be a piece of cake, you deserve it!</p>
 <code>inst/params/user/weight_annotations.yaml</code>.</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/source.html" class="external-link">source</a></span><span class="op">(</span>file <span class="op">=</span> <span class="st">"inst/scripts/weight_annotations.R"</span><span class="op">)</span></span>
-<span><span class="co">#&gt; 2023-09-19 16:24:00.905742 This script performs <span style="color: #00BB00;">taxonomically informed scoring</span> and followed by <span style="color: #0000BB;">chemical consistency informed scoring</span> </span></span>
-<span><span class="co">#&gt; 2023-09-19 16:24:00.912118 Authors:  <span style="color: #00BB00;">AR</span> , <span style="color: #0000BB;">PMA</span> </span></span>
+<span><span class="co">#&gt; 2023-09-20 13:34:43.659038 This script performs <span style="color: #00BB00;">taxonomically informed scoring</span> and followed by <span style="color: #0000BB;">chemical consistency informed scoring</span> </span></span>
+<span><span class="co">#&gt; 2023-09-20 13:34:43.667486 Authors:  <span style="color: #00BB00;">AR</span> , <span style="color: #0000BB;">PMA</span> </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-09-19 16:24:00.912606 Contributors: ... </span></span>
-<span><span class="co">#&gt; <span style="color: #BB0000;">✔ skip target dic_add</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target dic_clu</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target dic_neu_los</span></span></span>
+<span><span class="co">#&gt; 2023-09-20 13:34:43.668072 Contributors: ... </span></span>
+<span><span class="co">#&gt; <span style="color: #BB0000;">✔ skip target dic_neu_los</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target yaml_paths</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target dic_clu</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target dic_add</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target paths</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target paths_data_source_libraries_sop_lotus</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_def_ann_mas</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_def_cre_com</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_def_pre_lib_spe</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_def_pre_lib_sop_lot</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target paths_gnps_example_id</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target paths_interim_a</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target paths_urls_massbank_file</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target paths_urls_massbank_url</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target paths_urls_massbank_version</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target paths_interim_f</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_def_wei_ann</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_def_pre_ann_sir</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_def_pre_lib_add</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_def_ann_mas</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_def_pre_lib_sop_ecm</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target paths_data_source_libraries_spectra_is_lotus_pos</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_def_pre_lib_rt</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target paths_interim_a</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target paths_source</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target paths_interim_f</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_def_pre_ann_gnp</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target paths_urls_examples_spectral_lib_neg</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target paths_gnps_example_id</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target paths_data_source_libraries_sop_lotus</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target paths_urls_lotus_doi</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target paths_urls_lotus_pattern</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_def_pre_tax</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target paths_data_interim_libraries_adducts_path</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target paths_urls_examples_spectra_mini</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target paths_data_source_libraries_spectra_is_lotus_neg</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target paths_urls_examples_spectral_lib_neg</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_def_pre_ann_gnp</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target paths_data_source_libraries_sop_ecmdb</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_pre_par</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target paths_urls_examples_spectral_lib_pos</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_def_pre_lib_sop_mer</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_def_cre_com</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_def_fil_ann</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target paths_source</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target paths_data_source_spectra</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target paths_test_mode</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_def_pre_fea_com</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_def_pre_ann_spe</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target paths_data_source_libraries_spectra_is_lotus_pos</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_def_pre_lib_sop_clo</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_def_pre_fea_tab</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_def_pre_lib_rt</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target paths_urls_ecmdb_metabolites</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_def_ann_spe</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_def_pre_lib_add</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_def_pre_fea_edg</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target paths_data_source_libraries_sop_ecmdb</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target paths_urls_examples_spectral_lib_pos</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_def_pre_fea_tab</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_def_pre_fea_com</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target paths_test_mode</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_def_pre_ann_sir</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target paths_data_source_libraries_spectra_is_lotus_neg</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_def_ann_spe</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_def_pre_lib_sop_mer</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target paths_urls_massbank_file</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target paths_urls_massbank_url</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_pre_par</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_def_pre_tax</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target paths_urls_ecmdb_metabolites</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target paths_data_interim_libraries_adducts_path</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_def_wei_ann</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_def_pre_ann_spe</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target paths_data_source_spectra</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target paths_urls_examples_spectra_mini</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_def_cre_edg_spe</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_def_pre_lib_spe</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target lib_spe_exp_mb_raw</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_def_pre_lib_sop_clo</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_def_fil_ann</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target paths_urls_massbank_version</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ▶ start target lib_sop_lot</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; A file with the same size is already present. Skipping</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ● built target lib_sop_lot [1.887 seconds]</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ▶ start target lib_spe_is_lot_neg</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; File already exists. Skipping.</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ● built target lib_spe_is_lot_neg [0.001 seconds]</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_fin_par</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ● built target lib_sop_lot [1.382 seconds]</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ▶ start target lib_spe_is_lot_pos</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; File already exists. Skipping.</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ● built target lib_spe_is_lot_pos [0.006 seconds]</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ● built target lib_spe_is_lot_pos [0.002 seconds]</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ▶ start target lib_spe_is_lot_neg</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; File already exists. Skipping.</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ● built target lib_spe_is_lot_neg [0.011 seconds]</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_fin_par</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target lib_sop_ecm</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target lib_spe_exp_mb_pre_pos</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target lib_spe_exp_mb_pre_neg</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target lib_spe_is_lot_pre_neg</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_usr_pre_lib_sop_lot</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_usr_pre_lib_sop_mer</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_usr_pre_lib_add</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_usr_pre_tax</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_usr_wei_ann</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_usr_pre_ann_sir</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_usr_pre_ann_gnp</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_usr_pre_lib_spe</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_usr_cre_com</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_usr_pre_lib_sop_ecm</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_usr_ann_mas</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_usr_pre_lib_rt</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_usr_pre_ann_spe</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_usr_pre_fea_tab</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_usr_ann_spe</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_usr_pre_lib_sop_clo</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_usr_pre_fea_com</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_usr_fil_ann</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_usr_pre_fea_edg</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_usr_cre_edg_spe</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target lib_spe_exp_mb_raw</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target lib_spe_is_lot_pre_pos</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_pre_lib_sop_lot</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_pre_lib_sop_mer</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_pre_lib_add</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_pre_tax</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_wei_ann</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_pre_ann_sir</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_pre_ann_gnp</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_pre_lib_spe</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target lib_spe_is_lot_pre_neg</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_usr_cre_com</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_usr_ann_mas</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_usr_pre_lib_sop_lot</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_usr_pre_lib_sop_ecm</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_usr_pre_ann_spe</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_usr_pre_lib_add</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_usr_pre_fea_edg</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_usr_wei_ann</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_usr_pre_fea_com</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_usr_pre_fea_tab</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_usr_cre_edg_spe</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_usr_pre_lib_spe</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_usr_pre_lib_sop_mer</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_usr_ann_spe</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_usr_pre_lib_rt</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_usr_pre_ann_gnp</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_usr_fil_ann</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_usr_pre_lib_sop_clo</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_usr_pre_ann_sir</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_usr_pre_tax</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target lib_spe_exp_mb_pre</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_cre_com</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_pre_lib_sop_ecm</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_ann_mas</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_pre_lib_rt</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_pre_lib_sop_lot</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_pre_lib_sop_ecm</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_pre_ann_spe</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_pre_fea_tab</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_ann_spe</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_pre_lib_sop_clo</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_pre_fea_com</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_fil_ann</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_pre_lib_add</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_pre_fea_edg</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_wei_ann</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_pre_fea_com</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_pre_fea_tab</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_cre_edg_spe</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_pre_lib_spe</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_pre_lib_sop_mer</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_ann_spe</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_pre_lib_rt</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_pre_ann_gnp</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_fil_ann</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_pre_lib_sop_clo</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_pre_ann_sir</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_pre_tax</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target lib_spe_exp_mb_pre_neg</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target lib_spe_exp_mb_pre_pos</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target lib_sop_lot_pre</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target lib_spe_exp_int_pre_neg</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target lib_spe_exp_int_pre_pos</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target lib_sop_ecm_pre</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target lib_spe_exp_int_pre</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target lib_rt</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target gnps_tables</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target lib_sop_clo_pre</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target gnps_tables</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target lib_spe_exp_int_pre_pos</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target lib_spe_exp_int_pre_neg</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target lib_rt_sop</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target lib_rt_rts</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target gnps_annotations</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target gnps_metadata</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target gnps_spectra</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target gnps_components</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target gnps_features</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target gnps_edges</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target gnps_spectra</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target gnps_features</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target gnps_metadata</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target gnps_components</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target gnps_annotations</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target lib_sop_mer</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target input_metadata</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target input_spectra</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target input_features</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target lib_mer_str_met</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target lib_mer_str_nam</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target lib_mer_str_stereo</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target lib_mer_str_tax_cla</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target lib_mer_str_tax_npc</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target input_metadata</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target lib_mer_org_tax_ott</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target lib_mer_key</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target lib_mer_str_stereo</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target lib_mer_str_nam</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target lib_mer_str_met</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target lib_mer_str_tax_cla</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target lib_mer_str_tax_npc</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target ann_spe_neg</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target ann_spe_pos</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target fea_edg_spe</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target ann_spe_pos</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target fea_pre</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target tax_pre</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target lib_add</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target ann_sir_pre</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target ann_spe_exp_gnp_pre</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target tax_pre</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target ann_spe_pre</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target edg_spe</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target ann_spe_pre</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target ann_ms1_pre</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target ann_sir_pre_can</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target ann_sir_pre_for</span></span></span>
@@ -265,49 +267,49 @@ successfully, this should be a piece of cake, you deserve it!</p>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target int_com</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target fea_com_pre</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ▶ start target ann_pre</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; </span>2023-09-19 16:24:08.314387 Loading files ... </span></span>
-<span><span class="co">#&gt; 2023-09-19 16:24:08.317206 ... components </span></span>
-<span><span class="co">#&gt; 2023-09-19 16:24:08.420093 ... edges </span></span>
-<span><span class="co">#&gt; 2023-09-19 16:24:08.470047 ... structure-organism pairs </span></span>
-<span><span class="co">#&gt; 2023-09-19 16:24:13.730621 ... canopus </span></span>
-<span><span class="co">#&gt; 2023-09-19 16:24:14.137812 ... formula </span></span>
-<span><span class="co">#&gt; 2023-09-19 16:24:14.173644 ... annotations </span></span>
-<span><span class="co">#&gt; 2023-09-19 16:24:17.20905 Re-arranging annotations </span></span>
-<span><span class="co">#&gt; 2023-09-19 16:24:19.964107 adding biological organism metadata </span></span>
-<span><span class="co">#&gt; 2023-09-19 16:24:20.286784 performing taxonomically informed scoring </span></span>
-<span><span class="co">#&gt; 2023-09-19 16:24:20.37537 filtering top  3  candidates and keeping only MS1 candidates with minimum </span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; </span>2023-09-20 13:34:51.683342 Loading files ... </span></span>
+<span><span class="co">#&gt; 2023-09-20 13:34:51.686746 ... components </span></span>
+<span><span class="co">#&gt; 2023-09-20 13:34:51.812359 ... edges </span></span>
+<span><span class="co">#&gt; 2023-09-20 13:34:51.868738 ... structure-organism pairs </span></span>
+<span><span class="co">#&gt; 2023-09-20 13:34:58.329019 ... canopus </span></span>
+<span><span class="co">#&gt; 2023-09-20 13:34:58.820319 ... formula </span></span>
+<span><span class="co">#&gt; 2023-09-20 13:34:58.86136 ... annotations </span></span>
+<span><span class="co">#&gt; 2023-09-20 13:35:02.538188 Re-arranging annotations </span></span>
+<span><span class="co">#&gt; 2023-09-20 13:35:05.772135 adding biological organism metadata </span></span>
+<span><span class="co">#&gt; 2023-09-20 13:35:06.183142 performing taxonomically informed scoring </span></span>
+<span><span class="co">#&gt; 2023-09-20 13:35:06.281344 filtering top  3  candidates and keeping only MS1 candidates with minimum </span></span>
 <span><span class="co">#&gt;  0.6  biological score </span></span>
 <span><span class="co">#&gt;  OR 0.6 chemical score </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-09-19 16:24:21.533212 adding "notClassified" </span></span>
+<span><span class="co">#&gt; 2023-09-20 13:35:07.560863 adding "notClassified" </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-09-19 16:24:22.972673 calculating biological score at all levels ... </span></span>
+<span><span class="co">#&gt; 2023-09-20 13:35:09.282738 calculating biological score at all levels ... </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-09-19 16:24:22.972905 ... domain </span></span>
+<span><span class="co">#&gt; 2023-09-20 13:35:09.282984 ... domain </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-09-19 16:24:23.000596 ... kingdom </span></span>
+<span><span class="co">#&gt; 2023-09-20 13:35:09.312992 ... kingdom </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-09-19 16:24:23.027564 ... phylum </span></span>
+<span><span class="co">#&gt; 2023-09-20 13:35:09.343287 ... phylum </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-09-19 16:24:23.055592 ... class </span></span>
+<span><span class="co">#&gt; 2023-09-20 13:35:09.374452 ... class </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-09-19 16:24:23.084864 ... order </span></span>
+<span><span class="co">#&gt; 2023-09-20 13:35:09.406504 ... order </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-09-19 16:24:23.127424 ... family </span></span>
+<span><span class="co">#&gt; 2023-09-20 13:35:09.451228 ... family </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-09-19 16:24:23.183916 ... tribe </span></span>
+<span><span class="co">#&gt; 2023-09-20 13:35:09.514295 ... tribe </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-09-19 16:24:23.226049 ... genus </span></span>
+<span><span class="co">#&gt; 2023-09-20 13:35:09.561331 ... genus </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-09-19 16:24:23.37859 ... species </span></span>
+<span><span class="co">#&gt; 2023-09-20 13:35:09.718777 ... species </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-09-19 16:24:23.789499 ... varietas </span></span>
+<span><span class="co">#&gt; 2023-09-20 13:35:10.212364 ... varietas </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-09-19 16:24:23.820521 ... keeping best biological score </span></span>
+<span><span class="co">#&gt; 2023-09-20 13:35:10.246795 ... keeping best biological score </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-09-19 16:24:26.734045 ... calculating weighted biological score </span></span>
+<span><span class="co">#&gt; 2023-09-20 13:35:13.523304 ... calculating weighted biological score </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-09-19 16:24:27.21295 taxonomically informed scoring led to </span></span>
+<span><span class="co">#&gt; 2023-09-20 13:35:14.037268 taxonomically informed scoring led to </span></span>
 <span><span class="co">#&gt;  <span style="color: #555555;">52816</span> annotations reranked at the <span style="color: #555555;">kingdom</span> level, </span></span>
 <span><span class="co">#&gt;  <span style="color: #BBBBBB;">52297</span> annotations reranked at the <span style="color: #BBBBBB;">phylum</span> level, </span></span>
 <span><span class="co">#&gt;  <span style="color: #00BBBB;">43888</span> annotations reranked at the <span style="color: #00BBBB;">class</span> level, </span></span>
@@ -318,55 +320,55 @@ successfully, this should be a piece of cake, you deserve it!</p>
 <span><span class="co">#&gt;  <span style="color: #00BB00;">394</span> annotations reranked at the <span style="color: #00BB00;">species</span> level, </span></span>
 <span><span class="co">#&gt;  and <span style="color: #BB0000;">0</span> annotations reranked at the <span style="color: #BB0000;">variety</span> level. </span></span>
 <span><span class="co">#&gt;  WITHOUT TAKING CONSISTENCY SCORE INTO ACCOUNT! (for later predictions) </span></span>
-<span><span class="co">#&gt; 2023-09-19 16:24:28.20664 calculating chemical consistency</span></span>
+<span><span class="co">#&gt; 2023-09-20 13:35:15.15097 calculating chemical consistency</span></span>
 <span><span class="co">#&gt;               features with at least 2 neighbors ... </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-09-19 16:24:28.206886 ... among edges ... </span></span>
+<span><span class="co">#&gt; 2023-09-20 13:35:15.151261 ... among edges ... </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-09-19 16:24:28.49488 ... at the (classyfire) kingdom level </span></span>
+<span><span class="co">#&gt; 2023-09-20 13:35:15.473146 ... at the (classyfire) kingdom level </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-09-19 16:24:28.782365 ... at the (NPC) pathway level </span></span>
+<span><span class="co">#&gt; 2023-09-20 13:35:15.804727 ... at the (NPC) pathway level </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-09-19 16:24:29.639941 ... at the (classyfire) superclass level </span></span>
+<span><span class="co">#&gt; 2023-09-20 13:35:16.721939 ... at the (classyfire) superclass level </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-09-19 16:24:30.335546 ... at the (NPC) superclass level </span></span>
+<span><span class="co">#&gt; 2023-09-20 13:35:17.529246 ... at the (NPC) superclass level </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-09-19 16:24:31.819745 ... at the (classyfire) class level </span></span>
+<span><span class="co">#&gt; 2023-09-20 13:35:19.109931 ... at the (classyfire) class level </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-09-19 16:24:33.476942 ... at the (NPC) class level </span></span>
+<span><span class="co">#&gt; 2023-09-20 13:35:20.993053 ... at the (NPC) class level </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-09-19 16:24:36.661617 ... at the (classyfire) parent level </span></span>
+<span><span class="co">#&gt; 2023-09-20 13:35:24.429042 ... at the (classyfire) parent level </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-09-19 16:24:40.080703 splitting already computed predictions </span></span>
+<span><span class="co">#&gt; 2023-09-20 13:35:28.070962 splitting already computed predictions </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-09-19 16:24:40.787657 joining all except -1 together </span></span>
+<span><span class="co">#&gt; 2023-09-20 13:35:28.853112 joining all except -1 together </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-09-19 16:24:42.479736 adding dummy consistency for features</span></span>
+<span><span class="co">#&gt; 2023-09-20 13:35:30.66566 adding dummy consistency for features</span></span>
 <span><span class="co">#&gt;               with less than 2 neighbors </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-09-19 16:24:43.324989 adding already computed predictions back </span></span>
+<span><span class="co">#&gt; 2023-09-20 13:35:31.570523 adding already computed predictions back </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-09-19 16:24:45.224753 calculating chemical score at all levels ... </span></span>
+<span><span class="co">#&gt; 2023-09-20 13:35:33.775768 calculating chemical score at all levels ... </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-09-19 16:24:45.225001 ... (classyfire) kingdom </span></span>
+<span><span class="co">#&gt; 2023-09-20 13:35:33.776112 ... (classyfire) kingdom </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-09-19 16:24:45.252069 ... (NPC) pathway </span></span>
+<span><span class="co">#&gt; 2023-09-20 13:35:33.802859 ... (NPC) pathway </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-09-19 16:24:45.290623 ... (classyfire) superclass </span></span>
+<span><span class="co">#&gt; 2023-09-20 13:35:33.844615 ... (classyfire) superclass </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-09-19 16:24:45.326583 ... (NPC) superclass </span></span>
+<span><span class="co">#&gt; 2023-09-20 13:35:33.884692 ... (NPC) superclass </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-09-19 16:24:45.402334 ... (classyfire) class </span></span>
+<span><span class="co">#&gt; 2023-09-20 13:35:33.969102 ... (classyfire) class </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-09-19 16:24:45.496457 ... (NPC) class </span></span>
+<span><span class="co">#&gt; 2023-09-20 13:35:34.06655 ... (NPC) class </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-09-19 16:24:45.695473 ... (classyfire) parent </span></span>
+<span><span class="co">#&gt; 2023-09-20 13:35:34.288039 ... (classyfire) parent </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-09-19 16:24:45.913926 ... keeping best chemical score </span></span>
+<span><span class="co">#&gt; 2023-09-20 13:35:34.53048 ... keeping best chemical score </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-09-19 16:24:46.778921 ... calculating weighted chemical score </span></span>
+<span><span class="co">#&gt; 2023-09-20 13:35:35.472387 ... calculating weighted chemical score </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-09-19 16:24:47.864328 chemically informed scoring led to </span></span>
+<span><span class="co">#&gt; 2023-09-20 13:35:36.649514 chemically informed scoring led to </span></span>
 <span><span class="co">#&gt;  <span style="color: #555555;">50587</span> annotations reranked at the <span style="color: #555555;">(classyfire) kingdom</span> level, </span></span>
 <span><span class="co">#&gt;  <span style="color: #00BBBB;">33209</span> annotations reranked at the <span style="color: #00BBBB;">(NPC) pathway</span> level, </span></span>
 <span><span class="co">#&gt;  <span style="color: #BB00BB;">27212</span> annotations reranked at the <span style="color: #BB00BB;">(classyfire) superclass</span> level, </span></span>
@@ -375,21 +377,21 @@ successfully, this should be a piece of cake, you deserve it!</p>
 <span><span class="co">#&gt;  <span style="color: #00BB00;">6164</span> annotations reranked at the <span style="color: #00BB00;">(NPC) class</span> level, and </span></span>
 <span><span class="co">#&gt;  <span style="color: #BB0000;">5879</span> annotations reranked at the <span style="color: #BB0000;">(classyfire) parent</span> level. </span></span>
 <span><span class="co">#&gt;  WITHOUT TAKING CONSISTENCY SCORE INTO ACCOUNT! </span></span>
-<span><span class="co">#&gt; 2023-09-19 16:24:53.340876 adding initial metadata (RT, etc.) and simplifying columns </span></span>
+<span><span class="co">#&gt; 2023-09-20 13:35:42.560125 adding initial metadata (RT, etc.) and simplifying columns </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-09-19 16:24:53.467329 adding references </span></span>
+<span><span class="co">#&gt; 2023-09-20 13:35:42.700598 adding references </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-09-19 16:24:59.14333 selecting columns to export </span></span>
+<span><span class="co">#&gt; 2023-09-20 13:35:49.074996 selecting columns to export </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-09-19 16:25:00.471279 adding consensus again to droped candidates </span></span>
+<span><span class="co">#&gt; 2023-09-20 13:35:50.487905 adding consensus again to droped candidates </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-09-19 16:25:02.860502 Exporting ... </span></span>
-<span><span class="co">#&gt; 2023-09-19 16:25:02.863253 Directory data/processed/230919_162502_example created. </span></span>
-<span><span class="co">#&gt; 2023-09-19 16:25:02.86347 ... path to used parameters is <span style="color: #00BB00;">data/processed/230919_162502_example</span> </span></span>
-<span><span class="co">#&gt; 2023-09-19 16:25:03.838151 ... path to export is <span style="color: #00BB00;">data/processed/230919_162502_example/annotations.tsv</span> </span></span>
-<span><span class="co">#&gt; <span style="color: #BB0000;">● built target ann_pre [55.683 seconds]</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ▶ end pipeline [1.013 minutes]</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; </span>2023-09-19 16:25:04.044302 Script finished in <span style="color: #00BB00;">1.052313 mins</span></span></span></code></pre></div>
+<span><span class="co">#&gt; 2023-09-20 13:35:53.031576 Exporting ... </span></span>
+<span><span class="co">#&gt; 2023-09-20 13:35:53.035697 Directory data/processed/230920_133553_example created. </span></span>
+<span><span class="co">#&gt; 2023-09-20 13:35:53.035872 ... path to used parameters is <span style="color: #00BB00;">data/processed/230920_133553_example</span> </span></span>
+<span><span class="co">#&gt; 2023-09-20 13:35:54.163453 ... path to export is <span style="color: #00BB00;">data/processed/230920_133553_example/annotations.tsv</span> </span></span>
+<span><span class="co">#&gt; <span style="color: #BB0000;">● built target ann_pre [1.044 minutes]</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ▶ end pipeline [1.131 minutes]</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; </span>2023-09-20 13:35:54.39485 Script finished in <span style="color: #00BB00;">1.178935 mins</span></span></span></code></pre></div>
 <p>The final exported file is formatted in order to be easily imported
 in <a href="https://cytoscape.org/" class="external-link">Cytoscape</a> to further explore
 your data!</p>

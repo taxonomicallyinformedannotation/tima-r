@@ -68,8 +68,10 @@ to be used for spectral matching</p>
     <h2 id="ref-usage">Usage<a class="anchor" aria-label="anchor" href="#ref-usage"></a></h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">prepare_libraries_spectra</span><span class="op">(</span></span>
 <span>  input <span class="op">=</span> <span class="fu"><a href="get_params.html">get_params</a></span><span class="op">(</span>step <span class="op">=</span> <span class="st">"prepare_libraries_spectra"</span><span class="op">)</span><span class="op">$</span><span class="va">files</span><span class="op">$</span><span class="va">libraries</span><span class="op">$</span><span class="va">spectral</span><span class="op">$</span><span class="va">exp</span><span class="op">$</span><span class="va">raw</span>,</span>
-<span>  output <span class="op">=</span> <span class="fu"><a href="get_params.html">get_params</a></span><span class="op">(</span>step <span class="op">=</span> <span class="st">"prepare_libraries_spectra"</span><span class="op">)</span><span class="op">$</span><span class="va">files</span><span class="op">$</span><span class="va">libraries</span><span class="op">$</span><span class="va">spectral</span><span class="op">$</span><span class="va">exp</span>,</span>
-<span>  polarity <span class="op">=</span> <span class="fu"><a href="get_params.html">get_params</a></span><span class="op">(</span>step <span class="op">=</span> <span class="st">"prepare_libraries_spectra"</span><span class="op">)</span><span class="op">$</span><span class="va">ms</span><span class="op">$</span><span class="va">polarity</span>,</span>
+<span>  output_neg <span class="op">=</span> <span class="fu"><a href="get_params.html">get_params</a></span><span class="op">(</span>step <span class="op">=</span></span>
+<span>    <span class="st">"prepare_libraries_spectra"</span><span class="op">)</span><span class="op">$</span><span class="va">files</span><span class="op">$</span><span class="va">libraries</span><span class="op">$</span><span class="va">spectral</span><span class="op">$</span><span class="va">exp</span><span class="op">$</span><span class="va">neg</span>,</span>
+<span>  output_pos <span class="op">=</span> <span class="fu"><a href="get_params.html">get_params</a></span><span class="op">(</span>step <span class="op">=</span></span>
+<span>    <span class="st">"prepare_libraries_spectra"</span><span class="op">)</span><span class="op">$</span><span class="va">files</span><span class="op">$</span><span class="va">libraries</span><span class="op">$</span><span class="va">spectral</span><span class="op">$</span><span class="va">exp</span><span class="op">$</span><span class="va">pos</span>,</span>
 <span>  metad <span class="op">=</span> <span class="st">"myLib"</span>,</span>
 <span>  col_ce <span class="op">=</span> <span class="fu"><a href="get_params.html">get_params</a></span><span class="op">(</span>step <span class="op">=</span> <span class="st">"prepare_libraries_spectra"</span><span class="op">)</span><span class="op">$</span><span class="va">names</span><span class="op">$</span><span class="va">mgf</span><span class="op">$</span><span class="va">collision_energy</span>,</span>
 <span>  col_ci <span class="op">=</span> <span class="fu"><a href="get_params.html">get_params</a></span><span class="op">(</span>step <span class="op">=</span> <span class="st">"prepare_libraries_spectra"</span><span class="op">)</span><span class="op">$</span><span class="va">names</span><span class="op">$</span><span class="va">mgf</span><span class="op">$</span><span class="va">compound_id</span>,</span>
@@ -96,12 +98,12 @@ to be used for spectral matching</p>
 <dd><p>File containing spectra</p></dd>
 
 
-<dt>output</dt>
-<dd><p>Output file</p></dd>
+<dt>output_neg</dt>
+<dd><p>Negative output file</p></dd>
 
 
-<dt>polarity</dt>
-<dd><p>MS polarity</p></dd>
+<dt>output_pos</dt>
+<dd><p>Positive output file</p></dd>
 
 
 <dt>metad</dt>
@@ -170,6 +172,10 @@ to be used for spectral matching</p>
 
 <dt>col_xl</dt>
 <dd><p>Name of the xlogp in mgf</p></dd>
+
+
+<dt>polarity</dt>
+<dd><p>MS polarity</p></dd>
 
 </dl></div>
 
