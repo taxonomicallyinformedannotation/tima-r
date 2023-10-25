@@ -66,9 +66,8 @@
     <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">prepare_params</span><span class="op">(</span></span>
 <span>  filename <span class="op">=</span> <span class="fu"><a href="get_params.html">get_params</a></span><span class="op">(</span>step <span class="op">=</span> <span class="st">"prepare_params"</span><span class="op">)</span><span class="op">$</span><span class="va">files</span><span class="op">$</span><span class="va">pattern</span>,</span>
 <span>  features <span class="op">=</span> <span class="fu"><a href="get_params.html">get_params</a></span><span class="op">(</span>step <span class="op">=</span> <span class="st">"prepare_params"</span><span class="op">)</span><span class="op">$</span><span class="va">files</span><span class="op">$</span><span class="va">features</span><span class="op">$</span><span class="va">raw</span>,</span>
+<span>  metadata <span class="op">=</span> <span class="fu"><a href="get_params.html">get_params</a></span><span class="op">(</span>step <span class="op">=</span> <span class="st">"prepare_params"</span><span class="op">)</span><span class="op">$</span><span class="va">files</span><span class="op">$</span><span class="va">metadata</span>,</span>
 <span>  spectra <span class="op">=</span> <span class="fu"><a href="get_params.html">get_params</a></span><span class="op">(</span>step <span class="op">=</span> <span class="st">"prepare_params"</span><span class="op">)</span><span class="op">$</span><span class="va">files</span><span class="op">$</span><span class="va">spectral</span><span class="op">$</span><span class="va">raw</span>,</span>
-<span>  gnps_job_id <span class="op">=</span> <span class="fu"><a href="get_params.html">get_params</a></span><span class="op">(</span>step <span class="op">=</span> <span class="st">"prepare_params"</span><span class="op">)</span><span class="op">$</span><span class="va">gnps</span><span class="op">$</span><span class="va">id</span>,</span>
-<span>  gnps_example_id <span class="op">=</span> <span class="fu"><a href="parse_yaml_paths.html">parse_yaml_paths</a></span><span class="op">(</span><span class="op">)</span><span class="op">$</span><span class="va">gnps</span><span class="op">$</span><span class="va">example</span>,</span>
 <span>  ms_mode <span class="op">=</span> <span class="fu"><a href="get_params.html">get_params</a></span><span class="op">(</span>step <span class="op">=</span> <span class="st">"prepare_params"</span><span class="op">)</span><span class="op">$</span><span class="va">ms</span><span class="op">$</span><span class="va">polarity</span>,</span>
 <span>  taxon <span class="op">=</span> <span class="fu"><a href="get_params.html">get_params</a></span><span class="op">(</span>step <span class="op">=</span> <span class="st">"prepare_params"</span><span class="op">)</span><span class="op">$</span><span class="va">organisms</span><span class="op">$</span><span class="va">taxon</span>,</span>
 <span>  summarise <span class="op">=</span> <span class="fu"><a href="get_params.html">get_params</a></span><span class="op">(</span>step <span class="op">=</span> <span class="st">"prepare_params"</span><span class="op">)</span><span class="op">$</span><span class="va">options</span><span class="op">$</span><span class="va">summarise</span>,</span>
@@ -83,19 +82,11 @@
 
 
 <dt>features</dt>
-<dd><p>File containing the features table</p></dd>
+<dd><p>File containing the metadata</p></dd>
 
 
 <dt>spectra</dt>
 <dd><p>File containing the spectra</p></dd>
-
-
-<dt>gnps_job_id</dt>
-<dd><p>GNPS job ID</p></dd>
-
-
-<dt>gnps_example_id</dt>
-<dd><p>GNPS example job ID</p></dd>
 
 
 <dt>ms_mode</dt>
