@@ -93,7 +93,7 @@
                         <h4 data-toc-skip class="author">Adriano
 Rutz</h4>
             
-            <h4 data-toc-skip class="date">2023-11-27</h4>
+            <h4 data-toc-skip class="date">2023-11-28</h4>
       
       <small class="dont-index">Source: <a href="https://github.com/taxonomicallyinformedannotation/tima-r/blob/HEAD/vignettes/III-processing.Rmd" class="external-link"><code>vignettes/III-processing.Rmd</code></a></small>
       <div class="d-none name"><code>III-processing.Rmd</code></div>
@@ -111,10 +111,10 @@ successfully, this should be a piece of cake, you deserve it!</p>
 <code>inst/params/user/weight_annotations.yaml</code>.</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/source.html" class="external-link">source</a></span><span class="op">(</span>file <span class="op">=</span> <span class="st">"inst/scripts/weight_annotations.R"</span><span class="op">)</span></span>
-<span><span class="co">#&gt; 2023-11-27 13:12:39.601929 This script performs <span style="color: #00BB00;">taxonomically informed scoring</span> and followed by <span style="color: #0000BB;">chemical consistency informed scoring</span> </span></span>
-<span><span class="co">#&gt; 2023-11-27 13:12:39.605584 Authors:  <span style="color: #00BB00;">AR</span> , <span style="color: #0000BB;">PMA</span> </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:14.735608 This script performs <span style="color: #00BB00;">taxonomically informed scoring</span> and followed by <span style="color: #0000BB;">chemical consistency informed scoring</span> </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:14.739557 Authors:  <span style="color: #00BB00;">AR</span> , <span style="color: #0000BB;">PMA</span> </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-11-27 13:12:39.605841 Contributors: ... </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:14.739804 Contributors: ... </span></span>
 <span><span class="co">#&gt; <span style="color: #BB0000;">✔ skip target dic_add</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target dic_clu</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target dic_neu_los</span></span></span>
@@ -159,7 +159,7 @@ successfully, this should be a piece of cake, you deserve it!</p>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target paths_urls_examples_spectra_mini</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ▶ start target lib_spe_is_lot_neg</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; File already exists. Skipping.</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ● built target lib_spe_is_lot_neg [0.001 seconds]</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ● built target lib_spe_is_lot_neg [0 seconds]</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target lib_spe_exp_mb_raw</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ▶ start target lib_spe_is_lot_pos</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; File already exists. Skipping.</span></span></span>
@@ -167,8 +167,8 @@ successfully, this should be a piece of cake, you deserve it!</p>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_fin_par2</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target lib_sop_ecm</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ▶ start target lib_sop_lot</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; A file with the same size is already present. Skipping</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ● built target lib_sop_lot [2.837 seconds]</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; </span>2023-11-28 00:47:20.655256 External error. Returning empty file instead. </span></span>
+<span><span class="co">#&gt; <span style="color: #BB0000;">● built target lib_sop_lot [2.991 seconds]</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_fin_par</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target lib_spe_is_lot_pre_neg</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target lib_spe_exp_mb_pre</span></span></span>
@@ -213,7 +213,11 @@ successfully, this should be a piece of cake, you deserve it!</p>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_pre_ann_sir</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_cre_edg_spe</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target par_pre_fea_tab</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target lib_sop_lot_pre</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ▶ start target lib_sop_lot_pre</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; </span>2023-11-28 00:47:21.006877 Loading and preparing LOTUS </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:21.083623 Exporting ... </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:21.083775 ... path to export is <span style="color: #00BB00;">data/interim/libraries/sop/lotus_prepared.tsv.gz</span> </span></span>
+<span><span class="co">#&gt; <span style="color: #BB0000;">● built target lib_sop_lot_pre [0.091 seconds]</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target lib_sop_ecm_pre</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target input_features</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target input_metadata</span></span></span>
@@ -230,156 +234,321 @@ successfully, this should be a piece of cake, you deserve it!</p>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target edg_spe</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target lib_rt_sop</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target lib_rt_rts</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target lib_sop_mer</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target lib_mer_str_met</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target lib_mer_str_nam</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target lib_mer_str_stereo</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target lib_mer_str_tax_cla</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target lib_mer_str_tax_npc</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target lib_mer_org_tax_ott</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target lib_mer_key</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target lib_add</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target ann_spe_pre</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target ann_sir_pre</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target tax_pre</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target ann_ms1_pre</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target ann_sir_pre_str</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target ann_sir_pre_can</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target ann_sir_pre_for</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target ann_ms1_pre_edg</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target ann_ms1_pre_ann</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ▶ start target lib_sop_mer</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; </span>2023-11-28 00:47:21.240308 Loading and concatenating prepared libraries </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:21.370631 Splitting the concatenated library into smaller pieces </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:21.388958 Led to 86 referenced structure-organism pairs </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:21.401758 Corresponding to 0 unique structures with stereo... </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:21.401861 and 0 unique structures without stereo </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:21.515547 among 2 unique organisms </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:21.528308 Keeping keys </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:21.528557 Keeping organisms </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:21.52863 Completing organisms taxonomy </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:21.611914 Testing if Open Tree of Life API is up </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:21.915634 Success! Submitting request... </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:22.341496 Request finished! </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:22.350224 Nothing found, returning empty dataframe </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:22.359871 Got OTTaxonomy! </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:22.368939 Keeping structures </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:22.369042 Completing structures metadata </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:22.369114 TODO </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:22.369179 Completing structures names </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:22.369239 TODO </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:22.369297 Completing structures taxonomy (classyfire) </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:22.369354 TODO </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:22.369411 Completing structures taxonomy (NPC) </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:22.369467 TODO </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:22.369524 Exporting ... </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:22.37418 ... path to used parameters is <span style="color: #00BB00;">data/interim/params</span> </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:22.826254 ... path to export is <span style="color: #00BB00;">data/interim/libraries/sop/merged/keys.tsv.gz</span> </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:22.829472 ... path to export is <span style="color: #00BB00;">data/interim/libraries/sop/merged/organisms/taxonomies/ott.tsv.gz</span> </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:22.830068 ... path to export is <span style="color: #00BB00;">data/interim/libraries/sop/merged/structures/stereo.tsv.gz</span> </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:22.831975 ... path to export is <span style="color: #00BB00;">data/interim/libraries/sop/merged/structures/metadata.tsv.gz</span> </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:22.833786 ... path to export is <span style="color: #00BB00;">data/interim/libraries/sop/merged/structures/names.tsv.gz</span> </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:22.83585 ... path to export is <span style="color: #00BB00;">data/interim/libraries/sop/merged/structures/taxonomies/classyfire.tsv.gz</span> </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:22.83666 ... path to export is <span style="color: #00BB00;">data/interim/libraries/sop/merged/structures/taxonomies/npc.tsv.gz</span> </span></span>
+<span><span class="co">#&gt; <span style="color: #BB0000;">● built target lib_sop_mer [1.625 seconds]</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ▶ start target lib_mer_str_met</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ● built target lib_mer_str_met [0 seconds]</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ▶ start target lib_mer_str_nam</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ● built target lib_mer_str_nam [0.001 seconds]</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ▶ start target lib_mer_str_stereo</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ● built target lib_mer_str_stereo [0 seconds]</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ▶ start target lib_mer_str_tax_cla</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ● built target lib_mer_str_tax_cla [0.001 seconds]</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ▶ start target lib_mer_str_tax_npc</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ● built target lib_mer_str_tax_npc [0 seconds]</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ▶ start target lib_mer_org_tax_ott</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ● built target lib_mer_org_tax_ott [0 seconds]</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ▶ start target lib_mer_key</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ● built target lib_mer_key [0 seconds]</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ▶ start target lib_add</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; </span>2023-11-28 00:47:23.749357 Loading files ... </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:23.749485 ... exact masses </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:23.77462 ... adducts </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:23.778441 ... clusters </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:23.785543 Treating adducts table </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:23.79235 Adding adducts to exact masses ... </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:23.792443 ... positive </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:23.910571 ... negative </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:23.937009 ... pure adducts masses ... </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:23.937411 ... positive </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:23.974493 ... negative </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:24.005944 Exporting ... </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:24.010788 ... path to used parameters is <span style="color: #00BB00;">data/interim/params</span> </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:24.034818 ... path to export is <span style="color: #00BB00;">data/interim/libraries/adducts/library_pos.tsv.gz</span> </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:24.038669 ... path to export is <span style="color: #00BB00;">data/interim/libraries/adducts/library_neg.tsv.gz</span> </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:24.041759 ... path to export is <span style="color: #00BB00;">data/interim/libraries/adducts/pos.tsv.gz</span> </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:24.042145 ... path to export is <span style="color: #00BB00;">data/interim/libraries/adducts/neg.tsv.gz</span> </span></span>
+<span><span class="co">#&gt; <span style="color: #BB0000;">● built target lib_add [0.323 seconds]</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ▶ start target ann_spe_pre</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; </span>2023-11-28 00:47:24.169989 Loading and formatting spectral matches </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:24.234909 Trying to look for already computed metadata </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:24.590779 Exporting ... </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:24.591715 ... path to used parameters is <span style="color: #00BB00;">data/interim/params</span> </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:24.610805 ... path to export is <span style="color: #00BB00;">data/interim/annotations/example_spectral_matches_prepared.tsv.gz</span> </span></span>
+<span><span class="co">#&gt; <span style="color: #BB0000;">● built target ann_spe_pre [0.457 seconds]</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ▶ start target ann_sir_pre</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; </span>2023-11-28 00:47:24.772567 Loading and formatting SIRIUS results </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:24.817912 Trying to look for already computed metadata </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:25.114196 Splitting SIRIUS results </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:25.119596 Exporting ... </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:25.120534 ... path to used parameters is <span style="color: #00BB00;">data/interim/params</span> </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:25.143918 ... path to export is <span style="color: #00BB00;">data/interim/annotations/example_canopus_prepared.tsv.gz</span> </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:25.144649 ... path to export is <span style="color: #00BB00;">data/interim/annotations/example_formula_prepared.tsv.gz</span> </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:25.145123 ... path to export is <span style="color: #00BB00;">data/interim/annotations/example_sirius_prepared.tsv.gz</span> </span></span>
+<span><span class="co">#&gt; <span style="color: #BB0000;">● built target ann_sir_pre [0.411 seconds]</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ▶ start target tax_pre</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; </span>2023-11-28 00:47:25.319067 Loading feature table </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:25.328976 Loading metadata table </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:25.329473 Formatting feature table ... </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:25.329553 ... WARNING: requires 'Peak area'</span></span>
+<span><span class="co">#&gt;               in columns (MZmine format) </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:25.329621 ... WARNING: or 'quant_' in columns (SLAW format) </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:25.353014 ... filtering top K intensities per feature </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:25.489672 Preparing organisms names </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:25.499833 Retrieving already computed Open Tree of Life Taxonomy </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:25.524455 Submitting the rest to OTL </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:25.536222 Testing if Open Tree of Life API is up </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:25.626869 Success! Submitting request... </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:26.00516 Request finished! </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:26.025378 Retrying with blk </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:26.230287 Getting taxonomy... </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:26.900359 Taxonomy retrieved! </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:26.93483 Got OTTaxonomy! </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:26.934944 Joining all results </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:26.938004 Joining top K with metadata table </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:26.941538 Joining with cleaned taxonomy table </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:27.555135 Exporting ... </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:27.556167 ... path to used parameters is <span style="color: #00BB00;">data/interim/params</span> </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:27.599493 ... path to export is <span style="color: #00BB00;">data/interim/taxa/example_taxed.tsv.gz</span> </span></span>
+<span><span class="co">#&gt; <span style="color: #BB0000;">● built target tax_pre [2.338 seconds]</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ▶ start target ann_ms1_pre</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; </span>2023-11-28 00:47:28.008877 ... single charge adducts table </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:28.04059 ... adducts masses for in source dimers and multicharged </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:28.044189 ... neutral lossses </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:28.044339 ... exact masses for MS1 annotation </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:28.230559 filtering desired adducts and adding mz tolerance </span></span>
+<span><span class="co">#&gt;  </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:28.251433 calculating rt tolerance ... </span></span>
+<span><span class="co">#&gt;  </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:28.252973 joining within given rt tolerance </span></span>
+<span><span class="co">#&gt;  </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:28.543182 adding delta mz tolerance for single charge adducts </span></span>
+<span><span class="co">#&gt;  </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:28.670559 forming clusters </span></span>
+<span><span class="co">#&gt;  </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:28.675869 calculating delta mz for single charge adducts and clusters </span></span>
+<span><span class="co">#&gt;  </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:28.701175 joining within given delta mz tolerance (neutral losses) </span></span>
+<span><span class="co">#&gt;  </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:28.745039 joining within given delta mz tolerance (adducts) </span></span>
+<span><span class="co">#&gt;  </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:28.804117 keeping initial and destination feature </span></span>
+<span><span class="co">#&gt;  </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:28.819934 joining with initial results (adducts) </span></span>
+<span><span class="co">#&gt;  </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:28.829453 joining with initial results (neutral losses) </span></span>
+<span><span class="co">#&gt;  </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:28.837676 joining within given mz tol to exact mass library </span></span>
+<span><span class="co">#&gt;  </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:28.84938 keeping unique exact masses and molecular formulas </span></span>
+<span><span class="co">#&gt;  </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:28.862547 joining exact masses with single charge adducts </span></span>
+<span><span class="co">#&gt;  </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:28.862643 Geting back to [1M] </span></span>
+<span><span class="co">#&gt;  </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:28.86623 calculating multicharged and in source dimers + mz tol </span></span>
+<span><span class="co">#&gt;  </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:28.892029 joining within given rt tolerance </span></span>
+<span><span class="co">#&gt;  </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:28.906717 joining within given mz tol and filtering possible adducts </span></span>
+<span><span class="co">#&gt;  </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:28.922911 joining single adducts, neutral losses, and multicharged </span></span>
+<span><span class="co">#&gt;  </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:28.929932 adding chemical classification </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:28.947105 MS1 annotation led to </span></span>
+<span><span class="co">#&gt;  <span style="color: #00BB00;">0</span> <span style="color: #00BB00;">annotations</span> , on </span></span>
+<span><span class="co">#&gt;  <span style="color: #0000BB;">0</span> <span style="color: #0000BB;">features</span> </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:28.963805 ... path to used parameters is <span style="color: #00BB00;">data/interim/params</span> </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:29.013438 ... path to export is <span style="color: #00BB00;">data/interim/features/example_edges_masses.tsv</span> </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:29.015053 ... path to export is <span style="color: #00BB00;">data/interim/annotations/example_gnps_prepared.tsv.gz</span> </span></span>
+<span><span class="co">#&gt; <span style="color: #BB0000;">● built target ann_ms1_pre [1.272 seconds]</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ▶ start target ann_sir_pre_str</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ● built target ann_sir_pre_str [0 seconds]</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ▶ start target ann_sir_pre_can</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ● built target ann_sir_pre_can [0 seconds]</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ▶ start target ann_sir_pre_for</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ● built target ann_sir_pre_for [0 seconds]</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ▶ start target ann_ms1_pre_edg</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ● built target ann_ms1_pre_edg [0 seconds]</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ▶ start target ann_ms1_pre_ann</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ● built target ann_ms1_pre_ann [0 seconds]</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target fea_edg_pre</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target ann_fil</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ▶ start target ann_fil</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; </span>2023-11-28 00:47:29.743227 ... features </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:29.773422 ... annotations </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:29.862061 ... retention times </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:29.89128 Filtering annotations outside of 0.15 minutes tolerance </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:29.911433 <span style="color: #00BB00;">3</span> Candidates were removed based on retention time. </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:29.927924 ... path to used parameters is <span style="color: #00BB00;">data/interim/params</span> </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:29.953151 ... path to export is <span style="color: #00BB00;">data/interim/annotations/example_annotations_filtered.tsv.gz</span> </span></span>
+<span><span class="co">#&gt; <span style="color: #BB0000;">● built target ann_fil [0.262 seconds]</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target fea_com</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target int_com</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skip target fea_com_pre</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ▶ start target ann_pre</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; </span>2023-11-27 13:12:45.894799 Loading files ... </span></span>
-<span><span class="co">#&gt; 2023-11-27 13:12:45.896563 ... components </span></span>
-<span><span class="co">#&gt; 2023-11-27 13:12:45.960525 ... edges </span></span>
-<span><span class="co">#&gt; 2023-11-27 13:12:45.993267 ... structure-organism pairs </span></span>
-<span><span class="co">#&gt; 2023-11-27 13:12:49.384838 ... canopus </span></span>
-<span><span class="co">#&gt; 2023-11-27 13:12:49.405935 ... formula </span></span>
-<span><span class="co">#&gt; 2023-11-27 13:12:49.426207 ... annotations </span></span>
-<span><span class="co">#&gt; 2023-11-27 13:12:51.266713 Re-arranging annotations </span></span>
-<span><span class="co">#&gt; 2023-11-27 13:12:52.803349 adding biological organism metadata </span></span>
-<span><span class="co">#&gt; 2023-11-27 13:12:53.293756 performing taxonomically informed scoring </span></span>
-<span><span class="co">#&gt; 2023-11-27 13:12:53.340585 filtering top  3  candidates and keeping only MS1 candidates with minimum </span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; </span>2023-11-28 00:47:30.154964 Loading files ... </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:30.155109 ... components </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:30.181349 ... edges </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:30.20895 ... structure-organism pairs </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:30.287078 ... canopus </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:30.309703 ... formula </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:30.337517 ... annotations </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:30.38121 Re-arranging annotations </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:30.438488 adding biological organism metadata </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:30.484369 performing taxonomically informed scoring </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:30.531332 filtering top  3  candidates and keeping only MS1 candidates with minimum </span></span>
 <span><span class="co">#&gt;  0.6  biological score </span></span>
 <span><span class="co">#&gt;  OR 0.6 chemical score </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-11-27 13:12:53.644208 adding "notClassified" </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:30.759634 adding "notClassified" </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-11-27 13:12:54.737778 calculating biological score at all levels ... </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:30.80333 calculating biological score at all levels ... </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-11-27 13:12:54.737932 ... domain </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:30.803478 ... domain </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-11-27 13:12:54.754343 ... kingdom </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:30.818066 ... kingdom </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-11-27 13:12:54.768383 ... phylum </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:30.831393 ... phylum </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-11-27 13:12:54.782417 ... class </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:30.844604 ... class </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-11-27 13:12:54.797133 ... order </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:30.857677 ... order </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-11-27 13:12:54.817882 ... family </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:30.870753 ... family </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-11-27 13:12:54.849361 ... tribe </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:30.889211 ... tribe </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-11-27 13:12:54.876572 ... genus </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:30.902136 ... genus </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-11-27 13:12:55.027255 ... species </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:30.915174 ... species </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-11-27 13:12:55.324951 ... varietas </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:30.928104 ... varietas </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-11-27 13:12:55.3408 ... keeping best biological score </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:30.941099 ... keeping best biological score </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-11-27 13:12:56.866644 ... calculating weighted biological score </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:30.991638 ... calculating weighted biological score </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-11-27 13:12:57.426928 taxonomically informed scoring led to </span></span>
-<span><span class="co">#&gt;  <span style="color: #555555;">54475</span> annotations reranked at the <span style="color: #555555;">kingdom</span> level, </span></span>
-<span><span class="co">#&gt;  <span style="color: #BBBBBB;">53939</span> annotations reranked at the <span style="color: #BBBBBB;">phylum</span> level, </span></span>
-<span><span class="co">#&gt;  <span style="color: #00BBBB;">45924</span> annotations reranked at the <span style="color: #00BBBB;">class</span> level, </span></span>
-<span><span class="co">#&gt;  <span style="color: #BB00BB;">13140</span> annotations reranked at the <span style="color: #BB00BB;">order</span> level, </span></span>
-<span><span class="co">#&gt;  <span style="color: #0000BB;">10843</span> annotations reranked at the <span style="color: #0000BB;">family</span> level, </span></span>
-<span><span class="co">#&gt;  <span style="color: #0000BB;">1500</span> annotations reranked at the <span style="color: #0000BB;">tribe</span> level, </span></span>
-<span><span class="co">#&gt;  <span style="color: #BBBB00;">1197</span> annotations reranked at the <span style="color: #BBBB00;">genus</span> level, </span></span>
-<span><span class="co">#&gt;  <span style="color: #00BB00;">411</span> annotations reranked at the <span style="color: #00BB00;">species</span> level, </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:31.014163 taxonomically informed scoring led to </span></span>
+<span><span class="co">#&gt;  <span style="color: #555555;">0</span> annotations reranked at the <span style="color: #555555;">kingdom</span> level, </span></span>
+<span><span class="co">#&gt;  <span style="color: #BBBBBB;">0</span> annotations reranked at the <span style="color: #BBBBBB;">phylum</span> level, </span></span>
+<span><span class="co">#&gt;  <span style="color: #00BBBB;">0</span> annotations reranked at the <span style="color: #00BBBB;">class</span> level, </span></span>
+<span><span class="co">#&gt;  <span style="color: #BB00BB;">0</span> annotations reranked at the <span style="color: #BB00BB;">order</span> level, </span></span>
+<span><span class="co">#&gt;  <span style="color: #0000BB;">0</span> annotations reranked at the <span style="color: #0000BB;">family</span> level, </span></span>
+<span><span class="co">#&gt;  <span style="color: #0000BB;">0</span> annotations reranked at the <span style="color: #0000BB;">tribe</span> level, </span></span>
+<span><span class="co">#&gt;  <span style="color: #BBBB00;">0</span> annotations reranked at the <span style="color: #BBBB00;">genus</span> level, </span></span>
+<span><span class="co">#&gt;  <span style="color: #00BB00;">0</span> annotations reranked at the <span style="color: #00BB00;">species</span> level, </span></span>
 <span><span class="co">#&gt;  and <span style="color: #BB0000;">0</span> annotations reranked at the <span style="color: #BB0000;">variety</span> level. </span></span>
 <span><span class="co">#&gt;  WITHOUT TAKING CONSISTENCY SCORE INTO ACCOUNT! (for later predictions) </span></span>
-<span><span class="co">#&gt; 2023-11-27 13:12:57.677622 calculating chemical consistency</span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:31.0527 calculating chemical consistency</span></span>
 <span><span class="co">#&gt;               features with at least 2 neighbors ... </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-11-27 13:12:57.823099 ... among all edges ... </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:31.087368 ... among all edges ... </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-11-27 13:12:57.823288 ... at the (classyfire) kingdom level </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:31.087489 ... at the (classyfire) kingdom level </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-11-27 13:12:58.043808 ... at the (NPC) pathway level </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:31.185391 ... at the (NPC) pathway level </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-11-27 13:12:58.623627 ... at the (classyfire) superclass level </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:31.28717 ... at the (classyfire) superclass level </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-11-27 13:12:59.032561 ... at the (NPC) superclass level </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:31.385641 ... at the (NPC) superclass level </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-11-27 13:12:59.701524 ... at the (classyfire) class level </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:31.487257 ... at the (classyfire) class level </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-11-27 13:13:00.576381 ... at the (NPC) class level </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:31.589622 ... at the (NPC) class level </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-11-27 13:13:02.090158 ... at the (classyfire) parent level </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:31.686738 ... at the (classyfire) parent level </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-11-27 13:13:03.790779 splitting already computed predictions </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:31.788303 splitting already computed predictions </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-11-27 13:13:04.187645 joining all except -1 together </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:31.811814 joining all except -1 together </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-11-27 13:13:05.517914 adding dummy consistency for features</span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:31.858181 adding dummy consistency for features</span></span>
 <span><span class="co">#&gt;               with less than 2 neighbors </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-11-27 13:13:05.559224 adding already computed predictions back </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:31.87043 adding already computed predictions back </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-11-27 13:13:07.237797 calculating chemical score at all levels ... </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:31.92278 calculating chemical score at all levels ... </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-11-27 13:13:07.237945 ... (classyfire) kingdom </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:31.922905 ... (classyfire) kingdom </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-11-27 13:13:07.251066 ... (NPC) pathway </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:31.929214 ... (NPC) pathway </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-11-27 13:13:07.267429 ... (classyfire) superclass </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:31.935355 ... (classyfire) superclass </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-11-27 13:13:07.282909 ... (NPC) superclass </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:31.941419 ... (NPC) superclass </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-11-27 13:13:07.323528 ... (classyfire) class </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:31.947464 ... (classyfire) class </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-11-27 13:13:07.370604 ... (NPC) class </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:31.953509 ... (NPC) class </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-11-27 13:13:07.495861 ... (classyfire) parent </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:31.959544 ... (classyfire) parent </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-11-27 13:13:07.632969 ... keeping best chemical score </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:31.965607 ... keeping best chemical score </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-11-27 13:13:08.193941 ... calculating weighted chemical score </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:31.988431 ... calculating weighted chemical score </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-11-27 13:13:08.398914 chemically informed scoring led to </span></span>
-<span><span class="co">#&gt;  <span style="color: #555555;">51519</span> annotations reranked at the <span style="color: #555555;">(classyfire) kingdom</span> level, </span></span>
-<span><span class="co">#&gt;  <span style="color: #00BBBB;">33774</span> annotations reranked at the <span style="color: #00BBBB;">(NPC) pathway</span> level, </span></span>
-<span><span class="co">#&gt;  <span style="color: #BB00BB;">26386</span> annotations reranked at the <span style="color: #BB00BB;">(classyfire) superclass</span> level, </span></span>
-<span><span class="co">#&gt;  <span style="color: #0000BB;">12696</span> annotations reranked at the <span style="color: #0000BB;">(NPC) superclass</span> level, </span></span>
-<span><span class="co">#&gt;  <span style="color: #BBBB00;">26367</span> annotations reranked at the <span style="color: #BBBB00;">(classyfire) class</span> level, </span></span>
-<span><span class="co">#&gt;  <span style="color: #00BB00;">12577</span> annotations reranked at the <span style="color: #00BB00;">(NPC) class</span> level, and </span></span>
-<span><span class="co">#&gt;  <span style="color: #BB0000;">12046</span> annotations reranked at the <span style="color: #BB0000;">(classyfire) parent</span> level. </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:32.011858 chemically informed scoring led to </span></span>
+<span><span class="co">#&gt;  <span style="color: #555555;">0</span> annotations reranked at the <span style="color: #555555;">(classyfire) kingdom</span> level, </span></span>
+<span><span class="co">#&gt;  <span style="color: #00BBBB;">0</span> annotations reranked at the <span style="color: #00BBBB;">(NPC) pathway</span> level, </span></span>
+<span><span class="co">#&gt;  <span style="color: #BB00BB;">0</span> annotations reranked at the <span style="color: #BB00BB;">(classyfire) superclass</span> level, </span></span>
+<span><span class="co">#&gt;  <span style="color: #0000BB;">0</span> annotations reranked at the <span style="color: #0000BB;">(NPC) superclass</span> level, </span></span>
+<span><span class="co">#&gt;  <span style="color: #BBBB00;">0</span> annotations reranked at the <span style="color: #BBBB00;">(classyfire) class</span> level, </span></span>
+<span><span class="co">#&gt;  <span style="color: #00BB00;">0</span> annotations reranked at the <span style="color: #00BB00;">(NPC) class</span> level, and </span></span>
+<span><span class="co">#&gt;  <span style="color: #BB0000;">0</span> annotations reranked at the <span style="color: #BB0000;">(classyfire) parent</span> level. </span></span>
 <span><span class="co">#&gt;  WITHOUT TAKING CONSISTENCY SCORE INTO ACCOUNT! </span></span>
-<span><span class="co">#&gt; 2023-11-27 13:13:11.288352 adding initial metadata (RT, etc.) and simplifying columns </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:32.057431 adding initial metadata (RT, etc.) and simplifying columns </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-11-27 13:13:11.391716 adding references </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:32.080508 adding references </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-11-27 13:13:15.371081 selecting columns to export </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:32.289307 selecting columns to export </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-11-27 13:13:15.949359 adding consensus again to droped candidates </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:32.344745 adding consensus again to droped candidates </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2023-11-27 13:13:17.519418 Exporting ... </span></span>
-<span><span class="co">#&gt; 2023-11-27 13:13:17.521786 Directory data/processed/231127_131317_example created. </span></span>
-<span><span class="co">#&gt; 2023-11-27 13:13:17.521889 ... path to used parameters is <span style="color: #00BB00;">data/processed/231127_131317_example</span> </span></span>
-<span><span class="co">#&gt; 2023-11-27 13:13:18.037408 ... path to used parameters is <span style="color: #00BB00;">data/processed/231127_131317_example</span> </span></span>
-<span><span class="co">#&gt; 2023-11-27 13:13:18.065231 ... path to export is <span style="color: #00BB00;">data/processed/231127_131317_example/example_results.tsv</span> </span></span>
-<span><span class="co">#&gt; <span style="color: #BB0000;">● built target ann_pre [32.255 seconds]</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ▶ end pipeline [37.226 seconds]</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; </span>2023-11-27 13:13:18.21235 Script finished in <span style="color: #00BB00;">38.61056 secs</span></span></span></code></pre></div>
+<span><span class="co">#&gt; 2023-11-28 00:47:32.441858 Exporting ... </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:32.443197 Directory data/processed/231128_004732_example created. </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:32.443313 ... path to used parameters is <span style="color: #00BB00;">data/processed/231128_004732_example</span> </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:32.467871 ... path to used parameters is <span style="color: #00BB00;">data/processed/231128_004732_example</span> </span></span>
+<span><span class="co">#&gt; 2023-11-28 00:47:32.493001 ... path to export is <span style="color: #00BB00;">data/processed/231128_004732_example/example_results.tsv</span> </span></span>
+<span><span class="co">#&gt; <span style="color: #BB0000;">● built target ann_pre [2.38 seconds]</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ▶ end pipeline [16.456 seconds]</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; Warning messages:</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; 1: experimental are not matched </span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; 2: BLK are not matched </span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; 3: blk are not matched </span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; 4: 2 targets produced warnings. Run targets::tar_meta(fields = warnings, complete_only = TRUE) for the messages. </span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; </span>2023-11-28 00:47:32.536427 Script finished in <span style="color: #00BB00;">17.80097 secs</span></span></span></code></pre></div>
 <p>The final exported file is formatted in order to be easily imported
 in <a href="https://cytoscape.org/" class="external-link">Cytoscape</a> to further explore
 your data!</p>
