@@ -121,6 +121,9 @@
     <loc>https://taxonomicallyinformedannotation.github.io/tima-r/reference/fake_ecmdb.html</loc>
   </url>
   <url>
+    <loc>https://taxonomicallyinformedannotation.github.io/tima-r/reference/fake_hmdb.html</loc>
+  </url>
+  <url>
     <loc>https://taxonomicallyinformedannotation.github.io/tima-r/reference/fake_lotus.html</loc>
   </url>
   <url>
@@ -218,6 +221,9 @@
   </url>
   <url>
     <loc>https://taxonomicallyinformedannotation.github.io/tima-r/reference/prepare_libraries_sop_ecmdb.html</loc>
+  </url>
+  <url>
+    <loc>https://taxonomicallyinformedannotation.github.io/tima-r/reference/prepare_libraries_sop_hmdb.html</loc>
   </url>
   <url>
     <loc>https://taxonomicallyinformedannotation.github.io/tima-r/reference/prepare_libraries_sop_lotus.html</loc>
