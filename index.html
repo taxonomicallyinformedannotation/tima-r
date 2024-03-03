@@ -92,8 +92,8 @@
 <!-- badges: start -->
 
 <p>The initial work is available at <a href="https://doi.org/10.3389/fpls.2019.01329" class="external-link uri">https://doi.org/10.3389/fpls.2019.01329</a>, with many improvements made since then. The workflow is illustrated below.</p>
-<div class="figure">
-<img src="https://raw.githubusercontent.com/taxonomicallyinformedannotation/tima-r/main/man/figures/tima.svg" alt=""><p class="caption">Workflow</p>
+<div class="float">
+<img src="https://raw.githubusercontent.com/taxonomicallyinformedannotation/tima-r/main/man/figures/tima.svg" alt="Workflow"><div class="figcaption">Workflow</div>
 </div>
 <p>This repository contains everything needed to perform <strong>T</strong>axonomically <strong>I</strong>nformed <strong>M</strong>etabolite <strong>A</strong>nnotation.</p>
 <p>It is provided with an example from well-known pharmacopoeia plants.</p>
@@ -112,27 +112,27 @@
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
 </h2>
 <p>As the package is not (yet) available on CRAN, you will need to install the development version, therefore:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/taxonomicallyinformedannotation/tima-r.git</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> tima-r</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="ex">Rscript</span> inst/scripts/install.R</span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/taxonomicallyinformedannotation/tima-r.git</span>
+<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a><span class="bu">cd</span> tima-r</span>
+<span id="cb1-3"><a href="#cb1-3" tabindex="-1"></a><span class="ex">Rscript</span> inst/scripts/install.R</span></code></pre></div>
 <p>Normally, everything you need should then be installed (as tested in <a href="https://github.com/taxonomicallyinformedannotation/tima-r/actions/workflows/external-use.yaml" class="external-link">here</a>). If for some reason, some packages were not installed, try to install them manually. To avoid such issues, we offer a containerized version (see <a href="#docker">Docker</a>).</p>
 <p>Once installed, you are ready to go through our <a href="https://taxonomicallyinformedannotation.github.io/tima-r/articles/">documentation</a>, with the major steps detailed.</p>
 <p>In case you do not have your data ready, you can obtain some example data (set of 8,000 spectra) using:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">Rscript</span> inst/scripts/get_example_spectra.R</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">Rscript</span> inst/scripts/get_example_features.R</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="ex">Rscript</span> inst/scripts/get_example_metadata.R</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Rscript inst/scripts/get_example_sirius.R</span></span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a><span class="ex">Rscript</span> inst/scripts/get_example_spectra.R</span>
+<span id="cb2-2"><a href="#cb2-2" tabindex="-1"></a><span class="ex">Rscript</span> inst/scripts/get_example_features.R</span>
+<span id="cb2-3"><a href="#cb2-3" tabindex="-1"></a><span class="ex">Rscript</span> inst/scripts/get_example_metadata.R</span>
+<span id="cb2-4"><a href="#cb2-4" tabindex="-1"></a><span class="co"># Rscript inst/scripts/get_example_sirius.R</span></span></code></pre></div>
 <p>Once you are done, you can open a small GUI to adapt your parameters and launch your job:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">Rscript</span> inst/scripts/run_app.R</span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="ex">Rscript</span> inst/scripts/run_app.R</span></code></pre></div>
 <p>This command will open a small app in your default browser.</p>
 <div class="section level3">
 <h3 id="docker">Docker<a class="anchor" aria-label="anchor" href="#docker"></a>
 </h3>
 <p>A container is also available, together with a small compose file. Main commands are below:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> pull adafede/tima-r</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="co"># docker build . -t adafede/tima-r</span></span></code></pre></div>
-<div class="sourceCode" id="cb5"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> compose up tima-gui</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="co"># docker compose up tima-full</span></span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a><span class="ex">docker</span> pull adafede/tima-r</span>
+<span id="cb4-2"><a href="#cb4-2" tabindex="-1"></a><span class="co"># docker build . -t adafede/tima-r</span></span></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a><span class="ex">docker</span> compose up tima-gui</span>
+<span id="cb5-2"><a href="#cb5-2" tabindex="-1"></a><span class="co"># docker compose up tima-full</span></span></code></pre></div>
 </div>
 </div>
 <div class="section level2">
