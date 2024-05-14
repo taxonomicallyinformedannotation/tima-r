@@ -96,29 +96,39 @@
 <img src="https://raw.githubusercontent.com/taxonomicallyinformedannotation/tima-r/main/man/figures/tima.svg" alt="Workflow"><div class="figcaption">Workflow</div>
 </div>
 <p>This repository contains everything needed to perform <strong>T</strong>axonomically <strong>I</strong>nformed <strong>M</strong>etabolite <strong>A</strong>nnotation.</p>
-<p>It is provided with an example from well-known pharmacopoeia plants.</p>
+<div class="section level2">
+<h2 id="requirements">Requirements<a class="anchor" aria-label="anchor" href="#requirements"></a>
+</h2>
 <p>Here is what you <em>minimally</em> need:</p>
 <ul>
-<li>A feature list with <em>or without</em> candidate annotations, if you are using GNPS, it can be your GNPS job ID.</li>
-<li>The source organism of the extract you are annotating, if you are associating metadata within GNPS, it can be your GNPS job ID.</li>
-<li>An edge list, if you are using GNPS, it can be your GNPS job ID.</li>
+<li>A feature list (.csv) (see <a href="https://github.com/taxonomicallyinformedannotation/tima-example-files/blob/main/example_features.csv" class="external-link">example features</a>)</li>
+<li>A spectral file corresponding to the feature list (.mgf) (see <a href="https://github.com/taxonomicallyinformedannotation/tima-example-files/blob/main/example_spectra_mini.mgf" class="external-link">example spectra</a>)</li>
+<li>The biological source(s) of the sample(s) you are annotating (.csv) (see <a href="https://github.com/taxonomicallyinformedannotation/tima-example-files/blob/main/example_metadata.tsv" class="external-link">example metadata</a>) (File is optional if only a single organism)</li>
 </ul>
 <p>Optionally, you may want to add:</p>
 <ul>
 <li>An in-house structure-organism pairs library (we provide <strong><a href="https://lotusnprod.github.io/lotus-manuscript/" class="external-link">LOTUS</a></strong> as starting point for each user)</li>
-<li>Your own manual or automated annotations (we currently support annotations coming from ISDB and SIRIUS (with some limitations))</li>
+<li>Your own manual or automated annotations (we currently support annotations coming from SIRIUS (with some limitations))</li>
 </ul>
+</div>
 <div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
 </h2>
+<div class="section level3">
+<h3 id="r">R<a class="anchor" aria-label="anchor" href="#r"></a>
+</h3>
 <p>R (&gt;= 4.4.0) is required. Please install it on your machine using the official binaries (<a href="https://cran.r-project.org/" class="external-link uri">https://cran.r-project.org/</a>).</p>
+</div>
+<div class="section level3">
+<h3 id="tima-r">TIMA-R<a class="anchor" aria-label="anchor" href="#tima-r"></a>
+</h3>
 <p>As the package is not (yet) available on CRAN, you will need to install the development version, therefore:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/taxonomicallyinformedannotation/tima-r.git</span>
 <span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a><span class="bu">cd</span> tima-r</span>
 <span id="cb1-3"><a href="#cb1-3" tabindex="-1"></a><span class="ex">Rscript</span> inst/scripts/install.R</span></code></pre></div>
 <p>Normally, everything you need should then be installed (as tested in <a href="https://github.com/taxonomicallyinformedannotation/tima-r/actions/workflows/external-use.yaml" class="external-link">here</a>). If for some reason, some packages were not installed, try to install them manually. To avoid such issues, we offer a containerized version (see <a href="#docker">Docker</a>).</p>
 <p>Once installed, you are ready to go through our <a href="https://taxonomicallyinformedannotation.github.io/tima-r/articles/">documentation</a>, with the major steps detailed.</p>
-<p>In case you do not have your data ready, you can obtain some example data (set of 8,000 spectra) using:</p>
+<p>In case you do not have your data ready, you can obtain some example data (set of 7,000+ spectra) using:</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a><span class="ex">Rscript</span> inst/scripts/get_example_spectra.R</span>
 <span id="cb2-2"><a href="#cb2-2" tabindex="-1"></a><span class="ex">Rscript</span> inst/scripts/get_example_features.R</span>
 <span id="cb2-3"><a href="#cb2-3" tabindex="-1"></a><span class="ex">Rscript</span> inst/scripts/get_example_metadata.R</span>
@@ -126,6 +136,7 @@
 <p>Once you are done, you can open a small GUI to adapt your parameters and launch your job:</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="ex">Rscript</span> inst/scripts/run_app.R</span></code></pre></div>
 <p>This command will open a small app in your default browser.</p>
+</div>
 <div class="section level3">
 <h3 id="docker">Docker<a class="anchor" aria-label="anchor" href="#docker"></a>
 </h3>
