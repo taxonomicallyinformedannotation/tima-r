@@ -10,7 +10,7 @@
     
     <a class="navbar-brand me-2" href="../index.html">timaR</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">2.9.4</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">2.9.5</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -72,6 +72,7 @@
 <span>    <span class="st">"prepare_annotations_sirius"</span><span class="op">)</span><span class="op">$</span><span class="va">files</span><span class="op">$</span><span class="va">annotations</span><span class="op">$</span><span class="va">prepared</span><span class="op">$</span><span class="va">canopus</span>,</span>
 <span>  output_for <span class="op">=</span> <span class="fu"><a href="get_params.html">get_params</a></span><span class="op">(</span>step <span class="op">=</span></span>
 <span>    <span class="st">"prepare_annotations_sirius"</span><span class="op">)</span><span class="op">$</span><span class="va">files</span><span class="op">$</span><span class="va">annotations</span><span class="op">$</span><span class="va">prepared</span><span class="op">$</span><span class="va">formula</span>,</span>
+<span>  sirius_version <span class="op">=</span> <span class="fu"><a href="get_params.html">get_params</a></span><span class="op">(</span>step <span class="op">=</span> <span class="st">"prepare_annotations_sirius"</span><span class="op">)</span><span class="op">$</span><span class="va">tools</span><span class="op">$</span><span class="va">sirius</span><span class="op">$</span><span class="va">version</span>,</span>
 <span>  str_stereo <span class="op">=</span> <span class="fu"><a href="get_params.html">get_params</a></span><span class="op">(</span>step <span class="op">=</span></span>
 <span>    <span class="st">"prepare_annotations_sirius"</span><span class="op">)</span><span class="op">$</span><span class="va">files</span><span class="op">$</span><span class="va">libraries</span><span class="op">$</span><span class="va">sop</span><span class="op">$</span><span class="va">merged</span><span class="op">$</span><span class="va">structures</span><span class="op">$</span><span class="va">stereo</span>,</span>
 <span>  str_met <span class="op">=</span> <span class="fu"><a href="get_params.html">get_params</a></span><span class="op">(</span>step <span class="op">=</span></span>
@@ -101,6 +102,10 @@
 
 <dt>output_for</dt>
 <dd><p>Output where to save prepared formula results</p></dd>
+
+
+<dt>sirius_version</dt>
+<dd><p>Sirius version</p></dd>
 
 
 <dt>str_stereo</dt>

@@ -268,10 +268,13 @@
     <loc>https://taxonomicallyinformedannotation.github.io/tima-r/reference/select_annotations_columns.html</loc>
   </url>
   <url>
-    <loc>https://taxonomicallyinformedannotation.github.io/tima-r/reference/select_sirius_columns.html</loc>
+    <loc>https://taxonomicallyinformedannotation.github.io/tima-r/reference/select_sirius_columns_canopus.html</loc>
   </url>
   <url>
-    <loc>https://taxonomicallyinformedannotation.github.io/tima-r/reference/select_sirius_columns_2.html</loc>
+    <loc>https://taxonomicallyinformedannotation.github.io/tima-r/reference/select_sirius_columns_formulas.html</loc>
+  </url>
+  <url>
+    <loc>https://taxonomicallyinformedannotation.github.io/tima-r/reference/select_sirius_columns_structures.html</loc>
   </url>
   <url>
     <loc>https://taxonomicallyinformedannotation.github.io/tima-r/reference/select_sop_columns.html</loc>
