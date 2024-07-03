@@ -82,10 +82,7 @@
 <span>    <span class="st">"annotate_masses"</span><span class="op">)</span><span class="op">$</span><span class="va">files</span><span class="op">$</span><span class="va">libraries</span><span class="op">$</span><span class="va">sop</span><span class="op">$</span><span class="va">merged</span><span class="op">$</span><span class="va">structures</span><span class="op">$</span><span class="va">taxonomies</span><span class="op">$</span><span class="va">cla</span>,</span>
 <span>  str_tax_npc <span class="op">=</span> <span class="fu"><a href="get_params.html">get_params</a></span><span class="op">(</span>step <span class="op">=</span></span>
 <span>    <span class="st">"annotate_masses"</span><span class="op">)</span><span class="op">$</span><span class="va">files</span><span class="op">$</span><span class="va">libraries</span><span class="op">$</span><span class="va">sop</span><span class="op">$</span><span class="va">merged</span><span class="op">$</span><span class="va">structures</span><span class="op">$</span><span class="va">taxonomies</span><span class="op">$</span><span class="va">npc</span>,</span>
-<span>  name <span class="op">=</span> <span class="fu"><a href="get_params.html">get_params</a></span><span class="op">(</span>step <span class="op">=</span> <span class="st">"annotate_masses"</span><span class="op">)</span><span class="op">$</span><span class="va">files</span><span class="op">$</span><span class="va">libraries</span><span class="op">$</span><span class="va">adducts</span><span class="op">$</span><span class="va">prepared</span>,</span>
 <span>  adducts_list <span class="op">=</span> <span class="fu"><a href="get_params.html">get_params</a></span><span class="op">(</span>step <span class="op">=</span> <span class="st">"annotate_masses"</span><span class="op">)</span><span class="op">$</span><span class="va">ms</span><span class="op">$</span><span class="va">adducts</span>,</span>
-<span>  adducts_neg <span class="op">=</span> <span class="fu"><a href="get_params.html">get_params</a></span><span class="op">(</span>step <span class="op">=</span> <span class="st">"annotate_masses"</span><span class="op">)</span><span class="op">$</span><span class="va">files</span><span class="op">$</span><span class="va">libraries</span><span class="op">$</span><span class="va">adducts</span><span class="op">$</span><span class="va">neg</span>,</span>
-<span>  adducts_pos <span class="op">=</span> <span class="fu"><a href="get_params.html">get_params</a></span><span class="op">(</span>step <span class="op">=</span> <span class="st">"annotate_masses"</span><span class="op">)</span><span class="op">$</span><span class="va">files</span><span class="op">$</span><span class="va">libraries</span><span class="op">$</span><span class="va">adducts</span><span class="op">$</span><span class="va">pos</span>,</span>
 <span>  adducts_masses_list <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/system.file.html" class="external-link">system.file</a></span><span class="op">(</span><span class="st">"extdata"</span>, <span class="st">"adducts.tsv"</span>, package <span class="op">=</span> <span class="st">"timaR"</span><span class="op">)</span>,</span>
 <span>  clusters_neg <span class="op">=</span> <span class="fu"><a href="get_params.html">get_params</a></span><span class="op">(</span>step <span class="op">=</span> <span class="st">"annotate_masses"</span><span class="op">)</span><span class="op">$</span><span class="va">ms</span><span class="op">$</span><span class="va">clusters</span><span class="op">$</span><span class="va">neg</span>,</span>
 <span>  clusters_pos <span class="op">=</span> <span class="fu"><a href="get_params.html">get_params</a></span><span class="op">(</span>step <span class="op">=</span> <span class="st">"annotate_masses"</span><span class="op">)</span><span class="op">$</span><span class="va">ms</span><span class="op">$</span><span class="va">clusters</span><span class="op">$</span><span class="va">pos</span>,</span>
@@ -147,20 +144,8 @@
 <dd><p>File containing NPClassifier taxonomy</p></dd>
 
 
-<dt>name</dt>
-<dd><p>Name of the adducts library</p></dd>
-
-
 <dt>adducts_list</dt>
 <dd><p>List of adducts to be used</p></dd>
-
-
-<dt>adducts_neg</dt>
-<dd><p>Negative adducts to be used</p></dd>
-
-
-<dt>adducts_pos</dt>
-<dd><p>Positive adducts to be used</p></dd>
 
 
 <dt>adducts_masses_list</dt>

@@ -55,6 +55,9 @@
     <loc>https://taxonomicallyinformedannotation.github.io/tima-r/reference/calculate_entropy.html</loc>
   </url>
   <url>
+    <loc>https://taxonomicallyinformedannotation.github.io/tima-r/reference/calculate_mass_from_adduct.html</loc>
+  </url>
+  <url>
     <loc>https://taxonomicallyinformedannotation.github.io/tima-r/reference/clean_bio.html</loc>
   </url>
   <url>
@@ -71,9 +74,6 @@
   </url>
   <url>
     <loc>https://taxonomicallyinformedannotation.github.io/tima-r/reference/complement_metadata_structures.html</loc>
-  </url>
-  <url>
-    <loc>https://taxonomicallyinformedannotation.github.io/tima-r/reference/create_adducts.html</loc>
   </url>
   <url>
     <loc>https://taxonomicallyinformedannotation.github.io/tima-r/reference/create_components.html</loc>
@@ -190,6 +190,9 @@
     <loc>https://taxonomicallyinformedannotation.github.io/tima-r/reference/normalize_peaks.html</loc>
   </url>
   <url>
+    <loc>https://taxonomicallyinformedannotation.github.io/tima-r/reference/parse_adduct.html</loc>
+  </url>
+  <url>
     <loc>https://taxonomicallyinformedannotation.github.io/tima-r/reference/parse_cli_params.html</loc>
   </url>
   <url>
@@ -218,9 +221,6 @@
   </url>
   <url>
     <loc>https://taxonomicallyinformedannotation.github.io/tima-r/reference/prepare_features_tables.html</loc>
-  </url>
-  <url>
-    <loc>https://taxonomicallyinformedannotation.github.io/tima-r/reference/prepare_libraries_adducts.html</loc>
   </url>
   <url>
     <loc>https://taxonomicallyinformedannotation.github.io/tima-r/reference/prepare_libraries_rt.html</loc>
