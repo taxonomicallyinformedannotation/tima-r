@@ -83,11 +83,8 @@
 <span>  str_tax_npc <span class="op">=</span> <span class="fu"><a href="get_params.html">get_params</a></span><span class="op">(</span>step <span class="op">=</span></span>
 <span>    <span class="st">"annotate_masses"</span><span class="op">)</span><span class="op">$</span><span class="va">files</span><span class="op">$</span><span class="va">libraries</span><span class="op">$</span><span class="va">sop</span><span class="op">$</span><span class="va">merged</span><span class="op">$</span><span class="va">structures</span><span class="op">$</span><span class="va">taxonomies</span><span class="op">$</span><span class="va">npc</span>,</span>
 <span>  adducts_list <span class="op">=</span> <span class="fu"><a href="get_params.html">get_params</a></span><span class="op">(</span>step <span class="op">=</span> <span class="st">"annotate_masses"</span><span class="op">)</span><span class="op">$</span><span class="va">ms</span><span class="op">$</span><span class="va">adducts</span>,</span>
-<span>  adducts_masses_list <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/system.file.html" class="external-link">system.file</a></span><span class="op">(</span><span class="st">"extdata"</span>, <span class="st">"adducts.tsv"</span>, package <span class="op">=</span> <span class="st">"timaR"</span><span class="op">)</span>,</span>
-<span>  clusters_neg <span class="op">=</span> <span class="fu"><a href="get_params.html">get_params</a></span><span class="op">(</span>step <span class="op">=</span> <span class="st">"annotate_masses"</span><span class="op">)</span><span class="op">$</span><span class="va">ms</span><span class="op">$</span><span class="va">clusters</span><span class="op">$</span><span class="va">neg</span>,</span>
-<span>  clusters_pos <span class="op">=</span> <span class="fu"><a href="get_params.html">get_params</a></span><span class="op">(</span>step <span class="op">=</span> <span class="st">"annotate_masses"</span><span class="op">)</span><span class="op">$</span><span class="va">ms</span><span class="op">$</span><span class="va">clusters</span><span class="op">$</span><span class="va">pos</span>,</span>
-<span>  clusters_list <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/system.file.html" class="external-link">system.file</a></span><span class="op">(</span><span class="st">"extdata"</span>, <span class="st">"clusters.tsv"</span>, package <span class="op">=</span> <span class="st">"timaR"</span><span class="op">)</span>,</span>
-<span>  neutral_losses_list <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/system.file.html" class="external-link">system.file</a></span><span class="op">(</span><span class="st">"extdata"</span>, <span class="st">"neutral_losses.tsv"</span>, package <span class="op">=</span> <span class="st">"timaR"</span><span class="op">)</span>,</span>
+<span>  clusters_list <span class="op">=</span> <span class="fu"><a href="get_params.html">get_params</a></span><span class="op">(</span>step <span class="op">=</span> <span class="st">"annotate_masses"</span><span class="op">)</span><span class="op">$</span><span class="va">ms</span><span class="op">$</span><span class="va">clusters</span>,</span>
+<span>  neutral_losses_list <span class="op">=</span> <span class="fu"><a href="get_params.html">get_params</a></span><span class="op">(</span>step <span class="op">=</span> <span class="st">"annotate_masses"</span><span class="op">)</span><span class="op">$</span><span class="va">ms</span><span class="op">$</span><span class="va">neutral_losses</span>,</span>
 <span>  ms_mode <span class="op">=</span> <span class="fu"><a href="get_params.html">get_params</a></span><span class="op">(</span>step <span class="op">=</span> <span class="st">"annotate_masses"</span><span class="op">)</span><span class="op">$</span><span class="va">ms</span><span class="op">$</span><span class="va">polarity</span>,</span>
 <span>  tolerance_ppm <span class="op">=</span> <span class="fu"><a href="get_params.html">get_params</a></span><span class="op">(</span>step <span class="op">=</span> <span class="st">"annotate_masses"</span><span class="op">)</span><span class="op">$</span><span class="va">ms</span><span class="op">$</span><span class="va">tolerances</span><span class="op">$</span><span class="va">mass</span><span class="op">$</span><span class="va">ppm</span><span class="op">$</span><span class="va">ms1</span>,</span>
 <span>  tolerance_rt <span class="op">=</span> <span class="fu"><a href="get_params.html">get_params</a></span><span class="op">(</span>step <span class="op">=</span> <span class="st">"annotate_masses"</span><span class="op">)</span><span class="op">$</span><span class="va">ms</span><span class="op">$</span><span class="va">tolerances</span><span class="op">$</span><span class="va">rt</span><span class="op">$</span><span class="va">minutes</span></span>
@@ -148,18 +145,6 @@
 <dd><p>List of adducts to be used</p></dd>
 
 
-<dt>adducts_masses_list</dt>
-<dd><p>Adducts masses</p></dd>
-
-
-<dt>clusters_neg</dt>
-<dd><p>Negative clusters to be used</p></dd>
-
-
-<dt>clusters_pos</dt>
-<dd><p>Positive clusters to be used</p></dd>
-
-
 <dt>clusters_list</dt>
 <dd><p>List of clusters to be used</p></dd>
 
@@ -178,6 +163,18 @@
 
 <dt>tolerance_rt</dt>
 <dd><p>Tolerance to group adducts. Should be &lt;= 0.1min</p></dd>
+
+
+<dt>adducts_masses_list</dt>
+<dd><p>Adducts masses</p></dd>
+
+
+<dt>clusters_neg</dt>
+<dd><p>Negative clusters to be used</p></dd>
+
+
+<dt>clusters_pos</dt>
+<dd><p>Positive clusters to be used</p></dd>
 
 </dl></div>
     <div class="section level2">
