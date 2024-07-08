@@ -5,7 +5,6 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="timaR">
 <title>1 Gathering everything you need • timaR</title>
 <!-- favicons --><link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
@@ -13,74 +12,65 @@
 <link rel="apple-touch-icon" type="image/png" sizes="120x120" href="../apple-touch-icon-120x120.png">
 <link rel="apple-touch-icon" type="image/png" sizes="76x76" href="../apple-touch-icon-76x76.png">
 <link rel="apple-touch-icon" type="image/png" sizes="60x60" href="../apple-touch-icon-60x60.png">
-<script src="../deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="../lightswitch.js"></script><script src="../deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="../deps/bootstrap-5.3.1/bootstrap.min.css" rel="stylesheet">
-<script src="../deps/bootstrap-5.3.1/bootstrap.bundle.min.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
-<!-- bootstrap-toc --><script src="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@v1.0.1/dist/bootstrap-toc.min.js" integrity="sha256-4veVQbu7//Lk5TSmc7YV48MxtMy98e26cf5MrgZYnwo=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.11/clipboard.min.js" integrity="sha512-7O5pXpc0oCRrxk8RUfDYFgn0nO1t+jLuIOQdOMRp4APB7uZ4vSjspzp5y6YDtDs4VzUSTbWzBFZ/LKJhnyFOKw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><!-- search --><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- pkgdown --><script src="../pkgdown.js"></script><meta property="og:title" content="1 Gathering everything you need">
-<meta property="og:description" content="timaR">
+<script src="../deps/bootstrap-5.3.1/bootstrap.bundle.min.js"></script><link href="../deps/font-awesome-6.4.2/css/all.min.css" rel="stylesheet">
+<link href="../deps/font-awesome-6.4.2/css/v4-shims.min.css" rel="stylesheet">
+<script src="../deps/headroom-0.11.0/headroom.min.js"></script><script src="../deps/headroom-0.11.0/jQuery.headroom.min.js"></script><script src="../deps/bootstrap-toc-1.0.1/bootstrap-toc.min.js"></script><script src="../deps/clipboard.js-2.0.11/clipboard.min.js"></script><script src="../deps/search-1.0.0/autocomplete.jquery.min.js"></script><script src="../deps/search-1.0.0/fuse.min.js"></script><script src="../deps/search-1.0.0/mark.min.js"></script><!-- pkgdown --><script src="../pkgdown.js"></script><meta property="og:title" content="1 Gathering everything you need">
 <meta property="og:image" content="https://github.com/taxonomicallyinformedannotation/tima-r/blob/main/man/figures/logo.svg">
 <meta property="og:image:alt" content="Taxonomically Informed Metabolite Annotation">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:creator" content="@adafede">
 <meta name="twitter:site" content="@adafede">
 <meta name="google-site-verification" content="Bt77rpBuC_R-0p62TWtA_ba5rvx-PuSEMv4LHg1UsOo">
-<!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-AMS-MML_HTMLorMML.js" integrity="sha256-84DKXVJXs0/F8OTMzX4UR909+jtl4G7SPypPavF+GfA=" crossorigin="anonymous"></script><!--[if lt IE 9]>
-<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-<![endif]-->
 </head>
 <body>
     <a href="#main" class="visually-hidden-focusable">Skip to contents</a>
-    
 
-    <nav class="navbar fixed-top navbar-light navbar-expand-lg bg-light" data-bs-theme="light"><div class="container">
-    
+
+    <nav class="navbar navbar-expand-lg fixed-top " aria-label="Site navigation"><div class="container">
+
     <a class="navbar-brand me-2" href="../index.html">timaR</a>
 
     <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">2.9.6</small>
 
-    
+
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
     <div id="navbar" class="collapse navbar-collapse ms-3">
       <ul class="navbar-nav me-auto">
-<li class="nav-item">
-  <a class="nav-link" href="../articles/timaR.html">Get started</a>
-</li>
-<li class="nav-item">
-  <a class="nav-link" href="../reference/index.html">Reference</a>
-</li>
+<li class="nav-item"><a class="nav-link" href="../articles/timaR.html">Get started</a></li>
+<li class="nav-item"><a class="nav-link" href="../reference/index.html">Reference</a></li>
 <li class="active nav-item dropdown">
-  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" id="dropdown-articles">Articles</a>
-  <div class="dropdown-menu" aria-labelledby="dropdown-articles">
-    <a class="dropdown-item" href="../articles/I-gathering.html">1 Gathering everything you need</a>
-    <a class="dropdown-item" href="../articles/II-preparing.html">2 Preparing inputs</a>
-    <a class="dropdown-item" href="../articles/III-processing.html">3 Performing Taxonomically Informed Metabolite Annotation</a>
-    <a class="dropdown-item" href="../articles/IV-benchmarking.html">4 Benchmarking Performance</a>
-  </div>
+  <button class="nav-link dropdown-toggle" type="button" id="dropdown-articles" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">Articles</button>
+  <ul class="dropdown-menu" aria-labelledby="dropdown-articles">
+<li><a class="dropdown-item" href="../articles/I-gathering.html">1 Gathering everything you need</a></li>
+    <li><a class="dropdown-item" href="../articles/II-preparing.html">2 Preparing inputs</a></li>
+    <li><a class="dropdown-item" href="../articles/III-processing.html">3 Performing Taxonomically Informed Metabolite Annotation</a></li>
+    <li><a class="dropdown-item" href="../articles/IV-benchmarking.html">4 Benchmarking Performance</a></li>
+  </ul>
 </li>
-<li class="nav-item">
-  <a class="nav-link" href="../news/index.html">Changelog</a>
-</li>
+<li class="nav-item"><a class="nav-link" href="../news/index.html">Changelog</a></li>
       </ul>
-<form class="form-inline my-2 my-lg-0" role="search">
-        <input type="search" class="form-control me-sm-2" aria-label="Toggle navigation" name="search-input" data-search-index="../search.json" id="search-input" placeholder="Search for" autocomplete="off">
-</form>
-
-      <ul class="navbar-nav">
-<li class="nav-item">
-  <a class="external-link nav-link" href="https://github.com/taxonomicallyinformedannotation/tima-r/" aria-label="github">
-    <span class="fab fa fab fa-github fa-lg"></span>
-     
-  </a>
+<ul class="navbar-nav">
+<li class="nav-item"><form class="form-inline" role="search">
+ <input class="form-control" type="search" name="search-input" id="search-input" autocomplete="off" aria-label="Search site" placeholder="Search for" data-search-index="../search.json">
+</form></li>
+<li class="nav-item"><a class="external-link nav-link" href="https://github.com/taxonomicallyinformedannotation/tima-r/" aria-label="GitHub"><span class="fa fab fa-github fa-lg"></span></a></li>
+<li class="nav-item dropdown">
+  <button class="nav-link dropdown-toggle" type="button" id="dropdown-lightswitch" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true" aria-label="Light switch"><span class="fa fa-sun"></span></button>
+  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-lightswitch">
+<li><button class="dropdown-item" data-bs-theme-value="light"><span class="fa fa-sun"></span> Light</button></li>
+    <li><button class="dropdown-item" data-bs-theme-value="dark"><span class="fa fa-moon"></span> Dark</button></li>
+    <li><button class="dropdown-item" data-bs-theme-value="auto"><span class="fa fa-adjust"></span> Auto</button></li>
+  </ul>
 </li>
       </ul>
 </div>
 
-    
+
   </div>
 </nav><div class="container template-article">
 
@@ -94,9 +84,9 @@
                         <h4 data-toc-skip class="author">Adriano
 Rutz</h4>
             
-            <h4 data-toc-skip class="date">2024-07-05</h4>
+            <h4 data-toc-skip class="date">2024-07-08</h4>
       
-      <small class="dont-index">Source: <a href="https://github.com/taxonomicallyinformedannotation/tima-r/blob/HEAD/vignettes/I-gathering.Rmd" class="external-link"><code>vignettes/I-gathering.Rmd</code></a></small>
+      <small class="dont-index">Source: <a href="https://github.com/taxonomicallyinformedannotation/tima-r/blob/main/vignettes/I-gathering.Rmd" class="external-link"><code>vignettes/I-gathering.Rmd</code></a></small>
       <div class="d-none name"><code>I-gathering.Rmd</code></div>
     </div>
 
@@ -224,7 +214,7 @@ provide it here as a starting point for your structure-organism pairs
 library.</p>
 <p>The process to download LOTUS looks like this:</p>
 <div class="visNetwork html-widget html-fill-item" id="htmlwidget-ac96cb3ee4656e2e9ec3" style="width:100%;height:432.632880098888px;"></div>
-<script type="application/json" data-for="htmlwidget-ac96cb3ee4656e2e9ec3">{"x":{"nodes":{"name":["lib_sop_lot","lib_sop_lot_pre","par_def_pre_lib_sop_lot","par_fin_par","par_fin_par2","par_pre_lib_sop_lot","par_pre_par","par_pre_par2","par_usr_pre_lib_sop_lot","paths","paths_data_source_libraries_sop_lotus","paths_test_mode","paths_urls_lotus_doi","paths_urls_lotus_pattern","yaml_paths"],"type":["stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem"],"description":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],"status":["outdated","outdated","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate"],"seconds":[2.621,19.788,0,0.001,0.003,0,0,0,0.745,0.001,0.001,0,0,0.001,0.024],"bytes":[92979778,46526322,494,283,3156,185,1298,19843,174,2445,90,56,75,75,10119],"branches":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],"label":["lib_sop_lot","lib_sop_lot_pre","par_def_pre_lib_sop_lot","par_fin_par","par_fin_par2","par_pre_lib_sop_lot","par_pre_par","par_pre_par2","par_usr_pre_lib_sop_lot","paths","paths_data_source_libraries_sop_lotus","paths_test_mode","paths_urls_lotus_doi","paths_urls_lotus_pattern","yaml_paths"],"color":["#78B7C5","#78B7C5","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823"],"id":["lib_sop_lot","lib_sop_lot_pre","par_def_pre_lib_sop_lot","par_fin_par","par_fin_par2","par_pre_lib_sop_lot","par_pre_par","par_pre_par2","par_usr_pre_lib_sop_lot","paths","paths_data_source_libraries_sop_lotus","paths_test_mode","paths_urls_lotus_doi","paths_urls_lotus_pattern","yaml_paths"],"level":[4,7,3,4,4,6,3,3,5,2,3,3,3,3,1],"shape":["dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot"]},"edges":{"from":["paths","yaml_paths","paths","paths","par_def_pre_lib_sop_lot","par_usr_pre_lib_sop_lot","paths","par_pre_par2","paths","par_fin_par","par_fin_par2","par_pre_par","paths","lib_sop_lot","par_pre_lib_sop_lot","paths_data_source_libraries_sop_lotus","paths_test_mode","paths_data_source_libraries_sop_lotus","paths_urls_lotus_doi","paths_urls_lotus_pattern","paths"],"to":["par_pre_par","paths","paths_data_source_libraries_sop_lotus","paths_test_mode","par_pre_lib_sop_lot","par_pre_lib_sop_lot","par_pre_par2","par_fin_par2","paths_urls_lotus_doi","par_usr_pre_lib_sop_lot","par_usr_pre_lib_sop_lot","par_fin_par","par_def_pre_lib_sop_lot","lib_sop_lot_pre","lib_sop_lot_pre","lib_sop_lot_pre","lib_sop_lot_pre","lib_sop_lot","lib_sop_lot","lib_sop_lot","paths_urls_lotus_pattern"],"arrows":["to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to"]},"nodesToDataframe":true,"edgesToDataframe":true,"options":{"width":"100%","height":"100%","nodes":{"shape":"dot","physics":false},"manipulation":{"enabled":false},"edges":{"smooth":{"type":"cubicBezier","forceDirection":"horizontal"}},"physics":{"stabilization":false},"interaction":{"zoomSpeed":1},"layout":{"hierarchical":{"enabled":true,"direction":"LR"}}},"groups":null,"width":null,"height":null,"idselection":{"enabled":false,"style":"width: 150px; height: 26px","useLabels":true,"main":"Select by id"},"byselection":{"enabled":false,"style":"width: 150px; height: 26px","multiple":false,"hideColor":"rgba(200,200,200,0.5)","highlight":false},"main":{"text":"","style":"font-family:Georgia, Times New Roman, Times, serif;font-weight:bold;font-size:20px;text-align:center;"},"submain":null,"footer":null,"background":"rgba(0, 0, 0, 0)","highlight":{"enabled":true,"hoverNearest":false,"degree":{"from":8,"to":1},"algorithm":"hierarchical","hideColor":"rgba(200,200,200,0.5)","labelOnly":true},"collapse":{"enabled":true,"fit":false,"resetHighlight":true,"clusterOptions":null,"keepCoord":true,"labelSuffix":"(cluster)"},"legend":{"width":0.2,"useGroups":false,"position":"right","ncol":1,"stepX":100,"stepY":100,"zoom":true,"nodes":{"label":["Outdated","Up to date","Stem"],"color":["#78B7C5","#354823","#899DA4"],"shape":["dot","dot","dot"]},"nodesToDataframe":true},"tooltipStay":300,"tooltipStyle":"position: fixed;visibility:hidden;padding: 5px;white-space: nowrap;font-family: verdana;font-size:14px;font-color:#000000;background-color: #f5f4ed;-moz-border-radius: 3px;-webkit-border-radius: 3px;border-radius: 3px;border: 1px solid #808074;box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);"},"evals":[],"jsHooks":[]}</script><p>As you can see, one target seems outdated. In reality, we force it to
+<script type="application/json" data-for="htmlwidget-ac96cb3ee4656e2e9ec3">{"x":{"nodes":{"name":["lib_sop_lot","lib_sop_lot_pre","par_def_pre_lib_sop_lot","par_fin_par","par_fin_par2","par_pre_lib_sop_lot","par_pre_par","par_pre_par2","par_usr_pre_lib_sop_lot","paths","paths_data_source_libraries_sop_lotus","paths_test_mode","paths_urls_lotus_doi","paths_urls_lotus_pattern","yaml_paths"],"type":["stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem"],"description":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],"status":["outdated","outdated","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate"],"seconds":[2.948,12.996,0,0.001,0.003,0,0.001,0,0.517,0.001,0.001,0,0,0.001,0.021],"bytes":[92979778,46526322,494,283,3156,185,1298,19843,174,2445,90,56,75,75,10119],"branches":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],"label":["lib_sop_lot","lib_sop_lot_pre","par_def_pre_lib_sop_lot","par_fin_par","par_fin_par2","par_pre_lib_sop_lot","par_pre_par","par_pre_par2","par_usr_pre_lib_sop_lot","paths","paths_data_source_libraries_sop_lotus","paths_test_mode","paths_urls_lotus_doi","paths_urls_lotus_pattern","yaml_paths"],"color":["#78B7C5","#78B7C5","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823"],"id":["lib_sop_lot","lib_sop_lot_pre","par_def_pre_lib_sop_lot","par_fin_par","par_fin_par2","par_pre_lib_sop_lot","par_pre_par","par_pre_par2","par_usr_pre_lib_sop_lot","paths","paths_data_source_libraries_sop_lotus","paths_test_mode","paths_urls_lotus_doi","paths_urls_lotus_pattern","yaml_paths"],"level":[4,7,3,4,4,6,3,3,5,2,3,3,3,3,1],"shape":["dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot"]},"edges":{"from":["paths","yaml_paths","paths","paths","par_def_pre_lib_sop_lot","par_usr_pre_lib_sop_lot","paths","par_pre_par2","paths","par_fin_par","par_fin_par2","par_pre_par","paths","lib_sop_lot","par_pre_lib_sop_lot","paths_data_source_libraries_sop_lotus","paths_test_mode","paths_data_source_libraries_sop_lotus","paths_urls_lotus_doi","paths_urls_lotus_pattern","paths"],"to":["par_pre_par","paths","paths_data_source_libraries_sop_lotus","paths_test_mode","par_pre_lib_sop_lot","par_pre_lib_sop_lot","par_pre_par2","par_fin_par2","paths_urls_lotus_doi","par_usr_pre_lib_sop_lot","par_usr_pre_lib_sop_lot","par_fin_par","par_def_pre_lib_sop_lot","lib_sop_lot_pre","lib_sop_lot_pre","lib_sop_lot_pre","lib_sop_lot_pre","lib_sop_lot","lib_sop_lot","lib_sop_lot","paths_urls_lotus_pattern"],"arrows":["to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to"]},"nodesToDataframe":true,"edgesToDataframe":true,"options":{"width":"100%","height":"100%","nodes":{"shape":"dot","physics":false},"manipulation":{"enabled":false},"edges":{"smooth":{"type":"cubicBezier","forceDirection":"horizontal"}},"physics":{"stabilization":false},"interaction":{"zoomSpeed":1},"layout":{"hierarchical":{"enabled":true,"direction":"LR"}}},"groups":null,"width":null,"height":null,"idselection":{"enabled":false,"style":"width: 150px; height: 26px","useLabels":true,"main":"Select by id"},"byselection":{"enabled":false,"style":"width: 150px; height: 26px","multiple":false,"hideColor":"rgba(200,200,200,0.5)","highlight":false},"main":{"text":"","style":"font-family:Georgia, Times New Roman, Times, serif;font-weight:bold;font-size:20px;text-align:center;"},"submain":null,"footer":null,"background":"rgba(0, 0, 0, 0)","highlight":{"enabled":true,"hoverNearest":false,"degree":{"from":8,"to":1},"algorithm":"hierarchical","hideColor":"rgba(200,200,200,0.5)","labelOnly":true},"collapse":{"enabled":true,"fit":false,"resetHighlight":true,"clusterOptions":null,"keepCoord":true,"labelSuffix":"(cluster)"},"legend":{"width":0.2,"useGroups":false,"position":"right","ncol":1,"stepX":100,"stepY":100,"zoom":true,"nodes":{"label":["Outdated","Up to date","Stem"],"color":["#78B7C5","#354823","#899DA4"],"shape":["dot","dot","dot"]},"nodesToDataframe":true},"tooltipStay":300,"tooltipStyle":"position: fixed;visibility:hidden;padding: 5px;white-space: nowrap;font-family: verdana;font-size:14px;font-color:#000000;background-color: #f5f4ed;-moz-border-radius: 3px;-webkit-border-radius: 3px;border-radius: 3px;border: 1px solid #808074;box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);"},"evals":[],"jsHooks":[]}</script><p>As you can see, one target seems outdated. In reality, we force it to
 search if a new version of LOTUS exists each time. If a newer version
 exists, it will fetch it and re-run needed steps accordingly.</p>
 </div>
@@ -260,14 +250,14 @@ share it with us for it to be implemented, feel free to contact us.</p>
 <p>Once all sub-libraries are ready, they are then merged in a single
 file that will be used for the next steps.</p>
 <div class="visNetwork html-widget html-fill-item" id="htmlwidget-e5c8c404fe174e4c81bd" style="width:100%;height:432.632880098888px;"></div>
-<script type="application/json" data-for="htmlwidget-e5c8c404fe174e4c81bd">{"x":{"nodes":{"name":["lib_rt","lib_rt_sop","lib_sop_clo_pre","lib_sop_ecm","lib_sop_ecm_pre","lib_sop_hmd","lib_sop_hmd_pre","lib_sop_lot","lib_sop_lot_pre","lib_sop_mer","lib_spe_exp_int_pre","lib_spe_exp_int_pre_neg","lib_spe_exp_int_pre_pos","lib_spe_exp_int_pre_sop","lib_spe_exp_mb_pre","lib_spe_exp_mb_pre_sop","lib_spe_exp_mb_raw","lib_spe_is_lot_neg","lib_spe_is_lot_pos","lib_spe_is_lot_pre_neg","lib_spe_is_lot_pre_pos"],"type":["stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem"],"description":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],"status":["outdated","outdated","uptodate","uptodate","uptodate","uptodate","uptodate","outdated","outdated","outdated","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","outdated","outdated","outdated","outdated"],"seconds":[101.364,0,1.264,1.323,2.014,15.45,45.27,2.108,19.788,46.146,4.65,0,0,0,216.392,0,10.171,0.012,0,0,0],"bytes":[7053,3113,268,1334921,177489,96479839,6989505,92979778,46526322,60306101,180721,49019,130197,1505,26771126,609246,118649350,168722018,221809332,168722018,221809332],"branches":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],"label":["lib_rt","lib_rt_sop","lib_sop_clo_pre","lib_sop_ecm","lib_sop_ecm_pre","lib_sop_hmd","lib_sop_hmd_pre","lib_sop_lot","lib_sop_lot_pre","lib_sop_mer","lib_spe_exp_int_pre","lib_spe_exp_int_pre_neg","lib_spe_exp_int_pre_pos","lib_spe_exp_int_pre_sop","lib_spe_exp_mb_pre","lib_spe_exp_mb_pre_sop","lib_spe_exp_mb_raw","lib_spe_is_lot_neg","lib_spe_is_lot_pos","lib_spe_is_lot_pre_neg","lib_spe_is_lot_pre_pos"],"color":["#78B7C5","#78B7C5","#354823","#354823","#354823","#354823","#354823","#78B7C5","#78B7C5","#78B7C5","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#78B7C5","#78B7C5","#78B7C5","#78B7C5"],"id":["lib_rt","lib_rt_sop","lib_sop_clo_pre","lib_sop_ecm","lib_sop_ecm_pre","lib_sop_hmd","lib_sop_hmd_pre","lib_sop_lot","lib_sop_lot_pre","lib_sop_mer","lib_spe_exp_int_pre","lib_spe_exp_int_pre_neg","lib_spe_exp_int_pre_pos","lib_spe_exp_int_pre_sop","lib_spe_exp_mb_pre","lib_spe_exp_mb_pre_sop","lib_spe_exp_mb_raw","lib_spe_is_lot_neg","lib_spe_is_lot_pos","lib_spe_is_lot_pre_neg","lib_spe_is_lot_pre_pos"],"level":[3,4,1,1,2,1,2,1,2,5,1,2,2,2,2,3,1,1,1,2,2],"shape":["dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot"]},"edges":{"from":["lib_sop_ecm","lib_spe_exp_int_pre","lib_spe_exp_mb_pre","lib_spe_exp_int_pre","lib_spe_is_lot_neg","lib_spe_exp_int_pre_neg","lib_spe_exp_int_pre_pos","lib_spe_is_lot_pre_neg","lib_spe_is_lot_pre_pos","lib_rt_sop","lib_sop_clo_pre","lib_sop_ecm_pre","lib_sop_hmd_pre","lib_sop_lot_pre","lib_spe_exp_int_pre_sop","lib_spe_exp_mb_pre_sop","lib_rt","lib_spe_is_lot_pos","lib_sop_lot","lib_spe_exp_int_pre","lib_sop_hmd","lib_spe_exp_mb_raw"],"to":["lib_sop_ecm_pre","lib_spe_exp_int_pre_sop","lib_spe_exp_mb_pre_sop","lib_spe_exp_int_pre_pos","lib_spe_is_lot_pre_neg","lib_rt","lib_rt","lib_rt","lib_rt","lib_sop_mer","lib_sop_mer","lib_sop_mer","lib_sop_mer","lib_sop_mer","lib_sop_mer","lib_sop_mer","lib_rt_sop","lib_spe_is_lot_pre_pos","lib_sop_lot_pre","lib_spe_exp_int_pre_neg","lib_sop_hmd_pre","lib_spe_exp_mb_pre"],"arrows":["to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to"]},"nodesToDataframe":true,"edgesToDataframe":true,"options":{"width":"100%","height":"100%","nodes":{"shape":"dot","physics":false},"manipulation":{"enabled":false},"edges":{"smooth":{"type":"cubicBezier","forceDirection":"horizontal"}},"physics":{"stabilization":false},"interaction":{"zoomSpeed":1},"layout":{"hierarchical":{"enabled":true,"direction":"LR"}}},"groups":null,"width":null,"height":null,"idselection":{"enabled":false,"style":"width: 150px; height: 26px","useLabels":true,"main":"Select by id"},"byselection":{"enabled":false,"style":"width: 150px; height: 26px","multiple":false,"hideColor":"rgba(200,200,200,0.5)","highlight":false},"main":{"text":"","style":"font-family:Georgia, Times New Roman, Times, serif;font-weight:bold;font-size:20px;text-align:center;"},"submain":null,"footer":null,"background":"rgba(0, 0, 0, 0)","highlight":{"enabled":true,"hoverNearest":false,"degree":{"from":8,"to":1},"algorithm":"hierarchical","hideColor":"rgba(200,200,200,0.5)","labelOnly":true},"collapse":{"enabled":true,"fit":false,"resetHighlight":true,"clusterOptions":null,"keepCoord":true,"labelSuffix":"(cluster)"},"legend":{"width":0.2,"useGroups":false,"position":"right","ncol":1,"stepX":100,"stepY":100,"zoom":true,"nodes":{"label":["Outdated","Up to date","Stem"],"color":["#78B7C5","#354823","#899DA4"],"shape":["dot","dot","dot"]},"nodesToDataframe":true},"tooltipStay":300,"tooltipStyle":"position: fixed;visibility:hidden;padding: 5px;white-space: nowrap;font-family: verdana;font-size:14px;font-color:#000000;background-color: #f5f4ed;-moz-border-radius: 3px;-webkit-border-radius: 3px;border-radius: 3px;border: 1px solid #808074;box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);"},"evals":[],"jsHooks":[]}</script><p>We now recommend you to read the <a href="https://taxonomicallyinformedannotation.github.io/tima-r/articles/II-preparing.html">next
+<script type="application/json" data-for="htmlwidget-e5c8c404fe174e4c81bd">{"x":{"nodes":{"name":["lib_rt","lib_rt_sop","lib_sop_clo_pre","lib_sop_ecm","lib_sop_ecm_pre","lib_sop_hmd","lib_sop_hmd_pre","lib_sop_lot","lib_sop_lot_pre","lib_sop_mer","lib_spe_exp_int_pre","lib_spe_exp_int_pre_neg","lib_spe_exp_int_pre_pos","lib_spe_exp_int_pre_sop","lib_spe_exp_mb_pre","lib_spe_exp_mb_pre_sop","lib_spe_exp_mb_raw","lib_spe_is_lot_neg","lib_spe_is_lot_pos","lib_spe_is_lot_pre_neg","lib_spe_is_lot_pre_pos"],"type":["stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem"],"description":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],"status":["outdated","outdated","uptodate","uptodate","uptodate","uptodate","uptodate","outdated","outdated","outdated","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","outdated","outdated","outdated","outdated"],"seconds":[98.72,0,1.012,2.338,1.558,12.829,37.138,2.985,12.996,36.156,3.349,0,0,0,146.844,0,12.341,0.004,0,0,0],"bytes":[7053,3113,268,1334921,177489,96479839,6989505,92979778,46526322,60306101,180721,49019,130197,1505,26771126,609246,118649350,168722018,221809332,168722018,221809332],"branches":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],"label":["lib_rt","lib_rt_sop","lib_sop_clo_pre","lib_sop_ecm","lib_sop_ecm_pre","lib_sop_hmd","lib_sop_hmd_pre","lib_sop_lot","lib_sop_lot_pre","lib_sop_mer","lib_spe_exp_int_pre","lib_spe_exp_int_pre_neg","lib_spe_exp_int_pre_pos","lib_spe_exp_int_pre_sop","lib_spe_exp_mb_pre","lib_spe_exp_mb_pre_sop","lib_spe_exp_mb_raw","lib_spe_is_lot_neg","lib_spe_is_lot_pos","lib_spe_is_lot_pre_neg","lib_spe_is_lot_pre_pos"],"color":["#78B7C5","#78B7C5","#354823","#354823","#354823","#354823","#354823","#78B7C5","#78B7C5","#78B7C5","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#78B7C5","#78B7C5","#78B7C5","#78B7C5"],"id":["lib_rt","lib_rt_sop","lib_sop_clo_pre","lib_sop_ecm","lib_sop_ecm_pre","lib_sop_hmd","lib_sop_hmd_pre","lib_sop_lot","lib_sop_lot_pre","lib_sop_mer","lib_spe_exp_int_pre","lib_spe_exp_int_pre_neg","lib_spe_exp_int_pre_pos","lib_spe_exp_int_pre_sop","lib_spe_exp_mb_pre","lib_spe_exp_mb_pre_sop","lib_spe_exp_mb_raw","lib_spe_is_lot_neg","lib_spe_is_lot_pos","lib_spe_is_lot_pre_neg","lib_spe_is_lot_pre_pos"],"level":[3,4,1,1,2,1,2,1,2,5,1,2,2,2,2,3,1,1,1,2,2],"shape":["dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot"]},"edges":{"from":["lib_sop_ecm","lib_spe_exp_int_pre","lib_spe_exp_mb_pre","lib_spe_exp_int_pre","lib_spe_is_lot_neg","lib_spe_exp_int_pre_neg","lib_spe_exp_int_pre_pos","lib_spe_is_lot_pre_neg","lib_spe_is_lot_pre_pos","lib_rt_sop","lib_sop_clo_pre","lib_sop_ecm_pre","lib_sop_hmd_pre","lib_sop_lot_pre","lib_spe_exp_int_pre_sop","lib_spe_exp_mb_pre_sop","lib_rt","lib_spe_is_lot_pos","lib_sop_lot","lib_spe_exp_int_pre","lib_sop_hmd","lib_spe_exp_mb_raw"],"to":["lib_sop_ecm_pre","lib_spe_exp_int_pre_sop","lib_spe_exp_mb_pre_sop","lib_spe_exp_int_pre_pos","lib_spe_is_lot_pre_neg","lib_rt","lib_rt","lib_rt","lib_rt","lib_sop_mer","lib_sop_mer","lib_sop_mer","lib_sop_mer","lib_sop_mer","lib_sop_mer","lib_sop_mer","lib_rt_sop","lib_spe_is_lot_pre_pos","lib_sop_lot_pre","lib_spe_exp_int_pre_neg","lib_sop_hmd_pre","lib_spe_exp_mb_pre"],"arrows":["to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to"]},"nodesToDataframe":true,"edgesToDataframe":true,"options":{"width":"100%","height":"100%","nodes":{"shape":"dot","physics":false},"manipulation":{"enabled":false},"edges":{"smooth":{"type":"cubicBezier","forceDirection":"horizontal"}},"physics":{"stabilization":false},"interaction":{"zoomSpeed":1},"layout":{"hierarchical":{"enabled":true,"direction":"LR"}}},"groups":null,"width":null,"height":null,"idselection":{"enabled":false,"style":"width: 150px; height: 26px","useLabels":true,"main":"Select by id"},"byselection":{"enabled":false,"style":"width: 150px; height: 26px","multiple":false,"hideColor":"rgba(200,200,200,0.5)","highlight":false},"main":{"text":"","style":"font-family:Georgia, Times New Roman, Times, serif;font-weight:bold;font-size:20px;text-align:center;"},"submain":null,"footer":null,"background":"rgba(0, 0, 0, 0)","highlight":{"enabled":true,"hoverNearest":false,"degree":{"from":8,"to":1},"algorithm":"hierarchical","hideColor":"rgba(200,200,200,0.5)","labelOnly":true},"collapse":{"enabled":true,"fit":false,"resetHighlight":true,"clusterOptions":null,"keepCoord":true,"labelSuffix":"(cluster)"},"legend":{"width":0.2,"useGroups":false,"position":"right","ncol":1,"stepX":100,"stepY":100,"zoom":true,"nodes":{"label":["Outdated","Up to date","Stem"],"color":["#78B7C5","#354823","#899DA4"],"shape":["dot","dot","dot"]},"nodesToDataframe":true},"tooltipStay":300,"tooltipStyle":"position: fixed;visibility:hidden;padding: 5px;white-space: nowrap;font-family: verdana;font-size:14px;font-color:#000000;background-color: #f5f4ed;-moz-border-radius: 3px;-webkit-border-radius: 3px;border-radius: 3px;border: 1px solid #808074;box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);"},"evals":[],"jsHooks":[]}</script><p>We now recommend you to read the <a href="https://taxonomicallyinformedannotation.github.io/tima-r/articles/II-preparing.html">next
 vignette</a>.</p>
 </div>
 </div>
 </div>
 </div>
 
-  </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>
+  </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>
     </nav></aside>
 </div>
 
@@ -278,15 +268,15 @@ vignette</a>.</p>
 </div>
 
 <div class="pkgdown-footer-right">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.9.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.1.0.</p>
 </div>
 
     </footer>
 </div>
 
-  
 
-  
+
+
 
   </body>
 </html>
