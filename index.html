@@ -43,6 +43,7 @@
 
     <div id="navbar" class="collapse navbar-collapse ms-3">
       <ul class="navbar-nav me-auto">
+<li class="nav-item"><a class="nav-link" href="articles/tima.html">Get started</a></li>
 <li class="nav-item"><a class="nav-link" href="reference/index.html">Reference</a></li>
 <li class="nav-item dropdown">
   <button class="nav-link dropdown-toggle" type="button" id="dropdown-articles" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">Articles</button>
@@ -51,7 +52,6 @@
     <li><a class="dropdown-item" href="articles/II-preparing.html">2 Preparing inputs</a></li>
     <li><a class="dropdown-item" href="articles/III-processing.html">3 Performing Taxonomically Informed Metabolite Annotation</a></li>
     <li><a class="dropdown-item" href="articles/IV-benchmarking.html">4 Benchmarking Performance</a></li>
-    <li><a class="dropdown-item" href="articles/timaR.html">General comments about the infrastructure</a></li>
   </ul>
 </li>
 <li class="nav-item"><a class="nav-link" href="news/index.html">Changelog</a></li>
@@ -60,7 +60,7 @@
 <li class="nav-item"><form class="form-inline" role="search">
  <input class="form-control" type="search" name="search-input" id="search-input" autocomplete="off" aria-label="Search site" placeholder="Search for" data-search-index="search.json">
 </form></li>
-<li class="nav-item"><a class="external-link nav-link" href="https://github.com/taxonomicallyinformedannotation/tima-r/" aria-label="GitHub"><span class="fa fab fa-github fa-lg"></span></a></li>
+<li class="nav-item"><a class="external-link nav-link" href="https://github.com/taxonomicallyinformedannotation/tima/" aria-label="GitHub"><span class="fa fab fa-github fa-lg"></span></a></li>
 <li class="nav-item dropdown">
   <button class="nav-link dropdown-toggle" type="button" id="dropdown-lightswitch" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true" aria-label="Light switch"><span class="fa fa-sun"></span></button>
   <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-lightswitch">
@@ -78,13 +78,13 @@
 <div class="row">
   <main id="main" class="col-md-9"><div class="section level1">
 <div class="page-header">
-<img src="logo.svg" class="logo" alt=""><h1 id="tima">tima<a class="anchor" aria-label="anchor" href="#tima"></a>
+<img src="logo.svg" class="logo" alt=""><h1 id="tima-">tima <a class="anchor" aria-label="anchor" href="#tima-"></a>
 </h1>
 </div>
 <!-- badges: start -->
 
 <p>The initial work is available at <a href="https://doi.org/10.3389/fpls.2019.01329" class="external-link uri">https://doi.org/10.3389/fpls.2019.01329</a>, with many improvements made since then. The workflow is illustrated below.</p>
-<figure><img src="https://raw.githubusercontent.com/taxonomicallyinformedannotation/tima-r/main/man/figures/tima.svg" alt="Workflow"><figcaption aria-hidden="true">
+<figure><img src="https://raw.githubusercontent.com/taxonomicallyinformedannotation/tima/main/man/figures/tima.svg" alt="Workflow"><figcaption aria-hidden="true">
 Workflow
 </figcaption></figure><p>This repository contains everything needed to perform <strong>T</strong>axonomically <strong>I</strong>nformed <strong>M</strong>etabolite <strong>A</strong>nnotation.</p>
 <div class="section level2">
@@ -138,7 +138,7 @@ Workflow
 </h2>
 <p>According to which steps you used, please give credit to the authors of the tools/resources used.</p>
 <div class="section level3">
-<h3 id="tima-1">TIMA<a class="anchor" aria-label="anchor" href="#tima-1"></a>
+<h3 id="tima">TIMA<a class="anchor" aria-label="anchor" href="#tima"></a>
 </h3>
 <p>General: <a href="https://doi.org/10.3389/fpls.2019.01329" class="external-link uri">https://doi.org/10.3389/fpls.2019.01329</a></p>
 <p>⚠️ Do not forget to cite which version you used: <a href="https://doi.org/10.5281/zenodo.5797920" class="external-link uri">https://doi.org/10.5281/zenodo.5797920</a></p>
@@ -204,8 +204,8 @@ Workflow
   </main><aside class="col-md-3"><div class="links">
 <h2 data-toc-skip>Links</h2>
 <ul class="list-unstyled">
-<li><a href="https://github.com/taxonomicallyinformedannotation/tima-r/" class="external-link">Browse source code</a></li>
-<li><a href="https://github.com/taxonomicallyinformedannotation/tima-r/issues" class="external-link">Report a bug</a></li>
+<li><a href="https://github.com/taxonomicallyinformedannotation/tima/" class="external-link">Browse source code</a></li>
+<li><a href="https://github.com/taxonomicallyinformedannotation/tima/issues" class="external-link">Report a bug</a></li>
 </ul>
 </div>
 
@@ -248,6 +248,8 @@ Workflow
 <li><a href="https://CRAN.R-project.org/package=tima" class="external-link"><img src="https://www.r-pkg.org/badges/version/tima" alt="CRAN status"></a></li>
 <li><a href="https://github.com/taxonomicallyinformedannotation/tima/actions/workflows/R-CMD-check.yaml" class="external-link"><img src="https://github.com/taxonomicallyinformedannotation/tima/actions/workflows/R-CMD-check.yaml/badge.svg" alt="R-CMD-check"></a></li>
 <li><a href="https://app.codecov.io/gh/taxonomicallyinformedannotation/tima" class="external-link"><img src="https://codecov.io/gh/taxonomicallyinformedannotation/tima/graph/badge.svg" alt="Codecov test coverage"></a></li>
+<li><a href="https://hub.docker.com/r/adafede/tima/" class="external-link"><img src="https://badgen.net/badge/icon/docker?icon=docker&amp;label" alt="Docker"></a></li>
+<li><a href="https://doi.org/10.5281/zenodo.5797920" class="external-link"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.5797920.svg" alt="DOI"></a></li>
 </ul>
 </div>
 

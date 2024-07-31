@@ -15,19 +15,19 @@
     </button>
 
     <div id="navbar" class="collapse navbar-collapse ms-3">
-      <ul class="navbar-nav me-auto"><li class="nav-item"><a class="nav-link" href="../reference/index.html">Reference</a></li>
+      <ul class="navbar-nav me-auto"><li class="nav-item"><a class="nav-link" href="../articles/tima.html">Get started</a></li>
+<li class="nav-item"><a class="nav-link" href="../reference/index.html">Reference</a></li>
 <li class="nav-item dropdown">
   <button class="nav-link dropdown-toggle" type="button" id="dropdown-articles" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">Articles</button>
   <ul class="dropdown-menu" aria-labelledby="dropdown-articles"><li><a class="dropdown-item" href="../articles/I-gathering.html">1 Gathering everything you need</a></li>
     <li><a class="dropdown-item" href="../articles/II-preparing.html">2 Preparing inputs</a></li>
     <li><a class="dropdown-item" href="../articles/III-processing.html">3 Performing Taxonomically Informed Metabolite Annotation</a></li>
     <li><a class="dropdown-item" href="../articles/IV-benchmarking.html">4 Benchmarking Performance</a></li>
-    <li><a class="dropdown-item" href="../articles/timaR.html">General comments about the infrastructure</a></li>
   </ul></li>
 <li class="active nav-item"><a class="nav-link" href="../news/index.html">Changelog</a></li>
       </ul><ul class="navbar-nav"><li class="nav-item"><form class="form-inline" role="search">
  <input class="form-control" type="search" name="search-input" id="search-input" autocomplete="off" aria-label="Search site" placeholder="Search for" data-search-index="../search.json"></form></li>
-<li class="nav-item"><a class="external-link nav-link" href="https://github.com/taxonomicallyinformedannotation/tima-r/" aria-label="GitHub"><span class="fa fab fa-github fa-lg"></span></a></li>
+<li class="nav-item"><a class="external-link nav-link" href="https://github.com/taxonomicallyinformedannotation/tima/" aria-label="GitHub"><span class="fa fab fa-github fa-lg"></span></a></li>
 <li class="nav-item dropdown">
   <button class="nav-link dropdown-toggle" type="button" id="dropdown-lightswitch" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true" aria-label="Light switch"><span class="fa fa-sun"></span></button>
   <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-lightswitch"><li><button class="dropdown-item" data-bs-theme-value="light"><span class="fa fa-sun"></span> Light</button></li>
@@ -42,18 +42,18 @@
 <div class="row">
   <main id="main" class="col-md-9"><div class="page-header">
       <img src="../logo.svg" class="logo" alt=""><h1>Changelog</h1>
-      <small>Source: <a href="https://github.com/taxonomicallyinformedannotation/tima-r/blob/main/NEWS.md" class="external-link"><code>NEWS.md</code></a></small>
+      <small>Source: <a href="https://github.com/taxonomicallyinformedannotation/tima/blob/main/NEWS.md" class="external-link"><code>NEWS.md</code></a></small>
     </div>
 
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="2.9.7" id="tima-297">tima 2.9.7<a class="anchor" aria-label="anchor" href="#tima-297"></a></h2>
 <ul><li>Added alt text to vignettes</li>
-<li>Added the possibility to add internal libraries through the GUI (<a href="https://github.com/taxonomicallyinformedannotation/tima-r/issues/159" class="external-link">#159</a>)</li>
-<li>Added the possibility to filter confident annotations only (<a href="https://github.com/taxonomicallyinformedannotation/tima-r/issues/140" class="external-link">#140</a>)</li>
+<li>Added the possibility to add internal libraries through the GUI (<a href="https://github.com/taxonomicallyinformedannotation/tima/issues/159" class="external-link">#159</a>)</li>
+<li>Added the possibility to filter confident annotations only (<a href="https://github.com/taxonomicallyinformedannotation/tima/issues/140" class="external-link">#140</a>)</li>
 <li>Added number of peaks in spectrum</li>
 <li>Changed package name, <code>usethis</code> update</li>
-<li>Clearer handling of SIRIUS scores (<a href="https://github.com/taxonomicallyinformedannotation/tima-r/issues/146" class="external-link">#146</a>, <a href="https://github.com/taxonomicallyinformedannotation/tima-r/issues/147" class="external-link">#147</a>)</li>
-<li>Exposed more parameters to the GUI (<a href="https://github.com/taxonomicallyinformedannotation/tima-r/issues/159" class="external-link">#159</a>)</li>
+<li>Clearer handling of SIRIUS scores (<a href="https://github.com/taxonomicallyinformedannotation/tima/issues/146" class="external-link">#146</a>, <a href="https://github.com/taxonomicallyinformedannotation/tima/issues/147" class="external-link">#147</a>)</li>
+<li>Exposed more parameters to the GUI (<a href="https://github.com/taxonomicallyinformedannotation/tima/issues/159" class="external-link">#159</a>)</li>
 <li>Fixed adducts and removed nitrogen rule</li>
 <li>Fixed number of matched peaks</li>
 <li>Improved imports</li>
@@ -64,9 +64,9 @@
 <h2 class="pkg-version" data-toc-text="2.9.6" id="tima-296">tima 2.9.6<a class="anchor" aria-label="anchor" href="#tima-296"></a></h2>
 <ul><li>Added light-switch thanks to <code>pkgdown 2.1.0</code>.</li>
 <li>Attempt to simplify installation</li>
-<li>Fixed library/adducts confusion (<a href="https://github.com/taxonomicallyinformedannotation/tima-r/issues/123" class="external-link">#123</a>)</li>
+<li>Fixed library/adducts confusion (<a href="https://github.com/taxonomicallyinformedannotation/tima/issues/123" class="external-link">#123</a>)</li>
 <li>Fixed some incorrect adduct differences annotations</li>
-<li>Refactored adducts / neutral losses / dimers annotation to allow for more flexibility (<a href="https://github.com/taxonomicallyinformedannotation/tima-r/issues/141" class="external-link">#141</a>, <a href="https://github.com/taxonomicallyinformedannotation/tima-r/issues/144" class="external-link">#144</a>)</li>
+<li>Refactored adducts / neutral losses / dimers annotation to allow for more flexibility (<a href="https://github.com/taxonomicallyinformedannotation/tima/issues/141" class="external-link">#141</a>, <a href="https://github.com/taxonomicallyinformedannotation/tima/issues/144" class="external-link">#144</a>)</li>
 </ul></div>
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="2.9.5" id="tima-295">tima 2.9.5<a class="anchor" aria-label="anchor" href="#tima-295"></a></h2>
@@ -78,12 +78,12 @@
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="2.9.4" id="tima-294">tima 2.9.4<a class="anchor" aria-label="anchor" href="#tima-294"></a></h2>
 <ul><li>Automated update</li>
-<li>Added an option to remove ties (<a href="https://github.com/taxonomicallyinformedannotation/tima-r/issues/134" class="external-link">#134</a>)</li>
-<li>Added some details for SIRIUS, added manual workspace addition (<a href="https://github.com/taxonomicallyinformedannotation/tima-r/issues/132" class="external-link">#132</a>)</li>
+<li>Added an option to remove ties (<a href="https://github.com/taxonomicallyinformedannotation/tima/issues/134" class="external-link">#134</a>)</li>
+<li>Added some details for SIRIUS, added manual workspace addition (<a href="https://github.com/taxonomicallyinformedannotation/tima/issues/132" class="external-link">#132</a>)</li>
 <li>Additional preprocessing (reduction) of noisy spectra</li>
 <li>Dependencies update</li>
-<li>Docker updates (<a href="https://github.com/taxonomicallyinformedannotation/tima-r/issues/131" class="external-link">#131</a>)</li>
-<li>Handle cases when same (feature_id, mslevel) pairs are present within an MGF (<a href="https://github.com/taxonomicallyinformedannotation/tima-r/issues/133" class="external-link">#133</a>)</li>
+<li>Docker updates (<a href="https://github.com/taxonomicallyinformedannotation/tima/issues/131" class="external-link">#131</a>)</li>
+<li>Handle cases when same (feature_id, mslevel) pairs are present within an MGF (<a href="https://github.com/taxonomicallyinformedannotation/tima/issues/133" class="external-link">#133</a>)</li>
 <li>Improved documentation</li>
 <li>New working directory at <code>$HOME/.tima</code>
 </li>
@@ -103,41 +103,41 @@
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="2.9.2" id="tima-292">tima 2.9.2<a class="anchor" aria-label="anchor" href="#tima-292"></a></h2>
 <ul><li>Added Nitrogen rule to filter out some annotations</li>
-<li>Better handling of partial downloads (<a href="https://github.com/taxonomicallyinformedannotation/tima-r/issues/118" class="external-link">#118</a>)</li>
+<li>Better handling of partial downloads (<a href="https://github.com/taxonomicallyinformedannotation/tima/issues/118" class="external-link">#118</a>)</li>
 <li>Dependencies update (mainly <code>targets 1.5.1</code>, will invalidate previous targets)</li>
-<li>Fixed some port issues in Shiny (<a href="https://github.com/taxonomicallyinformedannotation/tima-r/issues/122" class="external-link">#122</a>)</li>
-<li>Removed completely empty columns from final output to avoid confusion (<a href="https://github.com/taxonomicallyinformedannotation/tima-r/issues/120" class="external-link">#120</a>)</li>
+<li>Fixed some port issues in Shiny (<a href="https://github.com/taxonomicallyinformedannotation/tima/issues/122" class="external-link">#122</a>)</li>
+<li>Removed completely empty columns from final output to avoid confusion (<a href="https://github.com/taxonomicallyinformedannotation/tima/issues/120" class="external-link">#120</a>)</li>
 </ul></div>
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="2.9.1" id="tima-291">tima 2.9.1<a class="anchor" aria-label="anchor" href="#tima-291"></a></h2>
 <ul><li>Added <a href="https://caltechlibrary.github.io/waystation/" class="external-link">Waystation</a> action</li>
-<li>Added structures from spectral libraries to SOP library (<a href="https://github.com/taxonomicallyinformedannotation/tima-r/issues/113" class="external-link">#113</a>)</li>
-<li>Exposed all parameters (<a href="https://github.com/taxonomicallyinformedannotation/tima-r/issues/107" class="external-link">#107</a>, <a href="https://github.com/taxonomicallyinformedannotation/tima-r/issues/108" class="external-link">#108</a>)</li>
+<li>Added structures from spectral libraries to SOP library (<a href="https://github.com/taxonomicallyinformedannotation/tima/issues/113" class="external-link">#113</a>)</li>
+<li>Exposed all parameters (<a href="https://github.com/taxonomicallyinformedannotation/tima/issues/107" class="external-link">#107</a>, <a href="https://github.com/taxonomicallyinformedannotation/tima/issues/108" class="external-link">#108</a>)</li>
 <li>Fixed for Zenodo API</li>
 <li>HMDB structures support</li>
 <li>Optimized grep/gsub by adding <code>perl=TRUE</code> or <code>fixed=TRUE</code>
 </li>
 <li>Updated to Massbank version <code>2023.11</code>
 </li>
-<li>Updated SIRIUS preparation (<a href="https://github.com/taxonomicallyinformedannotation/tima-r/issues/74" class="external-link">#74</a>, <a href="https://github.com/taxonomicallyinformedannotation/tima-r/issues/115" class="external-link">#115</a>)</li>
+<li>Updated SIRIUS preparation (<a href="https://github.com/taxonomicallyinformedannotation/tima/issues/74" class="external-link">#74</a>, <a href="https://github.com/taxonomicallyinformedannotation/tima/issues/115" class="external-link">#115</a>)</li>
 </ul></div>
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="2.9.0" id="tima-290">tima 2.9.0<a class="anchor" aria-label="anchor" href="#tima-290"></a></h2>
 <ul><li>Added compounds names as parameter</li>
-<li>Added MassBank spectral library (<a href="https://github.com/taxonomicallyinformedannotation/tima-r/issues/77" class="external-link">#77</a>)</li>
-<li>Allowed files outside <code>data/source</code> (<a href="https://github.com/taxonomicallyinformedannotation/tima-r/issues/89" class="external-link">#89</a>)</li>
-<li>Added RT library as annotation library (<a href="https://github.com/taxonomicallyinformedannotation/tima-r/issues/86" class="external-link">#86</a>)</li>
+<li>Added MassBank spectral library (<a href="https://github.com/taxonomicallyinformedannotation/tima/issues/77" class="external-link">#77</a>)</li>
+<li>Allowed files outside <code>data/source</code> (<a href="https://github.com/taxonomicallyinformedannotation/tima/issues/89" class="external-link">#89</a>)</li>
+<li>Added RT library as annotation library (<a href="https://github.com/taxonomicallyinformedannotation/tima/issues/86" class="external-link">#86</a>)</li>
 <li>Better handling of download errors</li>
 <li>Fixed Docker mount path</li>
-<li>Improved naming (<a href="https://github.com/taxonomicallyinformedannotation/tima-r/issues/91" class="external-link">#91</a>)</li>
+<li>Improved naming (<a href="https://github.com/taxonomicallyinformedannotation/tima/issues/91" class="external-link">#91</a>)</li>
 <li>Internal variables refactoring</li>
-<li>Multiple Shiny fixes and tests addition (<a href="https://github.com/taxonomicallyinformedannotation/tima-r/issues/60" class="external-link">#60</a>)</li>
-<li>Multiple fixes (<a href="https://github.com/taxonomicallyinformedannotation/tima-r/issues/71" class="external-link">#71</a>, <a href="https://github.com/taxonomicallyinformedannotation/tima-r/issues/81" class="external-link">#81</a>, <a href="https://github.com/taxonomicallyinformedannotation/tima-r/issues/82" class="external-link">#82</a>)</li>
-<li>New adducts (<a href="https://github.com/taxonomicallyinformedannotation/tima-r/issues/79" class="external-link">#79</a>, <a href="https://github.com/taxonomicallyinformedannotation/tima-r/issues/80" class="external-link">#80</a>)</li>
+<li>Multiple Shiny fixes and tests addition (<a href="https://github.com/taxonomicallyinformedannotation/tima/issues/60" class="external-link">#60</a>)</li>
+<li>Multiple fixes (<a href="https://github.com/taxonomicallyinformedannotation/tima/issues/71" class="external-link">#71</a>, <a href="https://github.com/taxonomicallyinformedannotation/tima/issues/81" class="external-link">#81</a>, <a href="https://github.com/taxonomicallyinformedannotation/tima/issues/82" class="external-link">#82</a>)</li>
+<li>New adducts (<a href="https://github.com/taxonomicallyinformedannotation/tima/issues/79" class="external-link">#79</a>, <a href="https://github.com/taxonomicallyinformedannotation/tima/issues/80" class="external-link">#80</a>)</li>
 <li>Refactored adducts, clusters and neutral losses</li>
 <li>Refactored biological and chemical score</li>
-<li>Refactored RT matching (<a href="https://github.com/taxonomicallyinformedannotation/tima-r/issues/76" class="external-link">#76</a>)</li>
-<li>Refactored Sirius scores (<a href="https://github.com/taxonomicallyinformedannotation/tima-r/issues/92" class="external-link">#92</a>)</li>
+<li>Refactored RT matching (<a href="https://github.com/taxonomicallyinformedannotation/tima/issues/76" class="external-link">#76</a>)</li>
+<li>Refactored Sirius scores (<a href="https://github.com/taxonomicallyinformedannotation/tima/issues/92" class="external-link">#92</a>)</li>
 <li>Removed GNPS dependency by default</li>
 </ul></div>
     <div class="section level2">
@@ -260,16 +260,16 @@
 </ul></div>
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="2.4.0" id="tima-240">tima 2.4.0<a class="anchor" aria-label="anchor" href="#tima-240"></a></h2>
-<ul><li>Added chemical names and xlogp to output (<a href="https://github.com/taxonomicallyinformedannotation/tima-r/issues/33" class="external-link">#33</a>)</li>
-<li>Added support for case when no consensus is found (<a href="https://github.com/taxonomicallyinformedannotation/tima-r/issues/30" class="external-link">#30</a>)</li>
-<li>Improved output (<a href="https://github.com/taxonomicallyinformedannotation/tima-r/issues/34" class="external-link">#34</a>)</li>
+<ul><li>Added chemical names and xlogp to output (<a href="https://github.com/taxonomicallyinformedannotation/tima/issues/33" class="external-link">#33</a>)</li>
+<li>Added support for case when no consensus is found (<a href="https://github.com/taxonomicallyinformedannotation/tima/issues/30" class="external-link">#30</a>)</li>
+<li>Improved output (<a href="https://github.com/taxonomicallyinformedannotation/tima/issues/34" class="external-link">#34</a>)</li>
 <li>Minor fixes</li>
 </ul></div>
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="2.3.0" id="tima-230">tima 2.3.0<a class="anchor" aria-label="anchor" href="#tima-230"></a></h2>
-<ul><li>Added support for annotation without MN (<a href="https://github.com/taxonomicallyinformedannotation/tima-r/issues/28" class="external-link">#28</a>)</li>
-<li>Added support for multi tool annotations (<a href="https://github.com/taxonomicallyinformedannotation/tima-r/issues/27" class="external-link">#27</a>)</li>
-<li>Added support for classical MN GNPS jobs (<a href="https://github.com/taxonomicallyinformedannotation/tima-r/issues/25" class="external-link">#25</a>)</li>
+<ul><li>Added support for annotation without MN (<a href="https://github.com/taxonomicallyinformedannotation/tima/issues/28" class="external-link">#28</a>)</li>
+<li>Added support for multi tool annotations (<a href="https://github.com/taxonomicallyinformedannotation/tima/issues/27" class="external-link">#27</a>)</li>
+<li>Added support for classical MN GNPS jobs (<a href="https://github.com/taxonomicallyinformedannotation/tima/issues/25" class="external-link">#25</a>)</li>
 <li>Added support for new version of LOTUS</li>
 <li>General improvements for manual inputs</li>
 <li>Improved tests code coverage</li>
@@ -278,7 +278,7 @@
 </ul></div>
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="2.2.2" id="tima-222">tima 2.2.2<a class="anchor" aria-label="anchor" href="#tima-222"></a></h2>
-<ul><li>Additional benchmark figure (<a href="https://taxonomicallyinformedannotation.github.io/tima-r/articles/V-actual-performance.html#candidates-distribution">Candidates distribution</a>)</li>
+<ul><li>Additional benchmark figure (<a href="https://taxonomicallyinformedannotation.github.io/tima/articles/IV-benchmarking.html#candidates-distribution" class="external-link">Candidates distribution</a>)</li>
 <li>Minor fixes</li>
 </ul></div>
     <div class="section level2">
@@ -287,7 +287,7 @@
 </ul></div>
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="2.2.0" id="tima-220">tima 2.2.0<a class="anchor" aria-label="anchor" href="#tima-220"></a></h2>
-<ul><li>Added benchmark (<a href="https://taxonomicallyinformedannotation.github.io/tima-r/articles/V-actual-performance.html">here</a>)</li>
+<ul><li>Added benchmark (<a href="https://taxonomicallyinformedannotation.github.io/tima/articles/IV-benchmarking.html" class="external-link">here</a>)</li>
 <li>Various fixes</li>
 </ul></div>
     <div class="section level2">
