@@ -2,6 +2,7 @@
 <url><loc>https://taxonomicallyinformedannotation.github.io/tima-r/404.html</loc></url>
 <url><loc>https://taxonomicallyinformedannotation.github.io/tima-r/CODE_OF_CONDUCT.html</loc></url>
 <url><loc>https://taxonomicallyinformedannotation.github.io/tima-r/CONTRIBUTING.html</loc></url>
+<url><loc>https://taxonomicallyinformedannotation.github.io/tima-r/LICENSE-text.html</loc></url>
 <url><loc>https://taxonomicallyinformedannotation.github.io/tima-r/LICENSE.html</loc></url>
 <url><loc>https://taxonomicallyinformedannotation.github.io/tima-r/SECURITY.html</loc></url>
 <url><loc>https://taxonomicallyinformedannotation.github.io/tima-r/SUPPORT.html</loc></url>
@@ -95,7 +96,7 @@
 <url><loc>https://taxonomicallyinformedannotation.github.io/tima-r/reference/select_sirius_columns_structures.html</loc></url>
 <url><loc>https://taxonomicallyinformedannotation.github.io/tima-r/reference/select_sop_columns.html</loc></url>
 <url><loc>https://taxonomicallyinformedannotation.github.io/tima-r/reference/split_tables_sop.html</loc></url>
-<url><loc>https://taxonomicallyinformedannotation.github.io/tima-r/reference/timaR-package.html</loc></url>
+<url><loc>https://taxonomicallyinformedannotation.github.io/tima-r/reference/tima-package.html</loc></url>
 <url><loc>https://taxonomicallyinformedannotation.github.io/tima-r/reference/transform_score_sirius_csi.html</loc></url>
 <url><loc>https://taxonomicallyinformedannotation.github.io/tima-r/reference/weight_annotations.html</loc></url>
 <url><loc>https://taxonomicallyinformedannotation.github.io/tima-r/reference/weight_bio.html</loc></url>

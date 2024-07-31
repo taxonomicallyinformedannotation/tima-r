@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Taxonomically Informed Metabolite Annotation • timaR</title>
+<title>Taxonomically Informed Metabolite Annotation • tima</title>
 <!-- favicons --><link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="apple-touch-icon.png">
@@ -32,7 +32,7 @@
 
     <nav class="navbar navbar-expand-lg fixed-top " aria-label="Site navigation"><div class="container">
 
-    <a class="navbar-brand me-2" href="index.html">timaR</a>
+    <a class="navbar-brand me-2" href="index.html">tima</a>
 
     <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">2.9.7</small>
 
@@ -43,7 +43,6 @@
 
     <div id="navbar" class="collapse navbar-collapse ms-3">
       <ul class="navbar-nav me-auto">
-<li class="nav-item"><a class="nav-link" href="articles/timaR.html">Get started</a></li>
 <li class="nav-item"><a class="nav-link" href="reference/index.html">Reference</a></li>
 <li class="nav-item dropdown">
   <button class="nav-link dropdown-toggle" type="button" id="dropdown-articles" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">Articles</button>
@@ -52,6 +51,7 @@
     <li><a class="dropdown-item" href="articles/II-preparing.html">2 Preparing inputs</a></li>
     <li><a class="dropdown-item" href="articles/III-processing.html">3 Performing Taxonomically Informed Metabolite Annotation</a></li>
     <li><a class="dropdown-item" href="articles/IV-benchmarking.html">4 Benchmarking Performance</a></li>
+    <li><a class="dropdown-item" href="articles/timaR.html">General comments about the infrastructure</a></li>
   </ul>
 </li>
 <li class="nav-item"><a class="nav-link" href="news/index.html">Changelog</a></li>
@@ -78,16 +78,15 @@
 <div class="row">
   <main id="main" class="col-md-9"><div class="section level1">
 <div class="page-header">
-<img src="logo.svg" class="logo" alt=""><h1 id="taxonomically-informed-metabolite-annotation-">Taxonomically Informed Metabolite Annotation <a class="anchor" aria-label="anchor" href="#taxonomically-informed-metabolite-annotation-"></a>
+<img src="logo.svg" class="logo" alt=""><h1 id="tima">tima<a class="anchor" aria-label="anchor" href="#tima"></a>
 </h1>
 </div>
 <!-- badges: start -->
 
 <p>The initial work is available at <a href="https://doi.org/10.3389/fpls.2019.01329" class="external-link uri">https://doi.org/10.3389/fpls.2019.01329</a>, with many improvements made since then. The workflow is illustrated below.</p>
-<div class="float">
-<img src="https://raw.githubusercontent.com/taxonomicallyinformedannotation/tima-r/main/man/figures/tima.svg" alt="Workflow"><div class="figcaption">Workflow</div>
-</div>
-<p>This repository contains everything needed to perform <strong>T</strong>axonomically <strong>I</strong>nformed <strong>M</strong>etabolite <strong>A</strong>nnotation.</p>
+<figure><img src="https://raw.githubusercontent.com/taxonomicallyinformedannotation/tima-r/main/man/figures/tima.svg" alt="Workflow"><figcaption aria-hidden="true">
+Workflow
+</figcaption></figure><p>This repository contains everything needed to perform <strong>T</strong>axonomically <strong>I</strong>nformed <strong>M</strong>etabolite <strong>A</strong>nnotation.</p>
 <div class="section level2">
 <h2 id="requirements">Requirements<a class="anchor" aria-label="anchor" href="#requirements"></a>
 </h2>
@@ -106,37 +105,32 @@
 <div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
 </h2>
-<div class="section level3">
-<h3 id="r">R<a class="anchor" aria-label="anchor" href="#r"></a>
-</h3>
-<p>R (&gt;= 4.4.0) is required. Please install it on your machine using the official binaries (<a href="https://cran.r-project.org/" class="external-link uri">https://cran.r-project.org/</a>).</p>
-</div>
-<div class="section level3">
-<h3 id="tima-r">TIMA-R<a class="anchor" aria-label="anchor" href="#tima-r"></a>
-</h3>
+<p>You can install the development version of tima from <a href="https://github.com/" class="external-link">GitHub</a> with:</p>
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="co"># install.packages("pak")</span></span>
+<span><span class="fu">pak</span><span class="fu">::</span><span class="fu"><a href="https://pak.r-lib.org/reference/pak.html" class="external-link">pak</a></span><span class="op">(</span><span class="st">"taxonomicallyinformedannotation/tima"</span><span class="op">)</span></span></code></pre></div>
 <p>As the package is not (yet) available on CRAN, you will need to install the development version, therefore:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/taxonomicallyinformedannotation/tima-r.git</span>
-<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a><span class="bu">cd</span> tima-r</span>
-<span id="cb1-3"><a href="#cb1-3" tabindex="-1"></a><span class="ex">Rscript</span> inst/scripts/install.R</span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/taxonomicallyinformedannotation/tima-r.git</span>
+<span id="cb2-2"><a href="#cb2-2" tabindex="-1"></a><span class="bu">cd</span> tima-r</span>
+<span id="cb2-3"><a href="#cb2-3" tabindex="-1"></a><span class="ex">Rscript</span> inst/scripts/install.R</span></code></pre></div>
 <p>Normally, everything you need should then be installed (as tested in <a href="https://github.com/taxonomicallyinformedannotation/tima-r/actions/workflows/external-use.yaml" class="external-link">here</a>). If for some reason, some packages were not installed, try to install them manually. To avoid such issues, we offer a containerized version (see <a href="#docker">Docker</a>).</p>
 <p>Once installed, you are ready to go through our <a href="https://taxonomicallyinformedannotation.github.io/tima-r/articles/">documentation</a>, with the major steps detailed.</p>
 <p>In case you do not have your data ready, you can obtain some example data (set of 7,000+ spectra) using:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a><span class="ex">Rscript</span> inst/scripts/get_example_spectra.R</span>
-<span id="cb2-2"><a href="#cb2-2" tabindex="-1"></a><span class="ex">Rscript</span> inst/scripts/get_example_features.R</span>
-<span id="cb2-3"><a href="#cb2-3" tabindex="-1"></a><span class="ex">Rscript</span> inst/scripts/get_example_metadata.R</span>
-<span id="cb2-4"><a href="#cb2-4" tabindex="-1"></a><span class="co"># Rscript inst/scripts/get_example_sirius.R</span></span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="ex">Rscript</span> inst/scripts/get_example_spectra.R</span>
+<span id="cb3-2"><a href="#cb3-2" tabindex="-1"></a><span class="ex">Rscript</span> inst/scripts/get_example_features.R</span>
+<span id="cb3-3"><a href="#cb3-3" tabindex="-1"></a><span class="ex">Rscript</span> inst/scripts/get_example_metadata.R</span>
+<span id="cb3-4"><a href="#cb3-4" tabindex="-1"></a><span class="co"># Rscript inst/scripts/get_example_sirius.R</span></span></code></pre></div>
 <p>Once you are done, you can open a small GUI to adapt your parameters and launch your job:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="ex">Rscript</span> inst/scripts/run_app.R</span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a><span class="ex">Rscript</span> inst/scripts/run_app.R</span></code></pre></div>
 <p>This command will open a small app in your default browser.</p>
-</div>
 <div class="section level3">
 <h3 id="docker">Docker<a class="anchor" aria-label="anchor" href="#docker"></a>
 </h3>
 <p>A container is also available, together with a small compose file. Main commands are below:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a><span class="ex">docker</span> pull adafede/tima-r</span>
-<span id="cb4-2"><a href="#cb4-2" tabindex="-1"></a><span class="co"># docker build . -t adafede/tima-r</span></span></code></pre></div>
-<div class="sourceCode" id="cb5"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a><span class="ex">docker</span> compose up tima-gui</span>
-<span id="cb5-2"><a href="#cb5-2" tabindex="-1"></a><span class="co"># docker compose up tima-full</span></span></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a><span class="ex">docker</span> pull adafede/tima-r</span>
+<span id="cb5-2"><a href="#cb5-2" tabindex="-1"></a><span class="co"># docker build . -t adafede/tima-r</span></span></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" tabindex="-1"></a><span class="ex">docker</span> compose up tima-gui</span>
+<span id="cb6-2"><a href="#cb6-2" tabindex="-1"></a><span class="co"># docker compose up tima-full</span></span></code></pre></div>
 </div>
 </div>
 <div class="section level2">
@@ -144,7 +138,7 @@
 </h2>
 <p>According to which steps you used, please give credit to the authors of the tools/resources used.</p>
 <div class="section level3">
-<h3 id="tima">TIMA<a class="anchor" aria-label="anchor" href="#tima"></a>
+<h3 id="tima-1">TIMA<a class="anchor" aria-label="anchor" href="#tima-1"></a>
 </h3>
 <p>General: <a href="https://doi.org/10.3389/fpls.2019.01329" class="external-link uri">https://doi.org/10.3389/fpls.2019.01329</a></p>
 <p>⚠️ Do not forget to cite which version you used: <a href="https://doi.org/10.5281/zenodo.5797920" class="external-link uri">https://doi.org/10.5281/zenodo.5797920</a></p>
@@ -235,7 +229,7 @@
 <div class="citation">
 <h2 data-toc-skip>Citation</h2>
 <ul class="list-unstyled">
-<li><a href="authors.html#citation">Citing timaR</a></li>
+<li><a href="authors.html#citation">Citing tima</a></li>
 </ul>
 </div>
 
@@ -250,12 +244,10 @@
 <div class="dev-status">
 <h2 data-toc-skip>Dev status</h2>
 <ul class="list-unstyled">
-<li><a href="https://app.codecov.io/gh/taxonomicallyinformedannotation/tima-r?branch=main" class="external-link"><img src="https://codecov.io/gh/taxonomicallyinformedannotation/tima-r/branch/main/graph/badge.svg" alt="Codecov test coverage"></a></li>
-<li><a href="https://hub.docker.com/r/adafede/tima-r/" class="external-link"><img src="https://badgen.net/badge/icon/docker?icon=docker&amp;label" alt="Docker"></a></li>
-<li><a href="https://doi.org/10.5281/zenodo.5797920" class="external-link"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.5797920.svg" alt="DOI"></a></li>
-<li><a href="https://github.com/taxonomicallyinformedannotation/tima-r/actions/workflows/r-license-report.yml" class="external-link"><img src="https://github.com/taxonomicallyinformedannotation/tima-r/actions/workflows/r-license-report.yml/badge.svg" alt="License report action test"></a></li>
-<li><a href="https://github.com/taxonomicallyinformedannotation/tima-r/actions/workflows/check-standard.yaml" class="external-link"><img src="https://github.com/taxonomicallyinformedannotation/tima-r/workflows/R-CMD-check/badge.svg" alt="R-CMD-check"></a></li>
-<li><a href="https://lifecycle.r-lib.org/articles/stages.html#stable" class="external-link"><img src="https://img.shields.io/badge/lifecycle-stable-brightgreen.svg" alt="Lifecycle: stable"></a></li>
+<li><a href="https://lifecycle.r-lib.org/articles/stages.html#experimental" class="external-link"><img src="https://img.shields.io/badge/lifecycle-experimental-orange.svg" alt="Lifecycle: experimental"></a></li>
+<li><a href="https://CRAN.R-project.org/package=tima" class="external-link"><img src="https://www.r-pkg.org/badges/version/tima" alt="CRAN status"></a></li>
+<li><a href="https://github.com/taxonomicallyinformedannotation/tima/actions/workflows/R-CMD-check.yaml" class="external-link"><img src="https://github.com/taxonomicallyinformedannotation/tima/actions/workflows/R-CMD-check.yaml/badge.svg" alt="R-CMD-check"></a></li>
+<li><a href="https://app.codecov.io/gh/taxonomicallyinformedannotation/tima" class="external-link"><img src="https://codecov.io/gh/taxonomicallyinformedannotation/tima/graph/badge.svg" alt="Codecov test coverage"></a></li>
 </ul>
 </div>
 

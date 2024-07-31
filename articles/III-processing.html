@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>3 Performing Taxonomically Informed Metabolite Annotation • timaR</title>
+<title>3 Performing Taxonomically Informed Metabolite Annotation • tima</title>
 <!-- favicons --><link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
 <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="../apple-touch-icon.png">
@@ -30,7 +30,7 @@
 
     <nav class="navbar navbar-expand-lg fixed-top " aria-label="Site navigation"><div class="container">
 
-    <a class="navbar-brand me-2" href="../index.html">timaR</a>
+    <a class="navbar-brand me-2" href="../index.html">tima</a>
 
     <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">2.9.7</small>
 
@@ -41,7 +41,6 @@
 
     <div id="navbar" class="collapse navbar-collapse ms-3">
       <ul class="navbar-nav me-auto">
-<li class="nav-item"><a class="nav-link" href="../articles/timaR.html">Get started</a></li>
 <li class="nav-item"><a class="nav-link" href="../reference/index.html">Reference</a></li>
 <li class="active nav-item dropdown">
   <button class="nav-link dropdown-toggle" type="button" id="dropdown-articles" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">Articles</button>
@@ -50,6 +49,7 @@
     <li><a class="dropdown-item" href="../articles/II-preparing.html">2 Preparing inputs</a></li>
     <li><a class="dropdown-item" href="../articles/III-processing.html">3 Performing Taxonomically Informed Metabolite Annotation</a></li>
     <li><a class="dropdown-item" href="../articles/IV-benchmarking.html">4 Benchmarking Performance</a></li>
+    <li><a class="dropdown-item" href="../articles/timaR.html">General comments about the infrastructure</a></li>
   </ul>
 </li>
 <li class="nav-item"><a class="nav-link" href="../news/index.html">Changelog</a></li>
@@ -83,7 +83,7 @@
                         <h4 data-toc-skip class="author">Adriano
 Rutz</h4>
             
-            <h4 data-toc-skip class="date">2024-07-25</h4>
+            <h4 data-toc-skip class="date">2024-07-31</h4>
       
       <small class="dont-index">Source: <a href="https://github.com/taxonomicallyinformedannotation/tima-r/blob/main/vignettes/articles/III-processing.Rmd" class="external-link"><code>vignettes/articles/III-processing.Rmd</code></a></small>
       <div class="d-none name"><code>III-processing.Rmd</code></div>
@@ -97,10 +97,10 @@ Rutz</h4>
 steps successfully, this should be a piece of cake, you deserve it!</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/source.html" class="external-link">source</a></span><span class="op">(</span>file <span class="op">=</span> <span class="st">"inst/scripts/weight_annotations.R"</span><span class="op">)</span></span>
-<span><span class="co">#&gt; 2024-07-25 13:45:54.728541 This script performs <span style="color: #00BB00;">taxonomically informed scoring</span> and followed by <span style="color: #0000BB;">chemical consistency informed scoring</span> </span></span>
-<span><span class="co">#&gt; 2024-07-25 13:45:54.729073 Authors:  <span style="color: #00BB00;">AR</span> , <span style="color: #0000BB;">PMA</span> </span></span>
+<span><span class="co">#&gt; 2024-07-31 20:34:38.563193 This script performs <span style="color: #00BB00;">taxonomically informed scoring</span> and followed by <span style="color: #0000BB;">chemical consistency informed scoring</span> </span></span>
+<span><span class="co">#&gt; 2024-07-31 20:34:38.563963 Authors:  <span style="color: #00BB00;">AR</span> , <span style="color: #0000BB;">PMA</span> </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2024-07-25 13:45:54.729201 Contributors: ... </span></span>
+<span><span class="co">#&gt; 2024-07-31 20:34:38.564207 Contributors: ... </span></span>
 <span><span class="co">#&gt; <span style="color: #BB0000;">✔ skipped target yaml_paths</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skipped target paths</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skipped target paths_data_source_libraries_spectra_is_lotus_neg</span></span></span>
@@ -145,7 +145,7 @@ steps successfully, this should be a piece of cake, you deserve it!</p>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ● completed target par_def_wei_ann [0 seconds]</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ▶ dispatched target lib_spe_is_lot_neg</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; File already exists. Skipping.</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ● completed target lib_spe_is_lot_neg [0.006 seconds]</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ● completed target lib_spe_is_lot_neg [0.009 seconds]</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skipped target par_fin_par</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skipped target lib_sop_ecm</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skipped target par_fin_par2</span></span></span>
@@ -156,7 +156,7 @@ steps successfully, this should be a piece of cake, you deserve it!</p>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ● completed target lib_spe_is_lot_pos [0 seconds]</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ▶ dispatched target lib_sop_lot</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; A file with the same size is already present. Skipping</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ● completed target lib_sop_lot [1.785 seconds]</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ● completed target lib_sop_lot [1.578 seconds]</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skipped target lib_spe_is_lot_pre_neg</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skipped target par_usr_pre_ann_sir</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skipped target par_usr_pre_fea_com</span></span></span>
@@ -177,14 +177,14 @@ steps successfully, this should be a piece of cake, you deserve it!</p>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skipped target par_usr_pre_tax</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skipped target par_usr_pre_fea_tab</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skipped target par_usr_pre_lib_sop_hmd</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; </span>2024-07-25 13:46:03.053539 Loading default params </span></span>
-<span><span class="co">#&gt; 2024-07-25 13:46:03.066652 All params </span></span>
-<span><span class="co">#&gt; 2024-07-25 13:46:03.066864 Small params </span></span>
-<span><span class="co">#&gt; 2024-07-25 13:46:03.066928 Changing params </span></span>
-<span><span class="co">#&gt; 2024-07-25 13:46:03.067027 Changing filenames </span></span>
-<span><span class="co">#&gt; 2024-07-25 13:46:03.475728 Exporting params ... </span></span>
-<span><span class="co">#&gt; <span style="color: #BB0000;">▶ dispatched target par_usr_wei_ann</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ● completed target par_usr_wei_ann [1.05 seconds]</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ▶ dispatched target par_usr_wei_ann</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; </span>2024-07-31 20:34:48.13049 Loading default params </span></span>
+<span><span class="co">#&gt; 2024-07-31 20:34:48.145093 All params </span></span>
+<span><span class="co">#&gt; 2024-07-31 20:34:48.145333 Small params </span></span>
+<span><span class="co">#&gt; 2024-07-31 20:34:48.145431 Changing params </span></span>
+<span><span class="co">#&gt; 2024-07-31 20:34:48.145572 Changing filenames </span></span>
+<span><span class="co">#&gt; 2024-07-31 20:34:48.782749 Exporting params ... </span></span>
+<span><span class="co">#&gt; <span style="color: #BB0000;">● completed target par_usr_wei_ann [1.494 seconds]</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skipped target lib_spe_exp_mb_pre</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skipped target lib_spe_is_lot_pre_pos</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skipped target par_pre_ann_sir</span></span></span>
@@ -254,51 +254,51 @@ steps successfully, this should be a piece of cake, you deserve it!</p>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skipped target int_com</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skipped target fea_com_pre</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ▶ dispatched target ann_pre</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; </span>2024-07-25 13:46:04.216361 Loading files ... </span></span>
-<span><span class="co">#&gt; 2024-07-25 13:46:04.2165 ... components </span></span>
-<span><span class="co">#&gt; 2024-07-25 13:46:04.21811 ... edges </span></span>
-<span><span class="co">#&gt; 2024-07-25 13:46:04.219453 ... structure-organism pairs </span></span>
-<span><span class="co">#&gt; 2024-07-25 13:46:08.729387 ... canopus </span></span>
-<span><span class="co">#&gt; 2024-07-25 13:46:08.750504 ... formula </span></span>
-<span><span class="co">#&gt; 2024-07-25 13:46:08.76916 ... annotations </span></span>
-<span><span class="co">#&gt; 2024-07-25 13:46:09.990324 Got c("ISDB", "MassBank - 2024.06", "TIMA MS1") initial annotations </span></span>
-<span><span class="co">#&gt;  2024-07-25 13:46:09.990324 Got c(975, 57, 284533) initial annotations </span></span>
-<span><span class="co">#&gt; 2024-07-25 13:46:10.502919 Re-arranging annotations </span></span>
-<span><span class="co">#&gt; 2024-07-25 13:46:11.853299 adding biological organism metadata </span></span>
-<span><span class="co">#&gt; 2024-07-25 13:46:12.075025 performing taxonomically informed scoring </span></span>
-<span><span class="co">#&gt; 2024-07-25 13:46:12.11106 filtering top  3  candidates and keeping only MS1 candidates with minimum </span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; </span>2024-07-31 20:34:49.707381 Loading files ... </span></span>
+<span><span class="co">#&gt; 2024-07-31 20:34:49.707533 ... components </span></span>
+<span><span class="co">#&gt; 2024-07-31 20:34:49.709883 ... edges </span></span>
+<span><span class="co">#&gt; 2024-07-31 20:34:49.711868 ... structure-organism pairs </span></span>
+<span><span class="co">#&gt; 2024-07-31 20:34:55.859708 ... canopus </span></span>
+<span><span class="co">#&gt; 2024-07-31 20:34:55.885717 ... formula </span></span>
+<span><span class="co">#&gt; 2024-07-31 20:34:55.910463 ... annotations </span></span>
+<span><span class="co">#&gt; 2024-07-31 20:34:57.577131 Got c("ISDB", "MassBank - 2024.06", "TIMA MS1") initial annotations </span></span>
+<span><span class="co">#&gt;  2024-07-31 20:34:57.577131 Got c(975, 57, 284533) initial annotations </span></span>
+<span><span class="co">#&gt; 2024-07-31 20:34:58.332984 Re-arranging annotations </span></span>
+<span><span class="co">#&gt; 2024-07-31 20:35:00.20716 adding biological organism metadata </span></span>
+<span><span class="co">#&gt; 2024-07-31 20:35:00.343118 performing taxonomically informed scoring </span></span>
+<span><span class="co">#&gt; 2024-07-31 20:35:00.389542 filtering top  3  candidates and keeping only MS1 candidates with minimum </span></span>
 <span><span class="co">#&gt;  0  biological score </span></span>
 <span><span class="co">#&gt;  OR 0 chemical score </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2024-07-25 13:46:12.279473 adding "notClassified" </span></span>
+<span><span class="co">#&gt; 2024-07-31 20:35:00.641056 adding "notClassified" </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2024-07-25 13:46:13.058525 calculating biological score at all levels ... </span></span>
+<span><span class="co">#&gt; 2024-07-31 20:35:01.978638 calculating biological score at all levels ... </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2024-07-25 13:46:13.058807 ... domain </span></span>
+<span><span class="co">#&gt; 2024-07-31 20:35:01.978847 ... domain </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2024-07-25 13:46:13.06622 ... kingdom </span></span>
+<span><span class="co">#&gt; 2024-07-31 20:35:01.988901 ... kingdom </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2024-07-25 13:46:13.073095 ... phylum </span></span>
+<span><span class="co">#&gt; 2024-07-31 20:35:01.998087 ... phylum </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2024-07-25 13:46:13.077655 ... class </span></span>
+<span><span class="co">#&gt; 2024-07-31 20:35:02.007267 ... class </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2024-07-25 13:46:13.082698 ... order </span></span>
+<span><span class="co">#&gt; 2024-07-31 20:35:02.017112 ... order </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2024-07-25 13:46:13.09173 ... family </span></span>
+<span><span class="co">#&gt; 2024-07-31 20:35:02.03164 ... family </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2024-07-25 13:46:13.106629 ... tribe </span></span>
+<span><span class="co">#&gt; 2024-07-31 20:35:02.055382 ... tribe </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2024-07-25 13:46:13.116773 ... genus </span></span>
+<span><span class="co">#&gt; 2024-07-31 20:35:02.071067 ... genus </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2024-07-25 13:46:13.166621 ... species </span></span>
+<span><span class="co">#&gt; 2024-07-31 20:35:02.146127 ... species </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2024-07-25 13:46:13.371809 ... varietas </span></span>
+<span><span class="co">#&gt; 2024-07-31 20:35:02.409004 ... varietas </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2024-07-25 13:46:13.378774 ... keeping best biological score </span></span>
+<span><span class="co">#&gt; 2024-07-31 20:35:02.419276 ... keeping best biological score </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2024-07-25 13:46:14.644164 ... calculating weighted biological score </span></span>
+<span><span class="co">#&gt; 2024-07-31 20:35:03.986233 ... calculating weighted biological score </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2024-07-25 13:46:15.461973 taxonomically informed scoring led to </span></span>
+<span><span class="co">#&gt; 2024-07-31 20:35:04.895258 taxonomically informed scoring led to </span></span>
 <span><span class="co">#&gt;  <span style="color: #555555;">44595</span> annotations reranked at the <span style="color: #555555;">kingdom</span> level, </span></span>
 <span><span class="co">#&gt;  <span style="color: #BBBBBB;">44188</span> annotations reranked at the <span style="color: #BBBBBB;">phylum</span> level, </span></span>
 <span><span class="co">#&gt;  <span style="color: #00BBBB;">36401</span> annotations reranked at the <span style="color: #00BBBB;">class</span> level, </span></span>
@@ -309,55 +309,55 @@ steps successfully, this should be a piece of cake, you deserve it!</p>
 <span><span class="co">#&gt;  <span style="color: #00BB00;">454</span> annotations reranked at the <span style="color: #00BB00;">species</span> level, </span></span>
 <span><span class="co">#&gt;  and <span style="color: #BB0000;">0</span> annotations reranked at the <span style="color: #BB0000;">variety</span> level. </span></span>
 <span><span class="co">#&gt;  WITHOUT TAKING CONSISTENCY SCORE INTO ACCOUNT! (for later predictions) </span></span>
-<span><span class="co">#&gt; 2024-07-25 13:46:15.539392 calculating chemical consistency</span></span>
+<span><span class="co">#&gt; 2024-07-31 20:35:05.02758 calculating chemical consistency</span></span>
 <span><span class="co">#&gt;               features with at least 2 neighbors ... </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2024-07-25 13:46:15.59037 ... among all edges ... </span></span>
+<span><span class="co">#&gt; 2024-07-31 20:35:05.207864 ... among all edges ... </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2024-07-25 13:46:15.590509 ... at the (classyfire) kingdom level </span></span>
+<span><span class="co">#&gt; 2024-07-31 20:35:05.208065 ... at the (classyfire) kingdom level </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2024-07-25 13:46:15.618009 ... at the (NPC) pathway level </span></span>
+<span><span class="co">#&gt; 2024-07-31 20:35:05.267407 ... at the (NPC) pathway level </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2024-07-25 13:46:15.67258 ... at the (classyfire) superclass level </span></span>
+<span><span class="co">#&gt; 2024-07-31 20:35:05.38875 ... at the (classyfire) superclass level </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2024-07-25 13:46:15.733754 ... at the (NPC) superclass level </span></span>
+<span><span class="co">#&gt; 2024-07-31 20:35:05.509894 ... at the (NPC) superclass level </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2024-07-25 13:46:15.893862 ... at the (classyfire) class level </span></span>
+<span><span class="co">#&gt; 2024-07-31 20:35:05.797851 ... at the (classyfire) class level </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2024-07-25 13:46:16.041819 ... at the (NPC) class level </span></span>
+<span><span class="co">#&gt; 2024-07-31 20:35:06.12576 ... at the (NPC) class level </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2024-07-25 13:46:16.282112 ... at the (classyfire) parent level </span></span>
+<span><span class="co">#&gt; 2024-07-31 20:35:06.650056 ... at the (classyfire) parent level </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2024-07-25 13:46:16.591801 splitting already computed predictions </span></span>
+<span><span class="co">#&gt; 2024-07-31 20:35:07.297585 splitting already computed predictions </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2024-07-25 13:46:16.900567 joining all except -1 together </span></span>
+<span><span class="co">#&gt; 2024-07-31 20:35:07.921299 joining all except -1 together </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2024-07-25 13:46:17.771255 adding dummy consistency for features</span></span>
+<span><span class="co">#&gt; 2024-07-31 20:35:09.782506 adding dummy consistency for features</span></span>
 <span><span class="co">#&gt;               with less than 2 neighbors </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2024-07-25 13:46:18.380548 adding already computed predictions back </span></span>
+<span><span class="co">#&gt; 2024-07-31 20:35:09.825357 adding already computed predictions back </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2024-07-25 13:46:19.053937 calculating chemical score at all levels ... </span></span>
+<span><span class="co">#&gt; 2024-07-31 20:35:11.298032 calculating chemical score at all levels ... </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2024-07-25 13:46:19.054077 ... (classyfire) kingdom </span></span>
+<span><span class="co">#&gt; 2024-07-31 20:35:11.298218 ... (classyfire) kingdom </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2024-07-25 13:46:19.057114 ... (NPC) pathway </span></span>
+<span><span class="co">#&gt; 2024-07-31 20:35:11.304568 ... (NPC) pathway </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2024-07-25 13:46:19.062016 ... (classyfire) superclass </span></span>
+<span><span class="co">#&gt; 2024-07-31 20:35:11.313781 ... (classyfire) superclass </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2024-07-25 13:46:19.066903 ... (NPC) superclass </span></span>
+<span><span class="co">#&gt; 2024-07-31 20:35:11.322683 ... (NPC) superclass </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2024-07-25 13:46:19.079393 ... (classyfire) class </span></span>
+<span><span class="co">#&gt; 2024-07-31 20:35:11.343177 ... (classyfire) class </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2024-07-25 13:46:19.095518 ... (NPC) class </span></span>
+<span><span class="co">#&gt; 2024-07-31 20:35:11.368065 ... (NPC) class </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2024-07-25 13:46:19.135248 ... (classyfire) parent </span></span>
+<span><span class="co">#&gt; 2024-07-31 20:35:11.428596 ... (classyfire) parent </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2024-07-25 13:46:19.176361 ... keeping best chemical score </span></span>
+<span><span class="co">#&gt; 2024-07-31 20:35:11.492359 ... keeping best chemical score </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2024-07-25 13:46:19.543934 ... calculating weighted chemical score </span></span>
+<span><span class="co">#&gt; 2024-07-31 20:35:12.382294 ... calculating weighted chemical score </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2024-07-25 13:46:19.659348 chemically informed scoring led to </span></span>
+<span><span class="co">#&gt; 2024-07-31 20:35:12.502146 chemically informed scoring led to </span></span>
 <span><span class="co">#&gt;  <span style="color: #555555;">27141</span> annotations reranked at the <span style="color: #555555;">(classyfire) kingdom</span> level, </span></span>
 <span><span class="co">#&gt;  <span style="color: #00BBBB;">17970</span> annotations reranked at the <span style="color: #00BBBB;">(NPC) pathway</span> level, </span></span>
 <span><span class="co">#&gt;  <span style="color: #BB00BB;">14250</span> annotations reranked at the <span style="color: #BB00BB;">(classyfire) superclass</span> level, </span></span>
@@ -366,25 +366,25 @@ steps successfully, this should be a piece of cake, you deserve it!</p>
 <span><span class="co">#&gt;  <span style="color: #00BB00;">8125</span> annotations reranked at the <span style="color: #00BB00;">(NPC) class</span> level, and </span></span>
 <span><span class="co">#&gt;  <span style="color: #BB0000;">7927</span> annotations reranked at the <span style="color: #BB0000;">(classyfire) parent</span> level. </span></span>
 <span><span class="co">#&gt;  WITHOUT TAKING CONSISTENCY SCORE INTO ACCOUNT! </span></span>
-<span><span class="co">#&gt; 2024-07-25 13:46:19.790892 Keeping high confidence candidates only... </span></span>
-<span><span class="co">#&gt; 2024-07-25 13:46:19.795134 Removed <span style="color: #BB0000;">284405</span> low confidence candidates out of the <span style="color: #0000BB;">286440</span> total ones. </span></span>
-<span><span class="co">#&gt; 2024-07-25 13:46:19.795386 <span style="color: #00BB00;">2035</span> high confidence candidates remaining. </span></span>
-<span><span class="co">#&gt; 2024-07-25 13:46:20.57161 adding initial metadata (RT, etc.) and simplifying columns </span></span>
+<span><span class="co">#&gt; 2024-07-31 20:35:12.586645 Keeping high confidence candidates only... </span></span>
+<span><span class="co">#&gt; 2024-07-31 20:35:12.592056 Removed <span style="color: #BB0000;">284405</span> low confidence candidates out of the <span style="color: #0000BB;">286440</span> total ones. </span></span>
+<span><span class="co">#&gt; 2024-07-31 20:35:12.592417 <span style="color: #00BB00;">2035</span> high confidence candidates remaining. </span></span>
+<span><span class="co">#&gt; 2024-07-31 20:35:13.303719 adding initial metadata (RT, etc.) and simplifying columns </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2024-07-25 13:46:20.593227 adding references </span></span>
+<span><span class="co">#&gt; 2024-07-31 20:35:13.331211 adding references </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2024-07-25 13:46:22.201179 selecting columns to export </span></span>
+<span><span class="co">#&gt; 2024-07-31 20:35:15.187943 selecting columns to export </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2024-07-25 13:46:22.268344 adding consensus again to droped candidates </span></span>
+<span><span class="co">#&gt; 2024-07-31 20:35:15.263117 adding consensus again to droped candidates </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2024-07-25 13:46:23.616309 Exporting ... </span></span>
-<span><span class="co">#&gt; 2024-07-25 13:46:23.622345 Directory data/processed/240725_134623_example created. </span></span>
-<span><span class="co">#&gt; 2024-07-25 13:46:23.622584 ... path to used parameters is <span style="color: #00BB00;">data/processed/240725_134623_example</span> </span></span>
-<span><span class="co">#&gt; 2024-07-25 13:46:26.928858 ... path to used parameters is <span style="color: #00BB00;">data/processed/240725_134623_example</span> </span></span>
-<span><span class="co">#&gt; 2024-07-25 13:46:27.344432 ... path to export is <span style="color: #00BB00;">data/processed/240725_134623_example/example_results.tsv</span> </span></span>
-<span><span class="co">#&gt; <span style="color: #BB0000;">● completed target ann_pre [23.163 seconds]</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ▶ ended pipeline [29.197 seconds]</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; </span>2024-07-25 13:46:27.410661 Script finished in <span style="color: #00BB00;">32.68219 secs</span></span></span></code></pre></div>
+<span><span class="co">#&gt; 2024-07-31 20:35:17.906641 Exporting ... </span></span>
+<span><span class="co">#&gt; 2024-07-31 20:35:17.912074 Directory data/processed/240731_203517_example created. </span></span>
+<span><span class="co">#&gt; 2024-07-31 20:35:17.912189 ... path to used parameters is <span style="color: #00BB00;">data/processed/240731_203517_example</span> </span></span>
+<span><span class="co">#&gt; 2024-07-31 20:35:22.442832 ... path to used parameters is <span style="color: #00BB00;">data/processed/240731_203517_example</span> </span></span>
+<span><span class="co">#&gt; 2024-07-31 20:35:22.966402 ... path to export is <span style="color: #00BB00;">data/processed/240731_203517_example/example_results.tsv</span> </span></span>
+<span><span class="co">#&gt; <span style="color: #BB0000;">● completed target ann_pre [33.304 seconds]</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ▶ ended pipeline [40.446 seconds]</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; </span>2024-07-31 20:35:23.089941 Script finished in <span style="color: #00BB00;">44.52693 secs</span></span></span></code></pre></div>
 <p>The final exported file is formatted in order to be easily imported
 in <a href="https://cytoscape.org/" class="external-link">Cytoscape</a> to further explore
 your data!</p>
