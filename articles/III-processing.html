@@ -83,7 +83,7 @@
                         <h4 data-toc-skip class="author">Adriano
 Rutz</h4>
             
-            <h4 data-toc-skip class="date">2024-07-31</h4>
+            <h4 data-toc-skip class="date">2024-08-01</h4>
       
       <small class="dont-index">Source: <a href="https://github.com/taxonomicallyinformedannotation/tima/blob/main/vignettes/articles/III-processing.Rmd" class="external-link"><code>vignettes/articles/III-processing.Rmd</code></a></small>
       <div class="d-none name"><code>III-processing.Rmd</code></div>
@@ -96,7 +96,7 @@ Rutz</h4>
 <strong>A</strong>nnotation is performed. If you followed all previous
 steps successfully, this should be a piece of cake, you deserve it!</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">targets</span><span class="fu">::</span><span class="fu"><a href="https://docs.ropensci.org/targets/reference/tar_make.html" class="external-link">tar_make</a></span><span class="op">(</span>names <span class="op">=</span> <span class="fu">matches</span><span class="op">(</span><span class="st">"ann_pre$"</span><span class="op">)</span><span class="op">)</span></span>
+<code class="sourceCode R"><span><span class="fu">targets</span><span class="fu">::</span><span class="fu"><a href="https://docs.ropensci.org/targets/reference/tar_make.html" class="external-link">tar_make</a></span><span class="op">(</span>names <span class="op">=</span> <span class="fu">matches</span><span class="op">(</span><span class="st">"ann_pre$"</span><span class="op">)</span>, script <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/system.file.html" class="external-link">system.file</a></span><span class="op">(</span><span class="st">"pipelines/_targets.R"</span>, package <span class="op">=</span> <span class="st">"tima"</span><span class="op">)</span><span class="op">)</span></span>
 <span><span class="co">#&gt; <span style="color: #BB0000;">✔ skipped target yaml_paths</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skipped target paths</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skipped target paths_data_source_libraries_spectra_is_lotus_neg</span></span></span>
@@ -119,8 +119,7 @@ steps successfully, this should be a piece of cake, you deserve it!</p>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skipped target paths_urls_massbank_file</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skipped target paths_urls_lotus_doi</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skipped target par_def_ann_spe</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ▶ dispatched target par_def_fil_ann</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ● completed target par_def_fil_ann [0.001 seconds]</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skipped target par_def_fil_ann</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skipped target par_def_cre_com</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skipped target par_def_pre_lib_rt</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skipped target par_def_pre_ann_sir</span></span></span>
@@ -132,8 +131,7 @@ steps successfully, this should be a piece of cake, you deserve it!</p>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skipped target paths_data_source_spectra</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skipped target paths_urls_massbank_version</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skipped target par_def_pre_fea_tab</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ▶ dispatched target par_def_pre_ann_gnp</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ● completed target par_def_pre_ann_gnp [0.001 seconds]</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skipped target par_def_pre_ann_gnp</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skipped target paths_data_source_libraries_spectra_is_lotus_pos</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skipped target paths_urls_examples_spectral_lib_pos</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skipped target par_def_pre_lib_sop_hmd</span></span></span>
@@ -143,7 +141,7 @@ steps successfully, this should be a piece of cake, you deserve it!</p>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ● completed target par_def_wei_ann [0 seconds]</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ▶ dispatched target lib_spe_is_lot_neg</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; File already exists. Skipping.</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ● completed target lib_spe_is_lot_neg [0.008 seconds]</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ● completed target lib_spe_is_lot_neg [0.009 seconds]</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skipped target par_fin_par</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skipped target lib_sop_ecm</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skipped target par_fin_par2</span></span></span>
@@ -151,24 +149,17 @@ steps successfully, this should be a piece of cake, you deserve it!</p>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skipped target lib_spe_exp_mb_raw</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ▶ dispatched target lib_spe_is_lot_pos</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; File already exists. Skipping.</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ● completed target lib_spe_is_lot_pos [0.001 seconds]</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ● completed target lib_spe_is_lot_pos [0 seconds]</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ▶ dispatched target lib_sop_lot</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; A file with the same size is already present. Skipping</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ● completed target lib_sop_lot [1.69 seconds]</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ● completed target lib_sop_lot [1.46 seconds]</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skipped target lib_spe_is_lot_pre_neg</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skipped target par_usr_pre_ann_sir</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skipped target par_usr_pre_fea_com</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skipped target par_usr_pre_lib_sop_ecm</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skipped target par_usr_ann_mas</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skipped target par_usr_pre_lib_spe</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ▶ dispatched target par_usr_fil_ann</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; </span>2024-07-31 23:30:41.200026 Loading default params </span></span>
-<span><span class="co">#&gt; 2024-07-31 23:30:41.212265 All params </span></span>
-<span><span class="co">#&gt; 2024-07-31 23:30:41.212454 Small params </span></span>
-<span><span class="co">#&gt; 2024-07-31 23:30:41.212545 Changing params </span></span>
-<span><span class="co">#&gt; 2024-07-31 23:30:41.212621 Changing filenames </span></span>
-<span><span class="co">#&gt; 2024-07-31 23:30:41.774241 Exporting params ... </span></span>
-<span><span class="co">#&gt; <span style="color: #BB0000;">● completed target par_usr_fil_ann [1.345 seconds]</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skipped target par_usr_fil_ann</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skipped target par_usr_pre_lib_sop_lot</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skipped target par_usr_pre_ann_spe</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skipped target par_usr_cre_edg_spe</span></span></span>
@@ -177,26 +168,19 @@ steps successfully, this should be a piece of cake, you deserve it!</p>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skipped target par_usr_pre_lib_sop_mer</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skipped target par_usr_cre_com</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skipped target par_usr_pre_lib_rt</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ▶ dispatched target par_usr_pre_ann_gnp</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; </span>2024-07-31 23:30:42.015284 Loading default params </span></span>
-<span><span class="co">#&gt; 2024-07-31 23:30:42.024871 All params </span></span>
-<span><span class="co">#&gt; 2024-07-31 23:30:42.025093 Small params </span></span>
-<span><span class="co">#&gt; 2024-07-31 23:30:42.025171 Changing params </span></span>
-<span><span class="co">#&gt; 2024-07-31 23:30:42.025246 Changing filenames </span></span>
-<span><span class="co">#&gt; 2024-07-31 23:30:42.082766 Exporting params ... </span></span>
-<span><span class="co">#&gt; <span style="color: #BB0000;">● completed target par_usr_pre_ann_gnp [0.072 seconds]</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skipped target par_usr_pre_ann_gnp</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skipped target par_usr_pre_lib_sop_clo</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skipped target par_usr_pre_tax</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skipped target par_usr_pre_fea_tab</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skipped target par_usr_pre_lib_sop_hmd</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ▶ dispatched target par_usr_wei_ann</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; </span>2024-07-31 23:30:42.319715 Loading default params </span></span>
-<span><span class="co">#&gt; 2024-07-31 23:30:42.329286 All params </span></span>
-<span><span class="co">#&gt; 2024-07-31 23:30:42.329511 Small params </span></span>
-<span><span class="co">#&gt; 2024-07-31 23:30:42.329587 Changing params </span></span>
-<span><span class="co">#&gt; 2024-07-31 23:30:42.329708 Changing filenames </span></span>
-<span><span class="co">#&gt; 2024-07-31 23:30:42.532823 Exporting params ... </span></span>
-<span><span class="co">#&gt; <span style="color: #BB0000;">● completed target par_usr_wei_ann [0.213 seconds]</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; </span>2024-08-01 01:49:09.440902 Loading default params </span></span>
+<span><span class="co">#&gt; 2024-08-01 01:49:09.454442 All params </span></span>
+<span><span class="co">#&gt; 2024-08-01 01:49:09.454718 Small params </span></span>
+<span><span class="co">#&gt; 2024-08-01 01:49:09.454859 Changing params </span></span>
+<span><span class="co">#&gt; 2024-08-01 01:49:09.455108 Changing filenames </span></span>
+<span><span class="co">#&gt; 2024-08-01 01:49:10.083576 Exporting params ... </span></span>
+<span><span class="co">#&gt; <span style="color: #BB0000;">● completed target par_usr_wei_ann [1.472 seconds]</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skipped target lib_spe_exp_mb_pre</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skipped target lib_spe_is_lot_pre_pos</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skipped target par_pre_ann_sir</span></span></span>
@@ -204,8 +188,7 @@ steps successfully, this should be a piece of cake, you deserve it!</p>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skipped target par_pre_lib_sop_ecm</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skipped target par_ann_mas</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skipped target par_pre_lib_spe</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ▶ dispatched target par_fil_ann</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ● completed target par_fil_ann [0.001 seconds]</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skipped target par_fil_ann</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skipped target par_pre_lib_sop_lot</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skipped target par_pre_ann_spe</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skipped target par_cre_edg_spe</span></span></span>
@@ -214,8 +197,7 @@ steps successfully, this should be a piece of cake, you deserve it!</p>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skipped target par_pre_lib_sop_mer</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skipped target par_cre_com</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skipped target par_pre_lib_rt</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ▶ dispatched target par_pre_ann_gnp</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ● completed target par_pre_ann_gnp [0.001 seconds]</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skipped target par_pre_ann_gnp</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skipped target par_pre_lib_sop_clo</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skipped target par_pre_tax</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skipped target par_pre_fea_tab</span></span></span>
@@ -253,12 +235,7 @@ steps successfully, this should be a piece of cake, you deserve it!</p>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skipped target lib_mer_org_tax_ott</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skipped target lib_mer_key</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skipped target ann_sir_pre</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ▶ dispatched target ann_spe_exp_gnp_pre</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; </span>2024-07-31 23:30:43.73248 No GNPS annotations found, returning an empty file instead </span></span>
-<span><span class="co">#&gt; 2024-07-31 23:30:43.733615 Exporting ... </span></span>
-<span><span class="co">#&gt; 2024-07-31 23:30:43.73493 ... path to used parameters is <span style="color: #00BB00;">data/interim/params</span> </span></span>
-<span><span class="co">#&gt; 2024-07-31 23:30:46.198838 ... path to export is <span style="color: #00BB00;">data/interim/annotations/example_gnpsPrepared.tsv.gz</span> </span></span>
-<span><span class="co">#&gt; <span style="color: #BB0000;">● completed target ann_spe_exp_gnp_pre [2.478 seconds]</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skipped target ann_spe_exp_gnp_pre</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skipped target ann_spe_pre</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skipped target tax_pre</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skipped target ann_ms1_pre</span></span></span>
@@ -268,64 +245,56 @@ steps successfully, this should be a piece of cake, you deserve it!</p>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skipped target ann_ms1_pre_edg</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skipped target ann_ms1_pre_ann</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skipped target fea_edg_pre</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ▶ dispatched target ann_fil</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; </span>2024-07-31 23:30:46.48504 ... features </span></span>
-<span><span class="co">#&gt; 2024-07-31 23:30:46.549311 ... annotations </span></span>
-<span><span class="co">#&gt; 2024-07-31 23:30:48.432818 ... retention times </span></span>
-<span><span class="co">#&gt; 2024-07-31 23:30:48.820376 Filtering annotations outside of 0.1 minutes tolerance </span></span>
-<span><span class="co">#&gt; 2024-07-31 23:30:50.153753 <span style="color: #00BB00;">153</span> Candidates were removed based on retention time. </span></span>
-<span><span class="co">#&gt; 2024-07-31 23:30:50.221919 ... path to used parameters is <span style="color: #00BB00;">data/interim/params</span> </span></span>
-<span><span class="co">#&gt; 2024-07-31 23:30:50.598099 ... path to export is <span style="color: #00BB00;">data/interim/annotations/example_annotationsFiltered.tsv.gz</span> </span></span>
-<span><span class="co">#&gt; <span style="color: #BB0000;">● completed target ann_fil [5.393 seconds]</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skipped target ann_fil</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skipped target fea_com</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skipped target int_com</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ✔ skipped target fea_com_pre</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; ▶ dispatched target ann_pre</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; </span>2024-07-31 23:30:52.181108 Loading files ... </span></span>
-<span><span class="co">#&gt; 2024-07-31 23:30:52.181232 ... components </span></span>
-<span><span class="co">#&gt; 2024-07-31 23:30:52.182573 ... edges </span></span>
-<span><span class="co">#&gt; 2024-07-31 23:30:52.184155 ... structure-organism pairs </span></span>
-<span><span class="co">#&gt; 2024-07-31 23:30:56.272213 ... canopus </span></span>
-<span><span class="co">#&gt; 2024-07-31 23:30:56.298009 ... formula </span></span>
-<span><span class="co">#&gt; 2024-07-31 23:30:56.321653 ... annotations </span></span>
-<span><span class="co">#&gt; 2024-07-31 23:30:57.743521 Got c("ISDB", "MassBank - 2024.06", "TIMA MS1") initial annotations </span></span>
-<span><span class="co">#&gt;  2024-07-31 23:30:57.743521 Got c(975, 57, 284533) initial annotations </span></span>
-<span><span class="co">#&gt; 2024-07-31 23:30:58.460137 Re-arranging annotations </span></span>
-<span><span class="co">#&gt; 2024-07-31 23:31:00.307091 adding biological organism metadata </span></span>
-<span><span class="co">#&gt; 2024-07-31 23:31:00.422136 performing taxonomically informed scoring </span></span>
-<span><span class="co">#&gt; 2024-07-31 23:31:00.46575 filtering top  3  candidates and keeping only MS1 candidates with minimum </span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; </span>2024-08-01 01:49:10.979701 Loading files ... </span></span>
+<span><span class="co">#&gt; 2024-08-01 01:49:10.979842 ... components </span></span>
+<span><span class="co">#&gt; 2024-08-01 01:49:10.982098 ... edges </span></span>
+<span><span class="co">#&gt; 2024-08-01 01:49:10.984099 ... structure-organism pairs </span></span>
+<span><span class="co">#&gt; 2024-08-01 01:49:16.610963 ... canopus </span></span>
+<span><span class="co">#&gt; 2024-08-01 01:49:16.636942 ... formula </span></span>
+<span><span class="co">#&gt; 2024-08-01 01:49:16.661922 ... annotations </span></span>
+<span><span class="co">#&gt; 2024-08-01 01:49:18.258336 Got c("ISDB", "MassBank - 2024.06", "TIMA MS1") initial annotations </span></span>
+<span><span class="co">#&gt;  2024-08-01 01:49:18.258336 Got c(975, 57, 284533) initial annotations </span></span>
+<span><span class="co">#&gt; 2024-08-01 01:49:18.973585 Re-arranging annotations </span></span>
+<span><span class="co">#&gt; 2024-08-01 01:49:20.762661 adding biological organism metadata </span></span>
+<span><span class="co">#&gt; 2024-08-01 01:49:20.894932 performing taxonomically informed scoring </span></span>
+<span><span class="co">#&gt; 2024-08-01 01:49:20.940867 filtering top  3  candidates and keeping only MS1 candidates with minimum </span></span>
 <span><span class="co">#&gt;  0  biological score </span></span>
 <span><span class="co">#&gt;  OR 0 chemical score </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2024-07-31 23:31:00.706724 adding "notClassified" </span></span>
+<span><span class="co">#&gt; 2024-08-01 01:49:21.192418 adding "notClassified" </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2024-07-31 23:31:01.889323 calculating biological score at all levels ... </span></span>
+<span><span class="co">#&gt; 2024-08-01 01:49:22.368963 calculating biological score at all levels ... </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2024-07-31 23:31:01.889519 ... domain </span></span>
+<span><span class="co">#&gt; 2024-08-01 01:49:22.369164 ... domain </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2024-07-31 23:31:01.898749 ... kingdom </span></span>
+<span><span class="co">#&gt; 2024-08-01 01:49:22.379003 ... kingdom </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2024-07-31 23:31:01.9068 ... phylum </span></span>
+<span><span class="co">#&gt; 2024-08-01 01:49:22.387861 ... phylum </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2024-07-31 23:31:01.915124 ... class </span></span>
+<span><span class="co">#&gt; 2024-08-01 01:49:22.396745 ... class </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2024-07-31 23:31:01.92388 ... order </span></span>
+<span><span class="co">#&gt; 2024-08-01 01:49:22.406158 ... order </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2024-07-31 23:31:01.9371 ... family </span></span>
+<span><span class="co">#&gt; 2024-08-01 01:49:22.419878 ... family </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2024-07-31 23:31:01.957999 ... tribe </span></span>
+<span><span class="co">#&gt; 2024-08-01 01:49:22.442835 ... tribe </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2024-07-31 23:31:01.971511 ... genus </span></span>
+<span><span class="co">#&gt; 2024-08-01 01:49:22.457539 ... genus </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2024-07-31 23:31:02.038546 ... species </span></span>
+<span><span class="co">#&gt; 2024-08-01 01:49:22.531592 ... species </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2024-07-31 23:31:02.276252 ... varietas </span></span>
+<span><span class="co">#&gt; 2024-08-01 01:49:22.793011 ... varietas </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2024-07-31 23:31:02.285854 ... keeping best biological score </span></span>
+<span><span class="co">#&gt; 2024-08-01 01:49:22.802928 ... keeping best biological score </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2024-07-31 23:31:03.277653 ... calculating weighted biological score </span></span>
+<span><span class="co">#&gt; 2024-08-01 01:49:24.268274 ... calculating weighted biological score </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2024-07-31 23:31:03.911396 taxonomically informed scoring led to </span></span>
+<span><span class="co">#&gt; 2024-08-01 01:49:25.115385 taxonomically informed scoring led to </span></span>
 <span><span class="co">#&gt;  <span style="color: #555555;">44595</span> annotations reranked at the <span style="color: #555555;">kingdom</span> level, </span></span>
 <span><span class="co">#&gt;  <span style="color: #BBBBBB;">44188</span> annotations reranked at the <span style="color: #BBBBBB;">phylum</span> level, </span></span>
 <span><span class="co">#&gt;  <span style="color: #00BBBB;">36401</span> annotations reranked at the <span style="color: #00BBBB;">class</span> level, </span></span>
@@ -336,55 +305,55 @@ steps successfully, this should be a piece of cake, you deserve it!</p>
 <span><span class="co">#&gt;  <span style="color: #00BB00;">454</span> annotations reranked at the <span style="color: #00BB00;">species</span> level, </span></span>
 <span><span class="co">#&gt;  and <span style="color: #BB0000;">0</span> annotations reranked at the <span style="color: #BB0000;">variety</span> level. </span></span>
 <span><span class="co">#&gt;  WITHOUT TAKING CONSISTENCY SCORE INTO ACCOUNT! (for later predictions) </span></span>
-<span><span class="co">#&gt; 2024-07-31 23:31:04.179777 calculating chemical consistency</span></span>
+<span><span class="co">#&gt; 2024-08-01 01:49:25.241539 calculating chemical consistency</span></span>
 <span><span class="co">#&gt;               features with at least 2 neighbors ... </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2024-07-31 23:31:04.245789 ... among all edges ... </span></span>
+<span><span class="co">#&gt; 2024-08-01 01:49:25.414819 ... among all edges ... </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2024-07-31 23:31:04.245946 ... at the (classyfire) kingdom level </span></span>
+<span><span class="co">#&gt; 2024-08-01 01:49:25.41528 ... at the (classyfire) kingdom level </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2024-07-31 23:31:04.299882 ... at the (NPC) pathway level </span></span>
+<span><span class="co">#&gt; 2024-08-01 01:49:25.473321 ... at the (NPC) pathway level </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2024-07-31 23:31:04.415316 ... at the (classyfire) superclass level </span></span>
+<span><span class="co">#&gt; 2024-08-01 01:49:25.594189 ... at the (classyfire) superclass level </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2024-07-31 23:31:04.52957 ... at the (NPC) superclass level </span></span>
+<span><span class="co">#&gt; 2024-08-01 01:49:25.714106 ... at the (NPC) superclass level </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2024-07-31 23:31:04.825979 ... at the (classyfire) class level </span></span>
+<span><span class="co">#&gt; 2024-08-01 01:49:25.997973 ... at the (classyfire) class level </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2024-07-31 23:31:05.080997 ... at the (NPC) class level </span></span>
+<span><span class="co">#&gt; 2024-08-01 01:49:26.315178 ... at the (NPC) class level </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2024-07-31 23:31:05.589293 ... at the (classyfire) parent level </span></span>
+<span><span class="co">#&gt; 2024-08-01 01:49:26.831881 ... at the (classyfire) parent level </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2024-07-31 23:31:06.517247 splitting already computed predictions </span></span>
+<span><span class="co">#&gt; 2024-08-01 01:49:27.475489 splitting already computed predictions </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2024-07-31 23:31:07.081473 joining all except -1 together </span></span>
+<span><span class="co">#&gt; 2024-08-01 01:49:27.919038 joining all except -1 together </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2024-07-31 23:31:08.407533 adding dummy consistency for features</span></span>
+<span><span class="co">#&gt; 2024-08-01 01:49:29.687478 adding dummy consistency for features</span></span>
 <span><span class="co">#&gt;               with less than 2 neighbors </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2024-07-31 23:31:08.479622 adding already computed predictions back </span></span>
+<span><span class="co">#&gt; 2024-08-01 01:49:29.729801 adding already computed predictions back </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2024-07-31 23:31:10.289328 calculating chemical score at all levels ... </span></span>
+<span><span class="co">#&gt; 2024-08-01 01:49:31.06816 calculating chemical score at all levels ... </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2024-07-31 23:31:10.289495 ... (classyfire) kingdom </span></span>
+<span><span class="co">#&gt; 2024-08-01 01:49:31.068364 ... (classyfire) kingdom </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2024-07-31 23:31:10.295277 ... (NPC) pathway </span></span>
+<span><span class="co">#&gt; 2024-08-01 01:49:31.074183 ... (NPC) pathway </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2024-07-31 23:31:10.303707 ... (classyfire) superclass </span></span>
+<span><span class="co">#&gt; 2024-08-01 01:49:31.083306 ... (classyfire) superclass </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2024-07-31 23:31:10.311872 ... (NPC) superclass </span></span>
+<span><span class="co">#&gt; 2024-08-01 01:49:31.092137 ... (NPC) superclass </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2024-07-31 23:31:10.330174 ... (classyfire) class </span></span>
+<span><span class="co">#&gt; 2024-08-01 01:49:31.112668 ... (classyfire) class </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2024-07-31 23:31:10.352736 ... (NPC) class </span></span>
+<span><span class="co">#&gt; 2024-08-01 01:49:31.235828 ... (NPC) class </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2024-07-31 23:31:10.407624 ... (classyfire) parent </span></span>
+<span><span class="co">#&gt; 2024-08-01 01:49:31.297024 ... (classyfire) parent </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2024-07-31 23:31:10.465409 ... keeping best chemical score </span></span>
+<span><span class="co">#&gt; 2024-08-01 01:49:31.375068 ... keeping best chemical score </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2024-07-31 23:31:10.877319 ... calculating weighted chemical score </span></span>
+<span><span class="co">#&gt; 2024-08-01 01:49:32.188804 ... calculating weighted chemical score </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2024-07-31 23:31:11.133024 chemically informed scoring led to </span></span>
+<span><span class="co">#&gt; 2024-08-01 01:49:32.302253 chemically informed scoring led to </span></span>
 <span><span class="co">#&gt;  <span style="color: #555555;">27141</span> annotations reranked at the <span style="color: #555555;">(classyfire) kingdom</span> level, </span></span>
 <span><span class="co">#&gt;  <span style="color: #00BBBB;">17970</span> annotations reranked at the <span style="color: #00BBBB;">(NPC) pathway</span> level, </span></span>
 <span><span class="co">#&gt;  <span style="color: #BB00BB;">14250</span> annotations reranked at the <span style="color: #BB00BB;">(classyfire) superclass</span> level, </span></span>
@@ -393,24 +362,24 @@ steps successfully, this should be a piece of cake, you deserve it!</p>
 <span><span class="co">#&gt;  <span style="color: #00BB00;">8125</span> annotations reranked at the <span style="color: #00BB00;">(NPC) class</span> level, and </span></span>
 <span><span class="co">#&gt;  <span style="color: #BB0000;">7927</span> annotations reranked at the <span style="color: #BB0000;">(classyfire) parent</span> level. </span></span>
 <span><span class="co">#&gt;  WITHOUT TAKING CONSISTENCY SCORE INTO ACCOUNT! </span></span>
-<span><span class="co">#&gt; 2024-07-31 23:31:11.331568 Keeping high confidence candidates only... </span></span>
-<span><span class="co">#&gt; 2024-07-31 23:31:11.337188 Removed <span style="color: #BB0000;">284405</span> low confidence candidates out of the <span style="color: #0000BB;">286440</span> total ones. </span></span>
-<span><span class="co">#&gt; 2024-07-31 23:31:11.337548 <span style="color: #00BB00;">2035</span> high confidence candidates remaining. </span></span>
-<span><span class="co">#&gt; 2024-07-31 23:31:12.425928 adding initial metadata (RT, etc.) and simplifying columns </span></span>
+<span><span class="co">#&gt; 2024-08-01 01:49:32.399906 Keeping high confidence candidates only... </span></span>
+<span><span class="co">#&gt; 2024-08-01 01:49:32.405192 Removed <span style="color: #BB0000;">284405</span> low confidence candidates out of the <span style="color: #0000BB;">286440</span> total ones. </span></span>
+<span><span class="co">#&gt; 2024-08-01 01:49:32.405538 <span style="color: #00BB00;">2035</span> high confidence candidates remaining. </span></span>
+<span><span class="co">#&gt; 2024-08-01 01:49:33.101782 adding initial metadata (RT, etc.) and simplifying columns </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2024-07-31 23:31:12.451401 adding references </span></span>
+<span><span class="co">#&gt; 2024-08-01 01:49:33.127033 adding references </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2024-07-31 23:31:13.889389 selecting columns to export </span></span>
+<span><span class="co">#&gt; 2024-08-01 01:49:34.921292 selecting columns to export </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2024-07-31 23:31:13.955072 adding consensus again to droped candidates </span></span>
+<span><span class="co">#&gt; 2024-08-01 01:49:34.993005 adding consensus again to droped candidates </span></span>
 <span><span class="co">#&gt;  </span></span>
-<span><span class="co">#&gt; 2024-07-31 23:31:15.991214 Exporting ... </span></span>
-<span><span class="co">#&gt; 2024-07-31 23:31:15.992899 Directory data/processed/240731_233115_example created. </span></span>
-<span><span class="co">#&gt; 2024-07-31 23:31:15.99299 ... path to used parameters is <span style="color: #00BB00;">data/processed/240731_233115_example</span> </span></span>
-<span><span class="co">#&gt; 2024-07-31 23:31:16.065965 ... path to used parameters is <span style="color: #00BB00;">data/processed/240731_233115_example</span> </span></span>
-<span><span class="co">#&gt; 2024-07-31 23:31:16.142932 ... path to export is <span style="color: #00BB00;">data/processed/240731_233115_example/example_results.tsv</span> </span></span>
-<span><span class="co">#&gt; <span style="color: #BB0000;">● completed target ann_pre [24.005 seconds]</span></span></span>
-<span><span class="co"><span style="color: #BB0000;">#&gt; ▶ ended pipeline [40.761 seconds]</span></span></span>
+<span><span class="co">#&gt; 2024-08-01 01:49:37.607872 Exporting ... </span></span>
+<span><span class="co">#&gt; 2024-08-01 01:49:37.613434 Directory data/processed/240801_014937_example created. </span></span>
+<span><span class="co">#&gt; 2024-08-01 01:49:37.613542 ... path to used parameters is <span style="color: #00BB00;">data/processed/240801_014937_example</span> </span></span>
+<span><span class="co">#&gt; 2024-08-01 01:49:41.887635 ... path to used parameters is <span style="color: #00BB00;">data/processed/240801_014937_example</span> </span></span>
+<span><span class="co">#&gt; 2024-08-01 01:49:42.380143 ... path to export is <span style="color: #00BB00;">data/processed/240801_014937_example/example_results.tsv</span> </span></span>
+<span><span class="co">#&gt; <span style="color: #BB0000;">● completed target ann_pre [31.447 seconds]</span></span></span>
+<span><span class="co"><span style="color: #BB0000;">#&gt; ▶ ended pipeline [38.332 seconds]</span></span></span>
 <span><span class="co"><span style="color: #BB0000;">#&gt; </span></span></span></code></pre></div>
 <p>The final exported file is formatted in order to be easily imported
 in <a href="https://cytoscape.org/" class="external-link">Cytoscape</a> to further explore
