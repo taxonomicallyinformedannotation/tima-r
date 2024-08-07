@@ -22,7 +22,6 @@
 <url><loc>https://taxonomicallyinformedannotation.github.io/tima-r/reference/clean_bio.html</loc></url>
 <url><loc>https://taxonomicallyinformedannotation.github.io/tima-r/reference/clean_chemo.html</loc></url>
 <url><loc>https://taxonomicallyinformedannotation.github.io/tima-r/reference/clean_collapse.html</loc></url>
-<url><loc>https://taxonomicallyinformedannotation.github.io/tima-r/reference/cleanup_spectra.html</loc></url>
 <url><loc>https://taxonomicallyinformedannotation.github.io/tima-r/reference/columns_model.html</loc></url>
 <url><loc>https://taxonomicallyinformedannotation.github.io/tima-r/reference/complement_metadata_structures.html</loc></url>
 <url><loc>https://taxonomicallyinformedannotation.github.io/tima-r/reference/create_components.html</loc></url>
@@ -61,11 +60,9 @@
 <url><loc>https://taxonomicallyinformedannotation.github.io/tima-r/reference/import_spectra.html</loc></url>
 <url><loc>https://taxonomicallyinformedannotation.github.io/tima-r/reference/index.html</loc></url>
 <url><loc>https://taxonomicallyinformedannotation.github.io/tima-r/reference/install.html</loc></url>
-<url><loc>https://taxonomicallyinformedannotation.github.io/tima-r/reference/keep_peaks.html</loc></url>
 <url><loc>https://taxonomicallyinformedannotation.github.io/tima-r/reference/load_yaml_files.html</loc></url>
 <url><loc>https://taxonomicallyinformedannotation.github.io/tima-r/reference/log_debug.html</loc></url>
 <url><loc>https://taxonomicallyinformedannotation.github.io/tima-r/reference/log_pipe.html</loc></url>
-<url><loc>https://taxonomicallyinformedannotation.github.io/tima-r/reference/normalize_peaks.html</loc></url>
 <url><loc>https://taxonomicallyinformedannotation.github.io/tima-r/reference/parse_adduct.html</loc></url>
 <url><loc>https://taxonomicallyinformedannotation.github.io/tima-r/reference/parse_cli_params.html</loc></url>
 <url><loc>https://taxonomicallyinformedannotation.github.io/tima-r/reference/parse_yaml_params.html</loc></url>
@@ -87,7 +84,6 @@
 <url><loc>https://taxonomicallyinformedannotation.github.io/tima-r/reference/prepare_params.html</loc></url>
 <url><loc>https://taxonomicallyinformedannotation.github.io/tima-r/reference/prepare_taxa.html</loc></url>
 <url><loc>https://taxonomicallyinformedannotation.github.io/tima-r/reference/read_from_sirius_zip.html</loc></url>
-<url><loc>https://taxonomicallyinformedannotation.github.io/tima-r/reference/remove_above_precursor.html</loc></url>
 <url><loc>https://taxonomicallyinformedannotation.github.io/tima-r/reference/replace_id.html</loc></url>
 <url><loc>https://taxonomicallyinformedannotation.github.io/tima-r/reference/round_reals.html</loc></url>
 <url><loc>https://taxonomicallyinformedannotation.github.io/tima-r/reference/run_app.html</loc></url>
